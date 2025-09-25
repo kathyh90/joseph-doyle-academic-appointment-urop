@@ -1,0 +1,1 @@
+Fall 2025 UROP Kathy Hu. Project on creating a database with university researchers and professors that captures the duration and trajectory of their appointments across multiple institutions. We also want to analyze if the presence of a hospital affects their use of avoidable healthcare.
