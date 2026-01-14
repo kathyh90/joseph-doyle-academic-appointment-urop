@@ -1,8 +1,10 @@
+#This file will enrich the profiles created in the first file with information on current and past institutions, ORCID, and other info.
 import pandas as pd
 import aiohttp
 import asyncio
 import time
 from pathlib import Path
+import math
 
 # ── CONFIG: Institutions ─────────────────────────────────────────────────────
 INSTITUTIONS = {
@@ -12,17 +14,23 @@ INSTITUTIONS = {
         "input":    "/home/mm4958/openalex/results/mit_only_affiliations.csv",
         "output":   "MIT_author_profiles_extended_f.csv"
     },
-    "ou": {
-        "display": "university of oklahoma",
-        "oa_id":    "https://openalex.org/I8692664",
-        "input":    "ou_only_affiliations.csv",
-        "output":   "OU_author_profiles_extended_f.csv"
-    },
+    #"ou": {
+    #    "display": "university of oklahoma",
+    #    "oa_id":    "https://openalex.org/I8692664",
+    #    "input":    "/home/mm4958/openalex/results/ou_only_affiliations.csv",
+    #    "output":   "OU_author_profiles_extended_f.csv"
+    #},
+    "cornell": {
+        "display": "cornell",
+        "oa_id":    "https://openalex.org/I205783295",
+        "input":    "/home/mm4958/openalex/results/cornell_only_affiliations.csv",
+        "output":   "cornell_author_profiles_extended_f.csv"
+    }
     # Add more institutions as needed...
 }
 
 # ── GLOBALS ──────────────────────────────────────────────────────────────────
-RATE_LIMIT = 10  # requests per second
+RATE_LIMIT = 5  # requests per second
 author_cache = {}  # Cache results by OpenAlex ID
 MAX_LINES = 100000  # stop after this many authors
 
@@ -71,7 +79,7 @@ async def fetch_profile(session, sem, oid):
             "author_id": oid
         }
         return author_cache[oid]
-
+    
 async def fetch_and_process(session, sem, row, oa_id, prefix):
     oid = row["author_id"].rsplit("/", 1)[-1]
     profile = await fetch_profile(session, sem, oid)
@@ -81,43 +89,67 @@ async def fetch_and_process(session, sem, row, oa_id, prefix):
 def process_profile(row, profile, oa_id, prefix):
     out = {}
 
+    # Original row-based fields
     out[f"{prefix}_ID"]         = row.get("inst_1_id")
     out[f"{prefix}_year_start"] = row.get("year_start_1")
     out[f"{prefix}_year_end"]   = row.get("year_end_1")
 
+    # If error was recorded earlier
     if "_error" in profile:
         out.update({
             "current_institutions": "",
-            "past_institutions":    "",
-            "_has_inst":            False,
-            "_error":               profile.get("_error"),
-            "status":               profile["status"],
-            "message":              profile["message"]
+            "past_institutions": "",
+            "_has_inst": False,
+            "_error": profile.get("_error"),
+            "status": profile.get("status"),
+            "message": profile.get("message"),
         })
         return out
 
-    current = [inst["display_name"] for inst in profile.get("last_known_institutions", [])]
-    past = [
-        aff["institution"]["display_name"]
-        for aff in profile.get("affiliations", [])
-        if aff["institution"]["display_name"] not in current
-    ]
+    # ─────────────────────────────────────────────
+    # SAFER: always get strings, never None
+    # ─────────────────────────────────────────────
+    def safe_name(x):
+        """Return institution display name as a string (Never None)."""
+        if not x:
+            return ""
+        return x.get("display_name") or ""
 
+    # Current institutions (last_known_institutions)
+    current = [safe_name(inst) for inst in profile.get("last_known_institutions", [])]
+
+    # Past institutions
+    past = []
+    for aff in profile.get("affiliations", []):
+        inst = aff.get("institution") or {}
+        name = safe_name(inst)
+        if name and name not in current:
+            past.append(name)
+
+    # ORCID extraction
     orcid = profile.get("orcid") or profile.get("ids", {}).get("orcid")
-    orcid = orcid.rsplit("/", 1)[-1] if orcid else None
+    if orcid:
+        orcid = orcid.rsplit("/", 1)[-1]
 
-    has_inst = any(inst.get("id", "").lower() == oa_id.lower()
-                   for inst in profile.get("last_known_institutions", [])) or \
-               any(aff["institution"].get("id", "").lower() == oa_id.lower()
-                   for aff in profile.get("affiliations", []))
+    # Has target institution?
+    has_inst = any(
+        (inst.get("id") or "").lower() == oa_id.lower()
+        for inst in profile.get("last_known_institutions", [])
+    ) or any(
+        ((aff.get("institution") or {}).get("id") or "").lower() == oa_id.lower()
+        for aff in profile.get("affiliations", [])
+    )
 
+    # Output
     out.update({
-        "current_institutions": "; ".join(current),
-        "past_institutions":    "; ".join(past),
-        "_has_inst":            has_inst,
-        "orcid":                orcid
+        "current_institutions": "; ".join(c for c in current if c),
+        "past_institutions": "; ".join(p for p in past if p),  # SAFE: never None
+        "_has_inst": has_inst,
+        "orcid": orcid
     })
+
     return out
+
 
 # ── MAIN ASYNC RUNNER ────────────────────────────────────────────────────────
 async def process_institution(slug, props):
@@ -132,13 +164,16 @@ async def process_institution(slug, props):
         return
 
     df = pd.read_csv(in_csv, dtype=str)
+    # Take 1% sample and overwrite df. DELETE THIS ONCE WE"RE DONE DEBUGGING
+    #sample_size = max(1, math.ceil(len(df) * 0.01))
+    #df = df.sample(n=sample_size, random_state=42)
     df = df.fillna("")
     total = len(df)
     print(f"\n=== Processing {props['display']} ({total} authors) ===")
 
     sem = asyncio.Semaphore(RATE_LIMIT)  # 10 req/sec limiter
     results = []
-
+    
     async with aiohttp.ClientSession() as session:
         tasks = [
             fetch_and_process(session, sem, row, oa_id, prefix)
@@ -146,11 +181,11 @@ async def process_institution(slug, props):
         ]
 
         results = []
-
+        
         for i, task in enumerate(asyncio.as_completed(tasks), 1):
             enriched = await task
             results.append(enriched)
-
+            
             if i >= MAX_LINES:  # stop early
                 print(f"Reached {MAX_LINES} rows, stopping early.")
                 break
@@ -159,8 +194,8 @@ async def process_institution(slug, props):
                 kept = sum(1 for r in results if r.get("_has_inst"))
                 errors = sum(1 for r in results if r.get("_error"))
                 print(f"[{i}/{total}] processed — {kept} kept, {errors} errors")
-
-
+            
+        
 
     errors = [r for r in results if r.get("_error")]
     print(errors)
@@ -186,7 +221,7 @@ async def main():
     start_time = time.time()
     for slug, props in INSTITUTIONS.items():
         await process_institution(slug, props)
-
+        
     elapsed_time = time.time() - start_time
     print(f"\n Finished in {elapsed_time/60:.2f} minutes ({elapsed_time:.2f} seconds)")
 

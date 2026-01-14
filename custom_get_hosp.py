@@ -1,6 +1,4 @@
 #This script gets the nearest hospital to each institution the author has worked at.
-#Note we are only searching for US hospitals, so the code below will ignore non-US institutions for this exercise
-#(although) those observatiosn are still kept
 import asyncio
 import aiohttp
 import pandas as pd
@@ -11,30 +9,10 @@ from sklearn.neighbors import BallTree
 
 # ---------------- CONFIG ----------------
 INSTITUTIONS = {
-    "mit": {
-        "input_csv": "/home/mm4958/openalex/results/MIT_author_institution_year_spans.csv",
-        "output_csv":   "/home/mm4958/openalex/results/with_nearest_hospital_mit.csv"
-    },
-    "ou": {
-        "input_csv": "/home/mm4958/openalex/results/OU_author_institution_year_spans.csv",
-        "output_csv":   "/home/mm4958/openalex/results/with_nearest_hospital_ou.csv"
-    },
-    #"osu": {
-    #    "input_csv": "/home/mm4958/openalex/results/OSU_author_institution_year_spans.csv",
-    #    "output_csv":   "with_nearest_hospital_OSU.csv"
-    #},
-    #"dartmouth": {
-    #    "input_csv": "/home/mm4958/openalex/results/dartmouth_author_institution_year_spans.csv",
-    #    "output_csv":   "with_nearest_hospital_dartmouth.csv"
-    #},
-    "cornell": {
-        "input_csv": "/home/mm4958/openalex/results/cornell_author_institution_year_spans.csv",
-        "output_csv":   "/home/mm4958/openalex/results/with_nearest_hospital_cornell.csv"
-    },
-    #"harvard": {
-    #    "input_csv": "/home/mm4958/openalex/results/harvard_author_institution_year_spans.csv",
-    #    "output_csv":   "with_nearest_hospital_harvard.csv"
-    #},
+    "custom": {
+        "input_csv": "/home/mm4958/openalex/custom_pipeline/results/custom_author_institution_year_span.csv",
+        "output_csv":   "/home/mm4958/openalex/custom_pipeline/results/with_nearest_hospital_custom.csv"
+    }
 }
 HOSPITALS_URL = "https://opendata.arcgis.com/datasets/f36521f6e07f4a859e838f0ad7536898_0.csv"
 OA_BASE = "https://api.openalex.org/institutions/"
@@ -73,31 +51,19 @@ async def fetch_inst_coord(inst_id, session, oa_sem):
     print(f"Fetching coordinates for {key} from OpenAlex")
     js = await fetch_json(session, url, oa_sem)
     if not js:
-        print(f"[OA] Failed to fetch {key}, got None")
         return inst_id, (None, None)
-    
-    country = js.get("country_code")
-    if country != "US":
-        #Skip non-US institutions entirely
-        #print(f"[OA] Non-US institution {key}, country={country}")
-        return inst_id, (None, None, country)
     geo = js.get("geo", {})
     lat = geo.get("latitude")
     lon = geo.get("longitude")
+    print(f"Found lat:{lat} and long:{lon} for institution: {key}")
     if lat is None or lon is None:
-        print(f"[OA] No coordinates for {key}, country={country}")
-        return inst_id, (None, None, country)
-
-    print(f"[OA] Got coordinates for {key}: lat={lat}, lon={lon}")
-    return inst_id, (float(lat), float(lon), country)
+        return inst_id, (None, None)
+    return inst_id, (float(lat), float(lon))
 
 
 async def fallback_nominatim(inst_id, name, session, nom_sem):
     if not name:
-        print(f"[NOM] No name for {inst_id}, skipping fallback")
         return inst_id, (None, None)
-    
-    print(f"[NOM] Fallback for {inst_id} ({name})")
     params = {"q": name, "format": "json", "limit": 1}
     headers = {"User-Agent": "AcademicHealthPanel/1.0"}
 
@@ -106,17 +72,14 @@ async def fallback_nominatim(inst_id, name, session, nom_sem):
             try:
                 async with session.get(NOMINATIM_URL, params=params, headers=headers) as r:
                     if r.status in RETRY_CODES:
-                        print(f"[NOM] Retry {attempt} for {inst_id} due to status {r.status}")
                         await asyncio.sleep(2 ** attempt)
                         continue
                     r.raise_for_status()
                     js = await r.json()
                     if js:
-                        print(f"[NOM] Got fallback coordinates for {inst_id}: lat={js[0]['lat']}, lon={js[0]['lon']}")
                         return inst_id, (float(js[0]["lat"]), float(js[0]["lon"]))
                     return inst_id, (None, None)
-            except Exception as e:
-                print(f"[NOM] Exception for {inst_id} attempt {attempt}: {e}")
+            except Exception:
                 if attempt == MAX_RETRIES:
                     return inst_id, (None, None)
                 await asyncio.sleep(2 ** attempt)
@@ -164,45 +127,16 @@ async def process_school(input_csv, output_csv, hosp):
         # OpenAlex geocoding
         oa_sem = asyncio.Semaphore(OA_CONCURRENCY)
         oa_tasks = [fetch_inst_coord(i, session, oa_sem) for i in unique_insts]
-        inst_results = await asyncio.gather(*oa_tasks)
-        
-        inst_coords = {}
-        inst_countries = {}  # track country for each institution
+        inst_coords = dict(await asyncio.gather(*oa_tasks))
 
-        for inst_id, result in inst_results:
-            if len(result) == 3:
-                lat, lon, country = result
-            else:
-                lat = lon = None
-                country = None
-            inst_coords[inst_id] = (lat, lon)
-            inst_countries[inst_id] = country  # save country
-            print(f"[DEBUG] {inst_id} -> lat={lat}, lon={lon}, country={country}")
-                
-        # Fallback Nominatim geocoding (US only)
+        # Fallback Nominatim geocoding
         nom_sem = asyncio.Semaphore(NOMINATIM_CONCURRENCY)
-        need_fallback = [
-            (inst_id, id_to_name.get(inst_id, ""))
-            for inst_id, (lat, lon) in inst_coords.items()
-            if lat is None and inst_countries.get(inst_id) == "US"
-        ]
-        print(f"[INFO] {len(need_fallback)} US institutions need Nominatim fallback")
-
+        need_fallback = [(inst_id, id_to_name.get(inst_id, "")) for inst_id, (lat, lon) in inst_coords.items() if lat is None]
         nom_tasks = [fallback_nominatim(inst_id, name, session, nom_sem) for inst_id, name in need_fallback]
         fallback_results = await asyncio.gather(*nom_tasks)
         for inst_id, coord in fallback_results:
             if coord != (None, None):
                 inst_coords[inst_id] = coord
-                print(f"[NOM] Got fallback coordinates for {inst_id}: {coord}")
-       
-        # Log US institutions still missing coordinates
-        failed_us = [
-            k for k, v in inst_coords.items()
-            if v == (None, None) and inst_countries.get(k) == "US"
-        ]
-        if failed_us:
-            print(f"⚠ {len(failed_us)} US institutions have missing coordinates: {failed_us}")
-
 
     # Nearest hospital lookup
     hosp_rad = np.deg2rad(hosp[["latitude", "longitude"]].values)
@@ -224,10 +158,10 @@ async def process_school(input_csv, output_csv, hosp):
 
     # Merge + save
     out = df.copy()
-    out["closest_hospital"] = out["institution_id"].map(lambda x: nearest_map.get(x, {}).get("closest_hospital", ""))
-    out["hospital_lat"] = out["institution_id"].map(lambda x: nearest_map.get(x, {}).get("hospital_lat", ""))
-    out["hospital_lon"] = out["institution_id"].map(lambda x: nearest_map.get(x, {}).get("hospital_lon", ""))
-    out["distance_km"] = out["institution_id"].map(lambda x: nearest_map.get(x, {}).get("distance_km", ""))
+    out["closest_hospital"] = out["institution_id"].map(lambda x: nearest_map[x]["closest_hospital"])
+    out["hospital_lat"] = out["institution_id"].map(lambda x: nearest_map[x]["hospital_lat"])
+    out["hospital_lon"] = out["institution_id"].map(lambda x: nearest_map[x]["hospital_lon"])
+    out["distance_km"] = out["institution_id"].map(lambda x: nearest_map[x]["distance_km"])
     out.to_csv(output_csv, index=False)
     print(f"✓ Done: wrote {len(out)} rows to {output_csv}")
 

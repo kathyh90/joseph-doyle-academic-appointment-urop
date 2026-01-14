@@ -9,11 +9,11 @@ from aiohttp import ClientSession, ClientResponseError
 
 # CONFIG: map a short slug to its OpenAlex institution ID
 INSTITUTIONS = {
-    "mit":      "I63966007"   # Massachusetts Institute of Technology
-    #"ou":       "I8692664",    # University of Oklahoma
+    "mit":      "I63966007",   # Massachusetts Institute of Technology
+    "ou":       "I8692664",    # University of Oklahoma
     #"osu":      "I115475287",   # Oklahoma State University
     #"dartmouth":"I107672454",  # Dartmouth College
-    #"cornell":  "I205783295",  # Cornell University
+    "cornell":  "I205783295",  # Cornell University
     #"harvard":  "I136199984",  # Harvard University
 }
 HEADERS = {
@@ -21,14 +21,11 @@ HEADERS = {
 }
 YEAR_MIN, YEAR_MAX = 1955, 2025
 CHUNK_SIZE = 10  # years per chunk
-REQUESTS_PER_SECOND = 1
+REQUESTS_PER_SECOND = 5
 MAX_REQUESTS = 1000
-PER_PAGE = 100
-request_times = []
-request_count = 0
-request_count_lock = asyncio.Lock()
+PER_PAGE = 200
 
-async def rate_limited_fetch(sem, session, url):
+async def rate_limited_fetch(sem, session, url, request_times):
     async with sem:
         start = time.time()
         async with session.get(url) as resp:
@@ -36,11 +33,11 @@ async def rate_limited_fetch(sem, session, url):
             result = await resp.json()
         elapsed = time.time() - start
         request_times.append(elapsed)
-
-        # await asyncio.sleep(0.1)
+        # enforce ~REQUESTS_PER_SECOND pacing
+        await asyncio.sleep(1 / REQUESTS_PER_SECOND)
         return result
 
-async def fetch_with_cursor(session, sem, inst_id_num, year_start, year_end):
+async def fetch_with_cursor(session, sem, inst_id_num, year_start, year_end, request_times):
     cursor = "*"
     all_results = []
     while cursor:
@@ -56,11 +53,10 @@ async def fetch_with_cursor(session, sem, inst_id_num, year_start, year_end):
             f"&per_page={PER_PAGE}&cursor={cursor}"
         )
         try:
-            result = await rate_limited_fetch(sem, session, url)
+            result = await rate_limited_fetch(sem, session, url, request_times)
             all_results.extend(result.get("results", []))
             cursor = result["meta"].get("next_cursor")
 
-            # log progress
             total_requests = len(request_times)
             total_time = sum(request_times)
             avg_rps = total_requests / total_time if total_time > 0 else 0
@@ -77,20 +73,19 @@ async def process_institution(slug, inst_id_num):
     authors = {}
     inst_url = f"https://openalex.org/{inst_id_num}"
     sem = asyncio.Semaphore(REQUESTS_PER_SECOND)  # limit concurrent requests
-
+    request_times = []  # reset per institution
+    print(f"Processing institution: {inst_id_num}")
     async with aiohttp.ClientSession(headers=HEADERS) as session:
         tasks = []
-        # Split years into chunks
         for start in range(YEAR_MIN, YEAR_MAX + 1, CHUNK_SIZE):
             end = min(start + CHUNK_SIZE - 1, YEAR_MAX)
-            tasks.append(fetch_with_cursor(session, sem, inst_id_num, start, end))
+            tasks.append(fetch_with_cursor(session, sem, inst_id_num, start, end, request_times))
 
-        # Run all chunks in parallel
         all_chunks = await asyncio.gather(*tasks)
 
     # Flatten results
     all_results = [r for chunk in all_chunks for r in chunk]
-
+    
     # Process works
     for work in all_results:
         year = work.get("publication_year")
@@ -113,29 +108,79 @@ async def process_institution(slug, inst_id_num):
                         "inst_1_id": iid,
                         "inst_1_name": iname,
                         "year_start_1": year,
-                        "year_end_1": year
+                        "year_end_1": year,
                     })
                     rec["year_start_1"] = min(rec["year_start_1"], year)
                     rec["year_end_1"] = max(rec["year_end_1"], year)
-
+                    
     # dump to CSV
     df = pd.DataFrame.from_dict(authors, orient="index")
     df.reset_index(inplace=True)
     df.rename(columns={"index": "author_id"}, inplace=True)
-
     out_fn = f"/home/mm4958/openalex/results/{slug}_only_affiliations.csv"
     df.to_csv(out_fn, index=False)
-    print(f"[{slug}] Saved {len(df)} authors → {out_fn}")
-
+    print(f"[{slug}] Saved {len(df)} authors → {out_fn}")             
+        
 # ── ENTRYPOINT ───────────────────────────────────────────────────────────────
 async def main():
     start_time = time.time()
-
+    
     for slug, props in INSTITUTIONS.items():
         await process_institution(slug, props) #once we add more institutions, this needs to be turned into a task so we can run asynchronously, using semaphore to rate limit to 10 req per second
-
+    
     elapsed_time = time.time() - start_time
     print(f"\n Finished in {elapsed_time/60:.2f} minutes ({elapsed_time:.2f} seconds)")
-
+    
 if __name__ == "__main__":
     asyncio.run(main())
+    
+#Below is new code so that we can keep track of multiple spells at one instutition
+'''
+rec = authors.setdefault(aid, {
+    "name": name,
+    "inst_1_id": iid,
+    "inst_1_name": iname,
+    "years": set()
+})
+
+rec["years"].add(year)
+^^Replace 106-112 with this. Then add the functions below.
+
+def years_to_spells(years, max_gap=1):
+    """
+    Convert a set of years into contiguous spells.
+    A new spell starts if gap > max_gap.
+    """
+    years = sorted(years)
+    spells = []
+
+    start = prev = years[0]
+
+    for y in years[1:]:
+        if y - prev <= max_gap:
+            prev = y
+        else:
+            spells.append((start, prev))
+            start = prev = y
+
+    spells.append((start, prev))
+    return spells
+rows = []
+
+for aid, rec in authors.items():
+    spells = years_to_spells(rec["years"], max_gap=1)
+
+    for i, (start, end) in enumerate(spells, 1):
+        rows.append({
+            "author_id": aid,
+            "name": rec["name"],
+            "inst_id": rec["inst_1_id"],
+            "inst_name": rec["inst_1_name"],
+            "spell_num": i,
+            "year_start": start,
+            "year_end": end
+        })
+
+df = pd.DataFrame(rows)
+'''
+

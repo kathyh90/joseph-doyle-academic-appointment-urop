@@ -12,23 +12,10 @@ import aiohttp
 import time
 
 # ── CONFIG ───────────────────────────────────────────────
-# ── CONFIG ───────────────────────────────────
-INSTITUTIONS = {
-    "mit": {
-        "input":  "/home/mm4958/openalex/results/with_nearest_hospital_mit.csv",
-        "output": "/home/mm4958/openalex/results/with_death_dates_mit.csv"
-    },
-    "cornell": {
-        "input":  "/home/mm4958/openalex/results/with_nearest_hospital_cornell.csv",
-        "output": "/home/mm4958/openalex/results/with_death_dates_cornell.csv"
-    },
-    "OU": {
-        "input":  "/home/mm4958/openalex/results/with_nearest_hospital_ou.csv",
-        "output": "/home/mm4958/openalex/results/with_death_dates_ou.csv"
-    },
-}
+INPUT_CSV = "/home/mm4958/openalex/custom_pipeline/results/with_nearest_hospital_custom.csv"
+OUTPUT_CSV = "/home/mm4958/openalex/custom_pipeline/results/with_death_dates_custom.csv"
 NAME_COL = "name"
-REQUESTS_PER_SEC = 1 # Wikidata rate limit
+REQUESTS_PER_SEC = 1.0  # Wikidata rate limit
 MAX_RETRIES = 5
 RETRY_CODES = {429, 500, 502, 503, 504}
 
@@ -88,14 +75,14 @@ async def fetch_wikidata(name: str, session: aiohttp.ClientSession, semaphore: a
     return name, None, None, None, None, None
 
 # ── MAIN ASYNC FUNCTION ──────────────────────────────────
-async def main(slug, props):
-    df = pd.read_csv(props["input"], dtype=str)
+async def main():
+    df = pd.read_csv(INPUT_CSV, dtype=str)
     df.columns = df.columns.str.strip()
     if NAME_COL not in df.columns:
-        raise KeyError(f"Column '{NAME_COL}' not found in {props['input']}")
+        raise KeyError(f"Column '{NAME_COL}' not found in {INPUT_CSV}")
 
     unique_names = df[NAME_COL].dropna().unique().tolist() #CHECK FOR DUPLICATE NAMES
-    print(f"[{slug}]→ {len(unique_names)} unique researcher names to query.")
+    print(f"→ {len(unique_names)} unique researcher names to query.")
 
     # Semaphore to rate-limit requests
     semaphore = asyncio.Semaphore(REQUESTS_PER_SEC)
@@ -121,14 +108,9 @@ async def main(slug, props):
     df["loc_id"] = df[NAME_COL].map(lambda n: lookup.get(n, {}).get("loc_id"))
     df["affiliation"] = df[NAME_COL].map(lambda n: lookup.get(n, {}).get("affiliation"))
 
-    df.to_csv(props["output"], index=False)
-    print(f"\n✓ Done! Wrote {len(df)} rows with birth/death dates to '{props['output']}'.")
+    df.to_csv(OUTPUT_CSV, index=False)
+    print(f"\n✓ Done! Wrote {len(df)} rows with birth/death dates to '{OUTPUT_CSV}'.")
 
-
-async def run_all():
-    for slug, props in INSTITUTIONS.items():
-        print(f"\n=== Processing {slug.upper()} ===")
-        await main(slug, props)
 
 if __name__ == "__main__":
-    asyncio.run(run_all())
+    asyncio.run(main())
