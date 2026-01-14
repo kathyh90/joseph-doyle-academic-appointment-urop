@@ -71,7 +71,7 @@ async def fetch_profile(session, sem, oid):
             "author_id": oid
         }
         return author_cache[oid]
-    
+
 async def fetch_and_process(session, sem, row, oa_id, prefix):
     oid = row["author_id"].rsplit("/", 1)[-1]
     profile = await fetch_profile(session, sem, oid)
@@ -138,7 +138,7 @@ async def process_institution(slug, props):
 
     sem = asyncio.Semaphore(RATE_LIMIT)  # 10 req/sec limiter
     results = []
-    
+
     async with aiohttp.ClientSession() as session:
         tasks = [
             fetch_and_process(session, sem, row, oa_id, prefix)
@@ -146,11 +146,11 @@ async def process_institution(slug, props):
         ]
 
         results = []
-        
+
         for i, task in enumerate(asyncio.as_completed(tasks), 1):
             enriched = await task
             results.append(enriched)
-            
+
             if i >= MAX_LINES:  # stop early
                 print(f"Reached {MAX_LINES} rows, stopping early.")
                 break
@@ -159,8 +159,8 @@ async def process_institution(slug, props):
                 kept = sum(1 for r in results if r.get("_has_inst"))
                 errors = sum(1 for r in results if r.get("_error"))
                 print(f"[{i}/{total}] processed — {kept} kept, {errors} errors")
-            
-        
+
+
 
     errors = [r for r in results if r.get("_error")]
     print(errors)
@@ -186,7 +186,7 @@ async def main():
     start_time = time.time()
     for slug, props in INSTITUTIONS.items():
         await process_institution(slug, props)
-        
+
     elapsed_time = time.time() - start_time
     print(f"\n Finished in {elapsed_time/60:.2f} minutes ({elapsed_time:.2f} seconds)")
 

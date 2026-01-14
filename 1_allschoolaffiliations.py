@@ -122,6 +122,7 @@ async def process_institution(slug, inst_id_num):
     df = pd.DataFrame.from_dict(authors, orient="index")
     df.reset_index(inplace=True)
     df.rename(columns={"index": "author_id"}, inplace=True)
+
     out_fn = f"/home/mm4958/openalex/results/{slug}_only_affiliations.csv"
     df.to_csv(out_fn, index=False)
     print(f"[{slug}] Saved {len(df)} authors → {out_fn}")

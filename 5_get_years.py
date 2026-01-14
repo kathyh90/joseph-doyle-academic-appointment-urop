@@ -1,4 +1,4 @@
-#This file gets date of death. We should implement async/aiohttp. Make sure to check the rate limit for th ewiki API
+#This file gets date of death. We should implement async/aiohttp. Make sure to check the rate limit for the wiki API
 #!/usr/bin/env python3
 """
 enrich_with_birth_death.py
@@ -16,25 +16,29 @@ Dependencies:
 import pandas as pd
 import time
 from SPARQLWrapper import SPARQLWrapper, JSON
+import os
 
+#working_directory = os.getcwd()
 
 # Need to create to all schools
 # ── CONFIG ────────────────────────────────────────────────────────────────
-INPUT_CSV         = "/home/mm4958/openalex/results/with_nearest_hospital_v4.csv"
-OUTPUT_CSV        = "/home/mm4958/openalex/results/with_nearest_hospital_v5.csv"
+INPUT_CSV         = "/home/kathyh90/joseph-doyle-academic-appointment-urop/results/wikidata_query.csv"
+OUTPUT_CSV        = "/home/kathyh90/joseph-doyle-academic-appointment-urop/results/wikidata_query_orcid.csv"
 NAME_COL          = "name"           # column in your CSV with the researcher’s name
+# added
+ORCID             = "orcid"
 MIT_WIKIDATA_QID  = "Q49117"         # Wikidata Q-ID for MIT
 REQUEST_DELAY_SEC = 1.0              # throttle ≤1 request/sec to Wikidata
 
 # ── SET UP SPARQL CLIENT ─────────────────────────────────────────────────
 url = "https://query.wikidata.org/sparql"
 user_agent = "MITResearchScript/1.0 (mm4958@mit.edu)" #A header for the user agent is required to query
-sparql = SPARQLWrapper(url, agent= user_agent) 
+sparql = SPARQLWrapper(url, agent= user_agent)
 sparql.setReturnFormat(JSON)
 
 #Not enough dob are being retrieved, consider fuzzy matching
 #Add code to get death dates via SSDI
-#Previously, a condition was included in the Sparql query that required the person to be affiliated with MIT. 
+#Previously, a condition was included in the Sparql query that required the person to be affiliated with MIT.
 #This resulted in a missing dob/dod for most researchers as the Wikibase doesn't include much info on affiliations
 #To circumvent this issue, I excluded the MIT condition. I'm not too concerned about this given that we already confirmed affiliations via OpenAlex.
 #However, one issue is that we might match to the wrong person. To avoid this, we will also ask for a search to return ORCID, Library of Congress ID, and Affiliations. We will then compare these details to confirm
@@ -49,15 +53,15 @@ def fetch_dates_from_wikidata(label: str):
                             mwapi:language "en".
             ?person wikibase:apiOutputItem mwapi:item.
         }}
-        
+
         ?person wdt:P31 wd:Q5;
                 wdt:P569 ?dob.
-                
+
         OPTIONAL {{ ?person wdt:P570 ?dod. }}       # death date
         OPTIONAL {{ ?person wdt:P496 ?orcid. }}     # ORCID
         OPTIONAL {{ ?person wdt:P244 ?loc_id. }}    # Library of Congress ID
         OPTIONAL {{ ?person wdt:P108 ?affiliation. }} # Affiliation(s)
-        
+
         SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
         }}
         LIMIT 1
@@ -89,7 +93,7 @@ def main():
     # 2) Get unique names
     unique_names = df[NAME_COL].dropna().unique().tolist()
     print(f"→ {len(unique_names)} unique researcher names to query on Wikidata.")
-    
+
     # 3) Query Wikidata for each name
     lookup = {}
     for i, name in enumerate(unique_names, start=1):
