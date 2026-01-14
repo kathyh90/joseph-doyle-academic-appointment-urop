@@ -1,0 +1,51 @@
+author_id,name,institution_id,institution_name,year_start,year_end,closest_hospital,hospital_lat,hospital_lon,distance_km, orcid
+https://openalex.org/A5082254377,Kyung-Min Nam,https://openalex.org/I63966007,Massachusetts Institute of Technology,2007,2014,CAMBRIDGE HEALTH ALLIANCE - CAMBRIDGE CAMPUS,42.3745,-71.1041,1.9080636237538477, 0000-0002-4579-4815
+https://openalex.org/A5082254377,Kyung-Min Nam,https://openalex.org/I889458895,University of Hong Kong,2014,2024,BELAU NATIONAL HOSPITAL,7.352444,134.46452,2737.5551706633973, 0000-0002-4579-4815
+https://openalex.org/A5082254377,Kyung-Min Nam,https://openalex.org/I848706,Sungkyunkwan University,2023,2023,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,3073.8401159391865, 0000-0002-4579-4815
+https://openalex.org/A5082254377,Kyung-Min Nam,https://openalex.org/I4210118286,Hong Kong Design Centre,2016,2021,BELAU NATIONAL HOSPITAL,7.352444,134.46452,2732.2266293240623, 0000-0002-4579-4815
+https://openalex.org/A5014945561,Valeriya Baru,https://openalex.org/I1344073410,Howard Hughes Medical Institute,2011,2014,WALTER REED NATIONAL MILITARY MEDICAL CENTER,39.0030041160001,-77.0945684719999,1.3917015973126403, 0000-0001-8518-9313
+https://openalex.org/A5014945561,Valeriya Baru,https://openalex.org/I63966007,Massachusetts Institute of Technology,2011,2014,CAMBRIDGE HEALTH ALLIANCE - CAMBRIDGE CAMPUS,42.3745,-71.1041,1.9080636237538477, 0000-0001-8518-9313
+https://openalex.org/A5014945561,Valeriya Baru,https://openalex.org/I4210157710,Whitehead Institute for Biomedical Research,2011,2021,,,,, 0000-0001-8518-9313
+https://openalex.org/A5014945561,Valeriya Baru,https://openalex.org/I4210105021,Q-State Biosciences (United States),2020,2022,,,,, 0000-0001-8518-9313
+https://openalex.org/A5037896009,Stuart K. Kim,https://openalex.org/I4210137306,Stanford Medicine,1992,2024,VA MEDICAL CENTER - PALO ALTO DIVISION,37.4053530240001,-122.139784645,2.2252185439920056, 0000-0001-8887-5095
+https://openalex.org/A5037896009,Stuart K. Kim,https://openalex.org/I97018004,Stanford University,1990,2022,STANFORD HOSPITAL,37.4346524360001,-122.174883097,0.6125138696179531, 0000-0001-8887-5095
+https://openalex.org/A5037896009,Stuart K. Kim,https://openalex.org/I1344073410,Howard Hughes Medical Institute,1990,2007,WALTER REED NATIONAL MILITARY MEDICAL CENTER,39.0030041160001,-77.0945684719999,1.3917015973126403, 0000-0001-8887-5095
+https://openalex.org/A5037896009,Stuart K. Kim,https://openalex.org/I63966007,Massachusetts Institute of Technology,1990,1990,CAMBRIDGE HEALTH ALLIANCE - CAMBRIDGE CAMPUS,42.3745,-71.1041,1.9080636237538477, 0000-0001-8887-5095
+https://openalex.org/A5037896009,Stuart K. Kim,https://openalex.org/I32971472,Yale University,2002,2002,WEST HAVEN VA MEDICAL CENTER,41.2818402820001,-72.9612065329999,3.634298400888651, 0000-0001-8887-5095
+https://openalex.org/A5037896009,Stuart K. Kim,https://openalex.org/I122411786,California Institute of Technology,1980,1980,HUNTINGTON MEMORIAL HOSPITAL,34.1343853610001,-118.152983944,2.565731752590538, 0000-0001-8887-5095
+https://openalex.org/A5037896009,Stuart K. Kim,https://openalex.org/I1743320,Palo Alto University,2002,2002,VA MEDICAL CENTER - PALO ALTO DIVISION,37.4053530240001,-122.139784645,4.869295724753308, 0000-0001-8887-5095
+https://openalex.org/A5037896009,Stuart K. Kim,https://openalex.org/I135310074,University of Wisconsin–Madison,1996,2000,UNIVERSITY OF WI HOSPITALS & CLINICS AUTHORITY,43.0765854090001,-89.431847137,0.41650634304366146, 0000-0001-8887-5095
+https://openalex.org/A5037896009,Stuart K. Kim,https://openalex.org/I202697423,University of Zurich,2000,2000,AROOSTOOK MENTAL HEALTH CENTER RESIDENTIAL TREATMENT FACILITY,46.8865379580001,-67.824388798,5536.680909985624, 0000-0001-8887-5095
+https://openalex.org/A5037896009,Stuart K. Kim,https://openalex.org/I195573530,Janelia Research Campus,2007,2007,INOVA LOUDOUN HOSPITAL,39.0739514200001,-77.478022014,1.1419950984173317, 0000-0001-8887-5095
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I63966007,Massachusetts Institute of Technology,2013,2017,CAMBRIDGE HEALTH ALLIANCE - CAMBRIDGE CAMPUS,42.3745,-71.1041,1.9080636237538477, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I139264467,Seoul National University,2009,2021,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,3088.9348418932536, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I166722992,University of Massachusetts Chan Medical School,2015,2018,,,,, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I4210093608,Neuropsychiatric Research Institute,2015,2015,,,,, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I193352282,Daegu Gyeongbuk Institute of Science and Technology,2019,2023,,,,, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I142401562,Electronics and Telecommunications Research Institute,2003,2022,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,2914.107990185038, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I1344073410,Howard Hughes Medical Institute,2013,2013,WALTER REED NATIONAL MILITARY MEDICAL CENTER,39.0030041160001,-77.0945684719999,1.3917015973126403, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I4210157693,Hyundai Research Institute,2004,2005,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,3070.4279342059244, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I4210155455,Korea Brain Research Institute,2019,2021,,,,, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I4210162056,Universal Hi-Tech Development,2010,2010,,,,, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I148751991,Sogang University,2012,2014,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,3096.3980621554233, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I4210139352,Hyundai Engineering (South Korea),2005,2005,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,3095.8736390449267, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I111277659,Chonnam National University,2011,2011,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,2906.2740140962474, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I113825674,Handong Global University,2013,2013,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,2832.501091834085, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I193775966,Yonsei University,2013,2013,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,3097.7953077894003, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I172675005,Nanyang Technological University,2013,2013,BELAU NATIONAL HOSPITAL,7.352444,134.46452,3475.773710620944, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I24456540,Korea Aerospace University,2013,2013,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,3104.8322086611356, 0000-0002-2553-6296
+https://openalex.org/A5016801481,Sukhee Cho,https://openalex.org/I180203408,Yokohama National University,2003,2003,COMMONWEALTH HEALTH CENTER,15.212064,145.724324,2334.3750848699287, 0000-0002-2553-6296
+https://openalex.org/A5085114228,Michael D. Pluth,https://openalex.org/I95457486,"University of California, Berkeley",2006,2017,ALTA BATES SUMMIT MED CTR-ALTA BATES CAMPUS,37.855876369,-122.257265691,2.7042266765188763, 0000-0003-3604-653X
+https://openalex.org/A5085114228,Michael D. Pluth,https://openalex.org/I148283060,Lawrence Berkeley National Laboratory,2008,2017,ALTA BATES SUMMIT MED CTR-HERRICK CAMPUS,37.8644118560001,-122.268577616,2.450236419339978, 0000-0003-3604-653X
+https://openalex.org/A5085114228,Michael D. Pluth,https://openalex.org/I63966007,Massachusetts Institute of Technology,2010,2013,CAMBRIDGE HEALTH ALLIANCE - CAMBRIDGE CAMPUS,42.3745,-71.1041,1.9080636237538477, 0000-0003-3604-653X
+https://openalex.org/A5085114228,Michael D. Pluth,https://openalex.org/I181233156,University of Oregon,2003,2025,SACRED HEART UNIVERSITY DISTRICT,44.046021291,-123.081707753,0.8147609489113747, 0000-0003-3604-653X
+https://openalex.org/A5085114228,Michael D. Pluth,https://openalex.org/I4210094839,Instituto de Ciencia de Materiales de Sevilla,2014,2021,,,,, 0000-0003-3604-653X
+https://openalex.org/A5085114228,Michael D. Pluth,https://openalex.org/I4210132531,Eugene Research Institute,2014,2021,SACRED HEART UNIVERSITY DISTRICT,44.046021291,-123.081707753,1.1009886721729214, 0000-0003-3604-653X
+https://openalex.org/A5085114228,Michael D. Pluth,https://openalex.org/I4210166736,Impact Technology Development (United States),2020,2021,,,,, 0000-0003-3604-653X
+https://openalex.org/A5085114228,Michael D. Pluth,https://openalex.org/I4210161256,Impact,2020,2025,HENDRICK MEDICAL CENTER,32.472176468,-99.733954404,3.3219268029386524, 0000-0003-3604-653X
+https://openalex.org/A5085114228,Michael D. Pluth,https://openalex.org/I4210137074,Institute of Biostructure and Bioimaging,2009,2009,,,,, 0000-0003-3604-653X
+https://openalex.org/A5085114228,Michael D. Pluth,https://openalex.org/I39063666,University of Catania,2009,2009,,,,, 0000-0003-3604-653X
+https://openalex.org/A5046815747,Hayden Miller,https://openalex.org/I63966007,Massachusetts Institute of Technology,2013,2013,CAMBRIDGE HEALTH ALLIANCE - CAMBRIDGE CAMPUS,42.3745,-71.1041,1.9080636237538477,0000-0001-7305-928X
+https://openalex.org/A5046815747,Hayden Miller,https://openalex.org/I122411786,California Institute of Technology,2013,2022,HUNTINGTON MEMORIAL HOSPITAL,34.1343853610001,-118.152983944,2.565731752590538,0000-0001-7305-928X
+https://openalex.org/A5046815747,Hayden Miller,https://openalex.org/I1343871089,Los Alamos National Laboratory,2022,2025,LOS ALAMOS MEDICAL CENTER,35.881699638,-106.319300155,8.485740302417845,0000-0001-7305-928X
+https://openalex.org/A5046815747,Hayden Miller,https://openalex.org/I55732556,Arizona State University,2020,2020,"TEMPE ST LUKE'S HOSPITAL, A CAMPUS OF ST LUKE'S MEDICAL CENTER",33.412596857,-111.940612498,1.1909290780951427,0000-0001-7305-928X
