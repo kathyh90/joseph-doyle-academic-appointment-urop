@@ -11,10 +11,10 @@ from aiohttp import ClientSession, ClientResponseError
 INSTITUTIONS = {
     "mit":      "I63966007",   # Massachusetts Institute of Technology
     "ou":       "I8692664",    # University of Oklahoma
-    #"osu":      "I115475287",   # Oklahoma State University
-    #"dartmouth":"I107672454",  # Dartmouth College
+    "osu":      "I115475287",   # Oklahoma State University
+    "dartmouth":"I107672454",  # Dartmouth College
     "cornell":  "I205783295",  # Cornell University
-    #"harvard":  "I136199984",  # Harvard University
+    "harvard":  "I136199984",  # Harvard University
 }
 HEADERS = {
     "User-Agent": "MyResearchScraper/1.0 (mailto:mm4958@mit.edu)"
@@ -85,7 +85,7 @@ async def process_institution(slug, inst_id_num):
 
     # Flatten results
     all_results = [r for chunk in all_chunks for r in chunk]
-    
+
     # Process works
     for work in all_results:
         year = work.get("publication_year")
@@ -112,28 +112,28 @@ async def process_institution(slug, inst_id_num):
                     })
                     rec["year_start_1"] = min(rec["year_start_1"], year)
                     rec["year_end_1"] = max(rec["year_end_1"], year)
-                    
+
     # dump to CSV
     df = pd.DataFrame.from_dict(authors, orient="index")
     df.reset_index(inplace=True)
     df.rename(columns={"index": "author_id"}, inplace=True)
-    out_fn = f"/home/mm4958/openalex/results/{slug}_only_affiliations.csv"
+    out_fn = f"/home/kathyh90/joseph-doyle-academic-appointment-urop/iap_2026_code/results/{slug}_only_affiliations.csv"
     df.to_csv(out_fn, index=False)
-    print(f"[{slug}] Saved {len(df)} authors → {out_fn}")             
-        
+    print(f"[{slug}] Saved {len(df)} authors → {out_fn}")
+
 # ── ENTRYPOINT ───────────────────────────────────────────────────────────────
 async def main():
     start_time = time.time()
-    
+
     for slug, props in INSTITUTIONS.items():
         await process_institution(slug, props) #once we add more institutions, this needs to be turned into a task so we can run asynchronously, using semaphore to rate limit to 10 req per second
-    
+
     elapsed_time = time.time() - start_time
     print(f"\n Finished in {elapsed_time/60:.2f} minutes ({elapsed_time:.2f} seconds)")
-    
+
 if __name__ == "__main__":
     asyncio.run(main())
-    
+
 #Below is new code so that we can keep track of multiple spells at one instutition
 '''
 rec = authors.setdefault(aid, {
@@ -183,4 +183,3 @@ for aid, rec in authors.items():
 
 df = pd.DataFrame(rows)
 '''
-
