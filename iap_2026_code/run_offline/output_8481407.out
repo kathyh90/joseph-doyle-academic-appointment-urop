@@ -1,0 +1,74 @@
+
+=== Processing massachusetts institute of technology (1012 authors) ===
+[50/1012] processed — 47 kept, 0 errors
+[100/1012] processed — 95 kept, 1 errors
+[150/1012] processed — 144 kept, 2 errors
+[200/1012] processed — 192 kept, 2 errors
+[250/1012] processed — 241 kept, 3 errors
+[300/1012] processed — 290 kept, 4 errors
+[350/1012] processed — 337 kept, 4 errors
+[400/1012] processed — 385 kept, 4 errors
+[450/1012] processed — 433 kept, 5 errors
+[500/1012] processed — 481 kept, 5 errors
+[550/1012] processed — 529 kept, 5 errors
+[600/1012] processed — 573 kept, 5 errors
+[650/1012] processed — 620 kept, 7 errors
+[700/1012] processed — 665 kept, 9 errors
+[750/1012] processed — 712 kept, 9 errors
+[800/1012] processed — 762 kept, 9 errors
+[850/1012] processed — 812 kept, 9 errors
+[900/1012] processed — 862 kept, 9 errors
+[950/1012] processed — 910 kept, 9 errors
+[1000/1012] processed — 959 kept, 9 errors
+[1012/1012] processed — 971 kept, 9 errors
+[{'author_id': 'https://openalex.org/A2765259247', 'name': 'Amilton Barbosa Botelho Junior', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2765259247'"}, {'author_id': 'https://openalex.org/A2751640369', 'name': 'Wei Zitang', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2751640369'"}, {'author_id': 'https://openalex.org/A1909111750', 'name': 'John Morrison', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A1909111750'"}, {'author_id': 'https://openalex.org/A2480770876', 'name': 'Alexander Tang', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2480770876'"}, {'author_id': 'https://openalex.org/A4294450618', 'name': 'Sławomir K. Tadeja', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A4294450618'"}, {'author_id': 'https://openalex.org/A3126671990', 'name': 'Haruko Wainwright', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A3126671990'"}, {'author_id': 'https://openalex.org/A2807814223', 'name': 'Sayed Saad Afzal', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2807814223'"}, {'author_id': 'https://openalex.org/A3171204331', 'name': 'B. L. Reichelt', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A3171204331'"}, {'author_id': 'https://openalex.org/A4304869649', 'name': 'Brastianos, Priscilla K.', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A4304869649'"}]
+Total errors: 9
+Error types: Counter({'ClientResponseError': 9})
+✓ Done! Saved 971 profiles to MIT_author_profiles_extended_f.csv
+
+=== Processing university of oklahoma (333 authors) ===
+[50/333] processed — 48 kept, 1 errors
+[100/333] processed — 98 kept, 1 errors
+[150/333] processed — 145 kept, 1 errors
+[200/333] processed — 195 kept, 1 errors
+[250/333] processed — 244 kept, 1 errors
+[300/333] processed — 292 kept, 2 errors
+[333/333] processed — 324 kept, 2 errors
+[{'author_id': 'https://openalex.org/A1994508286', 'name': 'Muhammad Asif', 'inst_1_id': 'https://openalex.org/I8692664', 'inst_1_name': 'University of Oklahoma', 'year_start_1': '2025', 'year_end_1': '2025', 'OU_ID': 'https://openalex.org/I8692664', 'OU_year_start': '2025', 'OU_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A1994508286'"}, {'author_id': 'https://openalex.org/A2314666664', 'name': 'Je Hyun Yoon', 'inst_1_id': 'https://openalex.org/I8692664', 'inst_1_name': 'University of Oklahoma', 'year_start_1': '2025', 'year_end_1': '2025', 'OU_ID': 'https://openalex.org/I8692664', 'OU_year_start': '2025', 'OU_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2314666664'"}]
+Total errors: 2
+Error types: Counter({'ClientResponseError': 2})
+✓ Done! Saved 324 profiles to OU_author_profiles_extended_f.csv
+
+=== Processing cornell (1203 authors) ===
+[50/1203] processed — 50 kept, 0 errors
+[100/1203] processed — 99 kept, 0 errors
+[150/1203] processed — 147 kept, 0 errors
+[200/1203] processed — 192 kept, 0 errors
+[250/1203] processed — 238 kept, 0 errors
+[300/1203] processed — 286 kept, 0 errors
+[350/1203] processed — 336 kept, 0 errors
+[400/1203] processed — 385 kept, 0 errors
+[450/1203] processed — 434 kept, 0 errors
+[500/1203] processed — 484 kept, 0 errors
+[550/1203] processed — 531 kept, 0 errors
+[600/1203] processed — 579 kept, 0 errors
+[650/1203] processed — 627 kept, 1 errors
+[700/1203] processed — 673 kept, 2 errors
+[750/1203] processed — 718 kept, 3 errors
+[800/1203] processed — 766 kept, 3 errors
+[850/1203] processed — 812 kept, 5 errors
+[900/1203] processed — 860 kept, 5 errors
+[950/1203] processed — 906 kept, 5 errors
+[1000/1203] processed — 955 kept, 5 errors
+[1050/1203] processed — 1004 kept, 5 errors
+[1100/1203] processed — 1052 kept, 6 errors
+[1150/1203] processed — 1101 kept, 6 errors
+[1200/1203] processed — 1145 kept, 7 errors
+[1203/1203] processed — 1148 kept, 7 errors
+[{'author_id': 'https://openalex.org/A2219028402', 'name': 'Gioia Turitto', 'inst_1_id': 'https://openalex.org/I205783295', 'inst_1_name': 'Cornell University', 'year_start_1': '2025', 'year_end_1': '2025', 'CORNELL_ID': 'https://openalex.org/I205783295', 'CORNELL_year_start': '2025', 'CORNELL_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2219028402'"}, {'author_id': 'https://openalex.org/A4274854985', 'name': 'Omar Bellorin-Marin', 'inst_1_id': 'https://openalex.org/I205783295', 'inst_1_name': 'Cornell University', 'year_start_1': '2025', 'year_end_1': '2025', 'CORNELL_ID': 'https://openalex.org/I205783295', 'CORNELL_year_start': '2025', 'CORNELL_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A4274854985'"}, {'author_id': 'https://openalex.org/A2313637270', 'name': 'Rachee Singh', 'inst_1_id': 'https://openalex.org/I205783295', 'inst_1_name': 'Cornell University', 'year_start_1': '2025', 'year_end_1': '2025', 'CORNELL_ID': 'https://openalex.org/I205783295', 'CORNELL_year_start': '2025', 'CORNELL_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2313637270'"}, {'author_id': 'https://openalex.org/A2167849272', 'name': 'Longfei Jia', 'inst_1_id': 'https://openalex.org/I205783295', 'inst_1_name': 'Cornell University', 'year_start_1': '2025', 'year_end_1': '2025', 'CORNELL_ID': 'https://openalex.org/I205783295', 'CORNELL_year_start': '2025', 'CORNELL_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2167849272'"}, {'author_id': 'https://openalex.org/A2122622828', 'name': 'W. L. Maxwell', 'inst_1_id': 'https://openalex.org/I205783295', 'inst_1_name': 'Cornell University', 'year_start_1': '1994', 'year_end_1': '1994', 'CORNELL_ID': 'https://openalex.org/I205783295', 'CORNELL_year_start': '1994', 'CORNELL_year_end': '1994', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2122622828'"}, {'author_id': 'https://openalex.org/A4222132925', 'name': 'Jason D Chobirko', 'inst_1_id': 'https://openalex.org/I205783295', 'inst_1_name': 'Cornell University', 'year_start_1': '2025', 'year_end_1': '2025', 'CORNELL_ID': 'https://openalex.org/I205783295', 'CORNELL_year_start': '2025', 'CORNELL_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A4222132925'"}, {'author_id': 'https://openalex.org/A4281135176', 'name': 'Jenny Z Xiang', 'inst_1_id': 'https://openalex.org/I205783295', 'inst_1_name': 'Cornell University', 'year_start_1': '2025', 'year_end_1': '2025', 'CORNELL_ID': 'https://openalex.org/I205783295', 'CORNELL_year_start': '2025', 'CORNELL_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A4281135176'"}]
+Total errors: 7
+Error types: Counter({'ClientResponseError': 7})
+✓ Done! Saved 1148 profiles to cornell_author_profiles_extended_f.csv
+
+ Finished in 17.59 minutes (1055.50 seconds)
+All scripts completed successfully.

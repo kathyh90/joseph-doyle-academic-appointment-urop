@@ -1,0 +1,2080 @@
+→ 971 unique researchers to query.
+this is names_try: ['Erik Kangas']
+maybe orcid: [nan]
+[1/971] Querying 'Erik Kangas' (ORCID=None) …each name: Erik Kangas
+ → dob='1987-07-17T00:00:00Z', dod=None, affil=None
+this is names_try: ['Knut Anton Mork', 'Knut Mork']
+maybe orcid: ['0000-0002-4062-7356']
+[2/971] Querying 'Knut Anton Mork' (ORCID=0000-0002-4062-7356) …orcid: 0000-0002-4062-7356
+ → dob='1946-05-24T00:00:00Z', dod=None, affil=None
+this is names_try: ['Rebecca L. Li', 'Rebecca Li']
+maybe orcid: ['0000-0001-7208-3413']
+[3/971] Querying 'Rebecca L. Li' (ORCID=0000-0001-7208-3413) …orcid: 0000-0001-7208-3413
+ → dob=None, dod=None, affil=None
+this is names_try: ['Daniel J. Kerkman', 'Daniel Kerkman']
+maybe orcid: [nan]
+[4/971] Querying 'Daniel J. Kerkman' (ORCID=None) …each name: Daniel J. Kerkman
+No match for name variant: Daniel J. Kerkman
+each name: Daniel Kerkman
+ → dob=None, dod=None, affil=None
+this is names_try: ['Joyce Luo']
+maybe orcid: ['0000-0002-5487-0058']
+[5/971] Querying 'Joyce Luo' (ORCID=0000-0002-5487-0058) …orcid: 0000-0002-5487-0058
+ → dob=None, dod=None, affil=None
+this is names_try: ['Zachary Chance']
+maybe orcid: ['0000-0002-7561-7959']
+[6/971] Querying 'Zachary Chance' (ORCID=0000-0002-7561-7959) …orcid: 0000-0002-7561-7959
+each name: Zachary Chance
+ → dob=None, dod=None, affil=None
+this is names_try: ['A. Sandacz']
+maybe orcid: ['0000-0002-0623-6642']
+[7/971] Querying 'A. Sandacz' (ORCID=0000-0002-0623-6642) …orcid: 0000-0002-0623-6642
+each name: A. Sandacz
+No match for name variant: A. Sandacz
+ → dob=None, dod=None, affil=None
+this is names_try: ['K.V. Shenoy']
+maybe orcid: [nan]
+[8/971] Querying 'K.V. Shenoy' (ORCID=None) …each name: K.V. Shenoy
+No match for name variant: K.V. Shenoy
+ → dob=None, dod=None, affil=None
+this is names_try: ['Sungkyu Kim']
+maybe orcid: ['0000-0002-5371-6964']
+[9/971] Querying 'Sungkyu Kim' (ORCID=0000-0002-5371-6964) …orcid: 0000-0002-5371-6964
+ → dob=None, dod=None, affil=None
+this is names_try: ['William Butera']
+maybe orcid: [nan]
+[10/971] Querying 'William Butera' (ORCID=None) …each name: William Butera
+No match for name variant: William Butera
+ → dob=None, dod=None, affil=None
+this is names_try: ['Atılım Güneş Baydin', 'Atılım Baydin']
+maybe orcid: ['0000-0001-9854-8100']
+[11/971] Querying 'Atılım Güneş Baydin' (ORCID=0000-0001-9854-8100) …orcid: 0000-0001-9854-8100
+ → dob=None, dod=None, affil='University of Oxford'
+this is names_try: ['Olof Sundin']
+maybe orcid: ['0000-0001-6352-8580']
+[12/971] Querying 'Olof Sundin' (ORCID=0000-0001-6352-8580) …orcid: 0000-0001-6352-8580
+ → dob='1968-01-01T00:00:00Z', dod=None, affil='Lund University'
+this is names_try: ['Patrick Guilfoile']
+maybe orcid: [nan]
+[13/971] Querying 'Patrick Guilfoile' (ORCID=None) …each name: Patrick Guilfoile
+No match for name variant: Patrick Guilfoile
+ → dob=None, dod=None, affil=None
+this is names_try: ['Sydney M. Moyer', 'Sydney Moyer']
+maybe orcid: ['0000-0002-2911-4058']
+[14/971] Querying 'Sydney M. Moyer' (ORCID=0000-0002-2911-4058) …orcid: 0000-0002-2911-4058
+ → dob=None, dod=None, affil='University of South Florida'
+this is names_try: ['Jonathan Lam']
+maybe orcid: ['0000-0002-2811-7177']
+[15/971] Querying 'Jonathan Lam' (ORCID=0000-0002-2811-7177) …orcid: 0000-0002-2811-7177
+ → dob=None, dod=None, affil='University of California, Davis'
+this is names_try: ['Francesco Lin']
+maybe orcid: ['0000-0001-7491-8795']
+[16/971] Querying 'Francesco Lin' (ORCID=0000-0001-7491-8795) …orcid: 0000-0001-7491-8795
+each name: Francesco Lin
+ → dob=None, dod=None, affil=None
+this is names_try: ['W. G. Klemperer', 'W. Klemperer']
+maybe orcid: [nan]
+[17/971] Querying 'W. G. Klemperer' (ORCID=None) …each name: W. G. Klemperer
+No match for name variant: W. G. Klemperer
+each name: W. Klemperer
+No match for name variant: W. Klemperer
+ → dob=None, dod=None, affil=None
+this is names_try: ['Horacio Lamela']
+maybe orcid: ['0000-0002-9731-2267']
+[18/971] Querying 'Horacio Lamela' (ORCID=0000-0002-9731-2267) …orcid: 0000-0002-9731-2267
+each name: Horacio Lamela
+No match for name variant: Horacio Lamela
+ → dob=None, dod=None, affil=None
+this is names_try: ['Margaret Dushko']
+maybe orcid: [nan]
+[19/971] Querying 'Margaret Dushko' (ORCID=None) …each name: Margaret Dushko
+No match for name variant: Margaret Dushko
+ → dob=None, dod=None, affil=None
+this is names_try: ['Forest Rohwer']
+maybe orcid: ['0000-0003-1548-5429']
+[20/971] Querying 'Forest Rohwer' (ORCID=0000-0003-1548-5429) …orcid: 0000-0003-1548-5429
+ → dob='1969-01-01T00:00:00Z', dod=None, affil='University of California, San Diego'
+this is names_try: ['Sofie Hashmi']
+maybe orcid: [nan]
+[21/971] Querying 'Sofie Hashmi' (ORCID=None) …each name: Sofie Hashmi
+No match for name variant: Sofie Hashmi
+ → dob=None, dod=None, affil=None
+this is names_try: ['Liang Jiang']
+maybe orcid: ['0000-0002-0000-9342']
+[22/971] Querying 'Liang Jiang' (ORCID=0000-0002-0000-9342) …orcid: 0000-0002-0000-9342
+ → dob='2000-01-01T00:00:00Z', dod=None, affil='Yale University'
+this is names_try: ['Bernard Khor']
+maybe orcid: ['0000-0003-4689-5092']
+[23/971] Querying 'Bernard Khor' (ORCID=0000-0003-4689-5092) …orcid: 0000-0003-4689-5092
+ → dob=None, dod=None, affil='Massachusetts General Hospital'
+this is names_try: ['Dusa MacDuff']
+maybe orcid: [nan]
+[24/971] Querying 'Dusa MacDuff' (ORCID=None) …each name: Dusa MacDuff
+No match for name variant: Dusa MacDuff
+ → dob=None, dod=None, affil=None
+this is names_try: ['Michael K. Qin', 'Michael Qin']
+maybe orcid: [nan]
+[25/971] Querying 'Michael K. Qin' (ORCID=None) …each name: Michael K. Qin
+No match for name variant: Michael K. Qin
+each name: Michael Qin
+No match for name variant: Michael Qin
+ → dob=None, dod=None, affil=None
+this is names_try: ['Kyosung Hwang']
+maybe orcid: [nan]
+[26/971] Querying 'Kyosung Hwang' (ORCID=None) …each name: Kyosung Hwang
+No match for name variant: Kyosung Hwang
+ → dob=None, dod=None, affil=None
+this is names_try: ['Johanna C. Scheuermann', 'Johanna Scheuermann']
+maybe orcid: [nan]
+[27/971] Querying 'Johanna C. Scheuermann' (ORCID=None) …each name: Johanna C. Scheuermann
+No match for name variant: Johanna C. Scheuermann
+each name: Johanna Scheuermann
+ → dob='1982-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['D.E. Troxel']
+maybe orcid: [nan]
+[28/971] Querying 'D.E. Troxel' (ORCID=None) …each name: D.E. Troxel
+No match for name variant: D.E. Troxel
+ → dob=None, dod=None, affil=None
+this is names_try: ['Aaron Maschinot']
+maybe orcid: [nan]
+[29/971] Querying 'Aaron Maschinot' (ORCID=None) …each name: Aaron Maschinot
+No match for name variant: Aaron Maschinot
+ → dob=None, dod=None, affil=None
+this is names_try: ['Susumu Ogawa']
+maybe orcid: ['0000-0003-4169-0477']
+[30/971] Querying 'Susumu Ogawa' (ORCID=0000-0003-4169-0477) …orcid: 0000-0003-4169-0477
+each name: Susumu Ogawa
+ → dob='1964-01-01T00:00:00Z', dod=None, affil='Kobe University'
+this is names_try: ['Tjama Tjivikua']
+maybe orcid: [nan]
+[31/971] Querying 'Tjama Tjivikua' (ORCID=None) …each name: Tjama Tjivikua
+ → dob='1958-07-27T00:00:00Z', dod=None, affil=None
+this is names_try: ['David Bellido']
+maybe orcid: [nan]
+[32/971] Querying 'David Bellido' (ORCID=None) …each name: David Bellido
+No match for name variant: David Bellido
+ → dob=None, dod=None, affil=None
+this is names_try: ['Robert S. Schwartz', 'Robert Schwartz']
+maybe orcid: [nan]
+[33/971] Querying 'Robert S. Schwartz' (ORCID=None) …each name: Robert S. Schwartz
+ → dob=None, dod=None, affil=None
+this is names_try: ['Carlo C. Maley', 'Carlo Maley']
+maybe orcid: ['0000-0002-0745-7076']
+[34/971] Querying 'Carlo C. Maley' (ORCID=0000-0002-0745-7076) …orcid: 0000-0002-0745-7076
+ → dob='1969-01-01T00:00:00Z', dod=None, affil='Arizona State University'
+this is names_try: ['L. J. Rosenberg', 'L. Rosenberg']
+maybe orcid: ['0000-0003-0686-0485']
+[35/971] Querying 'L. J. Rosenberg' (ORCID=0000-0003-0686-0485) …orcid: 0000-0003-0686-0485
+each name: L. J. Rosenberg
+No match for name variant: L. J. Rosenberg
+each name: L. Rosenberg
+ → dob='1969-05-24T00:00:00Z', dod=None, affil=None
+this is names_try: ['Brian D. Follstad', 'Brian Follstad']
+maybe orcid: [nan]
+[36/971] Querying 'Brian D. Follstad' (ORCID=None) …each name: Brian D. Follstad
+No match for name variant: Brian D. Follstad
+each name: Brian Follstad
+No match for name variant: Brian Follstad
+ → dob=None, dod=None, affil=None
+this is names_try: ['Elizabeth M. Horrigan', 'Elizabeth Horrigan']
+maybe orcid: [nan]
+[37/971] Querying 'Elizabeth M. Horrigan' (ORCID=None) …each name: Elizabeth M. Horrigan
+No match for name variant: Elizabeth M. Horrigan
+each name: Elizabeth Horrigan
+No match for name variant: Elizabeth Horrigan
+ → dob=None, dod=None, affil=None
+this is names_try: ['Yulan Qing']
+maybe orcid: ['0000-0003-2911-8603']
+[38/971] Querying 'Yulan Qing' (ORCID=0000-0003-2911-8603) …orcid: 0000-0003-2911-8603
+each name: Yulan Qing
+ → dob=None, dod=None, affil=None
+this is names_try: ['Jacob Steinhardt']
+maybe orcid: ['0000-0002-0257-3860']
+[39/971] Querying 'Jacob Steinhardt' (ORCID=0000-0002-0257-3860) …orcid: 0000-0002-0257-3860
+each name: Jacob Steinhardt
+ → dob='1887-05-23T00:00:00Z', dod='1968-02-11T00:00:00Z', affil='Bezalel Academy of Art and Design'
+this is names_try: ['Dinuri Rupasinghe']
+maybe orcid: [nan]
+[40/971] Querying 'Dinuri Rupasinghe' (ORCID=None) …each name: Dinuri Rupasinghe
+No match for name variant: Dinuri Rupasinghe
+ → dob=None, dod=None, affil=None
+this is names_try: ["Kristina Shampan'er"]
+maybe orcid: [nan]
+[41/971] Querying 'Kristina Shampan'er' (ORCID=None) …each name: Kristina Shampan'er
+No match for name variant: Kristina Shampan'er
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. P. Hill', 'J. Hill']
+maybe orcid: [nan]
+[42/971] Querying 'J. P. Hill' (ORCID=None) …each name: J. P. Hill
+ → dob=None, dod=None, affil='Fonterra'
+this is names_try: ['Asli Kumbasar']
+maybe orcid: ['0000-0001-8574-2756']
+[43/971] Querying 'Asli Kumbasar' (ORCID=0000-0001-8574-2756) …orcid: 0000-0001-8574-2756
+each name: Asli Kumbasar
+No match for name variant: Asli Kumbasar
+ → dob=None, dod=None, affil=None
+this is names_try: ['B. B. Lane', 'B. Lane']
+maybe orcid: ['0000-0002-7379-3764']
+[44/971] Querying 'B. B. Lane' (ORCID=0000-0002-7379-3764) …orcid: 0000-0002-7379-3764
+each name: B. B. Lane
+No match for name variant: B. B. Lane
+each name: B. Lane
+No match for name variant: B. Lane
+ → dob=None, dod=None, affil=None
+this is names_try: ['Robert B. Randall', 'Robert Randall']
+maybe orcid: ['0000-0003-4042-1566']
+[45/971] Querying 'Robert B. Randall' (ORCID=0000-0003-4042-1566) …orcid: 0000-0003-4042-1566
+each name: Robert B. Randall
+ → dob=None, dod=None, affil=None
+this is names_try: ['Jørgen Kjems']
+maybe orcid: ['0000-0003-4128-9317']
+[46/971] Querying 'Jørgen Kjems' (ORCID=0000-0003-4128-9317) …orcid: 0000-0003-4128-9317
+ → dob=None, dod=None, affil='Aarhus University'
+this is names_try: ['Philip R. Costa', 'Philip Costa']
+maybe orcid: [nan]
+[47/971] Querying 'Philip R. Costa' (ORCID=None) …each name: Philip R. Costa
+No match for name variant: Philip R. Costa
+each name: Philip Costa
+ → dob=None, dod=None, affil=None
+this is names_try: ['Lower Hurt']
+maybe orcid: [nan]
+[48/971] Querying 'Lower Hurt' (ORCID=None) …each name: Lower Hurt
+No match for name variant: Lower Hurt
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. Vail']
+maybe orcid: [nan]
+[49/971] Querying 'J. Vail' (ORCID=None) …each name: J. Vail
+ → dob='1963-08-20T00:00:00Z', dod=None, affil=None
+this is names_try: ['Xiaojie Duan']
+maybe orcid: ['0000-0001-7799-3897']
+[50/971] Querying 'Xiaojie Duan' (ORCID=0000-0001-7799-3897) …orcid: 0000-0001-7799-3897
+ → dob=None, dod=None, affil='Peking University'
+this is names_try: ['Briony Swire']
+maybe orcid: [nan]
+[51/971] Querying 'Briony Swire' (ORCID=None) …each name: Briony Swire
+ → dob=None, dod=None, affil=None
+this is names_try: ['Anna J. Morys', 'Anna Morys']
+maybe orcid: [nan]
+[52/971] Querying 'Anna J. Morys' (ORCID=None) …each name: Anna J. Morys
+No match for name variant: Anna J. Morys
+each name: Anna Morys
+No match for name variant: Anna Morys
+ → dob=None, dod=None, affil=None
+this is names_try: ['Wonyoung So']
+maybe orcid: ['0000-0002-4867-3429']
+[53/971] Querying 'Wonyoung So' (ORCID=0000-0002-4867-3429) …orcid: 0000-0002-4867-3429
+ → dob=None, dod=None, affil=None
+this is names_try: ['D. M. Green', 'D. Green']
+maybe orcid: [nan]
+[54/971] Querying 'D. M. Green' (ORCID=None) …each name: D. M. Green
+ → dob='1932-01-01T00:00:00Z', dod=None, affil='City College of New York'
+this is names_try: ['F.A. Mussa-Ivadi']
+maybe orcid: [nan]
+[55/971] Querying 'F.A. Mussa-Ivadi' (ORCID=None) …each name: F.A. Mussa-Ivadi
+No match for name variant: F.A. Mussa-Ivadi
+ → dob=None, dod=None, affil=None
+this is names_try: ['Chongyuan Xiang']
+maybe orcid: [nan]
+[56/971] Querying 'Chongyuan Xiang' (ORCID=None) …each name: Chongyuan Xiang
+No match for name variant: Chongyuan Xiang
+ → dob=None, dod=None, affil=None
+this is names_try: ['C. Michael Greenlief', 'C. Greenlief']
+maybe orcid: ['0000-0001-6420-7375']
+[57/971] Querying 'C. Michael Greenlief' (ORCID=0000-0001-6420-7375) …orcid: 0000-0001-6420-7375
+ → dob=None, dod=None, affil=None
+this is names_try: ['Atif R. Mirza', 'Atif Mirza']
+maybe orcid: [nan]
+[58/971] Querying 'Atif R. Mirza' (ORCID=None) …each name: Atif R. Mirza
+No match for name variant: Atif R. Mirza
+each name: Atif Mirza
+No match for name variant: Atif Mirza
+ → dob=None, dod=None, affil=None
+this is names_try: ['Max B. Mendel', 'Max Mendel']
+maybe orcid: [nan]
+[59/971] Querying 'Max B. Mendel' (ORCID=None) …each name: Max B. Mendel
+No match for name variant: Max B. Mendel
+each name: Max Mendel
+ → dob='1872-05-19T00:00:00Z', dod='1942-08-10T00:00:00Z', affil=None
+this is names_try: ['Philip J. Vergragt', 'Philip Vergragt']
+maybe orcid: [nan]
+[60/971] Querying 'Philip J. Vergragt' (ORCID=None) …each name: Philip J. Vergragt
+ → dob='1945-01-01T00:00:00Z', dod=None, affil='Delft University of Technology'
+this is names_try: ['Nezam H. Afdhal', 'Nezam Afdhal']
+maybe orcid: ['0000-0002-7342-6593']
+[61/971] Querying 'Nezam H. Afdhal' (ORCID=0000-0002-7342-6593) …orcid: 0000-0002-7342-6593
+ → dob=None, dod=None, affil=None
+this is names_try: ['M. Q. Wang', 'M. Wang']
+maybe orcid: [nan]
+[62/971] Querying 'M. Q. Wang' (ORCID=None) …each name: M. Q. Wang
+No match for name variant: M. Q. Wang
+each name: M. Wang
+ → dob='1970-01-01T00:00:00Z', dod=None, affil='Shandong University'
+this is names_try: ['N. Buzinsky']
+maybe orcid: ['0000-0002-5326-331X']
+[63/971] Querying 'N. Buzinsky' (ORCID=0000-0002-5326-331X) …orcid: 0000-0002-5326-331X
+each name: N. Buzinsky
+No match for name variant: N. Buzinsky
+ → dob=None, dod=None, affil=None
+this is names_try: ['Timothy Tully']
+maybe orcid: [nan]
+[64/971] Querying 'Timothy Tully' (ORCID=None) …each name: Timothy Tully
+ → dob=None, dod=None, affil='San Diego State University'
+this is names_try: ['M. J. Graf', 'M. Graf']
+maybe orcid: ['0000-0002-3977-3006']
+[65/971] Querying 'M. J. Graf' (ORCID=0000-0002-3977-3006) …orcid: 0000-0002-3977-3006
+ → dob=None, dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Peter H.R. Green', 'Peter Green']
+maybe orcid: ['0000-0001-6839-9634']
+[66/971] Querying 'Peter H.R. Green' (ORCID=0000-0001-6839-9634) …orcid: 0000-0001-6839-9634
+ → dob=None, dod=None, affil=None
+this is names_try: ['Herre S. J. van der Zant', 'Herre Zant']
+maybe orcid: ['0000-0002-5385-0282']
+[67/971] Querying 'Herre S. J. van der Zant' (ORCID=0000-0002-5385-0282) …orcid: 0000-0002-5385-0282
+ → dob=None, dod=None, affil=None
+this is names_try: ['S. Carl Falco', 'S. Falco']
+maybe orcid: [nan]
+[68/971] Querying 'S. Carl Falco' (ORCID=None) …each name: S. Carl Falco
+No match for name variant: S. Carl Falco
+each name: S. Falco
+No match for name variant: S. Falco
+ → dob=None, dod=None, affil=None
+this is names_try: ['Samuel Martín']
+maybe orcid: ['0000-0003-0289-6317']
+[69/971] Querying 'Samuel Martín' (ORCID=0000-0003-0289-6317) …orcid: 0000-0003-0289-6317
+ → dob=None, dod=None, affil='University of Aberdeen'
+this is names_try: ['Lu Hu']
+maybe orcid: ['0000-0002-0389-7103']
+[70/971] Querying 'Lu Hu' (ORCID=0000-0002-0389-7103) …orcid: 0000-0002-0389-7103
+each name: Lu Hu
+ → dob='http://www.wikidata.org/.well-known/genid/c7d9a83bda9495218576309382b4dede', dod=None, affil=None
+this is names_try: ['Jack C. Cavanagh', 'Jack Cavanagh']
+maybe orcid: [nan]
+[71/971] Querying 'Jack C. Cavanagh' (ORCID=None) …each name: Jack C. Cavanagh
+No match for name variant: Jack C. Cavanagh
+each name: Jack Cavanagh
+ → dob=None, dod=None, affil=None
+this is names_try: ['Irene Chou Chen', 'Irene Chen']
+maybe orcid: [nan]
+[72/971] Querying 'Irene Chou Chen' (ORCID=None) …each name: Irene Chou Chen
+No match for name variant: Irene Chou Chen
+each name: Irene Chen
+ → dob=None, dod=None, affil=None
+this is names_try: ['Janice Jang']
+maybe orcid: [nan]
+[73/971] Querying 'Janice Jang' (ORCID=None) …each name: Janice Jang
+No match for name variant: Janice Jang
+ → dob=None, dod=None, affil=None
+this is names_try: ['Ruth T. McVey', 'Ruth McVey']
+maybe orcid: [nan]
+[74/971] Querying 'Ruth T. McVey' (ORCID=None) …each name: Ruth T. McVey
+No match for name variant: Ruth T. McVey
+each name: Ruth McVey
+ → dob='1930-10-22T00:00:00Z', dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Wenchao Sheng']
+maybe orcid: ['0000-0001-9020-6202']
+[75/971] Querying 'Wenchao Sheng' (ORCID=0000-0001-9020-6202) …orcid: 0000-0001-9020-6202
+ → dob=None, dod=None, affil=None
+this is names_try: ['Arnaud Czaja']
+maybe orcid: ['0000-0003-3645-0284']
+[76/971] Querying 'Arnaud Czaja' (ORCID=0000-0003-3645-0284) …orcid: 0000-0003-3645-0284
+ → dob=None, dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Jeffrey T. Borenstein', 'Jeffrey Borenstein']
+maybe orcid: ['0000-0002-4482-3274']
+[77/971] Querying 'Jeffrey T. Borenstein' (ORCID=0000-0002-4482-3274) …orcid: 0000-0002-4482-3274
+ → dob=None, dod=None, affil='Draper'
+this is names_try: ['W. F. Van Eekelen', 'W. Eekelen']
+maybe orcid: [nan]
+[78/971] Querying 'W. F. Van Eekelen' (ORCID=None) …each name: W. F. Van Eekelen
+No match for name variant: W. F. Van Eekelen
+each name: W. Eekelen
+No match for name variant: W. Eekelen
+ → dob=None, dod=None, affil=None
+this is names_try: ['Evelyne Walker‐Nasir']
+maybe orcid: [nan]
+[79/971] Querying 'Evelyne Walker‐Nasir' (ORCID=None) …each name: Evelyne Walker‐Nasir
+No match for name variant: Evelyne Walker‐Nasir
+ → dob=None, dod=None, affil=None
+this is names_try: ['Brandon Sorbom']
+maybe orcid: ['0000-0002-2110-6766']
+[80/971] Querying 'Brandon Sorbom' (ORCID=0000-0002-2110-6766) …orcid: 0000-0002-2110-6766
+each name: Brandon Sorbom
+No match for name variant: Brandon Sorbom
+ → dob=None, dod=None, affil=None
+this is names_try: ['Ryan Boas']
+maybe orcid: [nan]
+[81/971] Querying 'Ryan Boas' (ORCID=None) …each name: Ryan Boas
+ → dob=None, dod=None, affil=None
+this is names_try: ['Sumit Basu']
+maybe orcid: ['0000-0001-6413-3070']
+[82/971] Querying 'Sumit Basu' (ORCID=0000-0001-6413-3070) …orcid: 0000-0001-6413-3070
+each name: Sumit Basu
+ → dob=None, dod=None, affil=None
+this is names_try: ['Kwabena Ofori-Atta']
+maybe orcid: [nan]
+[83/971] Querying 'Kwabena Ofori-Atta' (ORCID=None) …each name: Kwabena Ofori-Atta
+No match for name variant: Kwabena Ofori-Atta
+ → dob=None, dod=None, affil=None
+this is names_try: ['Daehyun Kim']
+maybe orcid: ['0000-0001-5138-097X']
+[84/971] Querying 'Daehyun Kim' (ORCID=0000-0001-5138-097X) …orcid: 0000-0001-5138-097X
+each name: Daehyun Kim
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. Hedgecock']
+maybe orcid: [nan]
+[85/971] Querying 'J. Hedgecock' (ORCID=None) …each name: J. Hedgecock
+No match for name variant: J. Hedgecock
+ → dob=None, dod=None, affil=None
+this is names_try: ['L. X. Liu', 'L. Liu']
+maybe orcid: [nan]
+[86/971] Querying 'L. X. Liu' (ORCID=None) …each name: L. X. Liu
+ → dob=None, dod=None, affil='Henan University'
+this is names_try: ['Venkatesan Sundaresan']
+maybe orcid: ['0000-0002-4670-0630']
+[87/971] Querying 'Venkatesan Sundaresan' (ORCID=0000-0002-4670-0630) …orcid: 0000-0002-4670-0630
+ → dob='1974-01-01T00:00:00Z', dod=None, affil='University of California, Davis'
+this is names_try: ['M. B. Graf', 'M. Graf']
+maybe orcid: [nan]
+[88/971] Querying 'M. B. Graf' (ORCID=None) …each name: M. B. Graf
+No match for name variant: M. B. Graf
+each name: M. Graf
+ → dob='1939-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Ji‐Hoon Kang']
+maybe orcid: ['0000-0001-6805-9840']
+[89/971] Querying 'Ji‐Hoon Kang' (ORCID=0000-0001-6805-9840) …orcid: 0000-0001-6805-9840
+each name: Ji‐Hoon Kang
+No match for name variant: Ji‐Hoon Kang
+ → dob=None, dod=None, affil=None
+this is names_try: ['Wilko Rohlfs']
+maybe orcid: ['0000-0002-8756-4778']
+[90/971] Querying 'Wilko Rohlfs' (ORCID=0000-0002-8756-4778) …orcid: 0000-0002-8756-4778
+ → dob='1984-01-01T00:00:00Z', dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Nicanor Pier Giorgio Austriaco', 'Nicanor Austriaco']
+maybe orcid: ['0000-0003-1854-8181']
+[91/971] Querying 'Nicanor Pier Giorgio Austriaco' (ORCID=0000-0003-1854-8181) …orcid: 0000-0003-1854-8181
+ → dob=None, dod=None, affil='University of Santo Tomas'
+this is names_try: ['PAUL STACH']
+maybe orcid: [nan]
+[92/971] Querying 'PAUL STACH' (ORCID=None) …each name: PAUL STACH
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. L. Kinley', 'J. Kinley']
+maybe orcid: [nan]
+[93/971] Querying 'J. L. Kinley' (ORCID=None) …each name: J. L. Kinley
+No match for name variant: J. L. Kinley
+each name: J. Kinley
+No match for name variant: J. Kinley
+ → dob=None, dod=None, affil=None
+this is names_try: ['H. A. Mook', 'H. Mook']
+maybe orcid: [nan]
+[94/971] Querying 'H. A. Mook' (ORCID=None) …each name: H. A. Mook
+ → dob=None, dod=None, affil=None
+this is names_try: ['Kunio Torii']
+maybe orcid: [nan]
+[95/971] Querying 'Kunio Torii' (ORCID=None) …each name: Kunio Torii
+ → dob='1961-02-28T00:00:00Z', dod=None, affil=None
+this is names_try: ['Valeriya Lyssenko']
+maybe orcid: ['0000-0002-0198-6524']
+[96/971] Querying 'Valeriya Lyssenko' (ORCID=0000-0002-0198-6524) …orcid: 0000-0002-0198-6524
+each name: Valeriya Lyssenko
+ → dob=None, dod=None, affil='University of Bergen'
+this is names_try: ['Qing Zhang']
+maybe orcid: ['0000-0001-8822-1753']
+[97/971] Querying 'Qing Zhang' (ORCID=0000-0001-8822-1753) …orcid: 0000-0001-8822-1753
+each name: Qing Zhang
+ → dob=None, dod=None, affil=None
+this is names_try: ['M. LEE']
+maybe orcid: [nan]
+[98/971] Querying 'M. LEE' (ORCID=None) …each name: M. LEE
+ → dob='1950-09-27T00:00:00Z', dod=None, affil='Harvard University'
+this is names_try: ['H. Aoki']
+maybe orcid: [nan]
+[99/971] Querying 'H. Aoki' (ORCID=None) …each name: H. Aoki
+No match for name variant: H. Aoki
+ → dob=None, dod=None, affil=None
+this is names_try: ['Robert Burke']
+maybe orcid: [nan]
+[100/971] Querying 'Robert Burke' (ORCID=None) …each name: Robert Burke
+ → dob='1821-05-06T00:00:00Z', dod='1861-06-28T00:00:00Z', affil=None
+this is names_try: ['Alicia C. Gutiérrez', 'Alicia Gutiérrez']
+maybe orcid: [nan]
+[101/971] Querying 'Alicia C. Gutiérrez' (ORCID=None) …each name: Alicia C. Gutiérrez
+No match for name variant: Alicia C. Gutiérrez
+each name: Alicia Gutiérrez
+ → dob=None, dod=None, affil=None
+this is names_try: ['Kripa K. Varanasi', 'Kripa Varanasi']
+maybe orcid: ['0000-0002-6846-152X']
+[102/971] Querying 'Kripa K. Varanasi' (ORCID=0000-0002-6846-152X) …orcid: 0000-0002-6846-152X
+ → dob=None, dod=None, affil=None
+this is names_try: ['M. Gordon']
+maybe orcid: [nan]
+[103/971] Querying 'M. Gordon' (ORCID=None) …each name: M. Gordon
+ → dob='1924-08-16T00:00:00Z', dod='2010-02-24T00:00:00Z', affil='United States Geological Survey'
+this is names_try: ['Jin Zhang']
+maybe orcid: ['0000-0003-3731-8859']
+[104/971] Querying 'Jin Zhang' (ORCID=0000-0003-3731-8859) …orcid: 0000-0003-3731-8859
+ → dob=None, dod=None, affil=None
+this is names_try: ['R. M. Dudley', 'R. Dudley']
+maybe orcid: [nan]
+[105/971] Querying 'R. M. Dudley' (ORCID=None) …each name: R. M. Dudley
+ → dob='1938-07-28T00:00:00Z', dod='2020-01-19T00:00:00Z', affil='Massachusetts Institute of Technology'
+this is names_try: ['E. Chin']
+maybe orcid: [nan]
+[106/971] Querying 'E. Chin' (ORCID=None) …each name: E. Chin
+ → dob=None, dod=None, affil='Hong Kong Airways'
+this is names_try: ['Kazuhisa Kakurai']
+maybe orcid: ['0000-0001-5899-7657']
+[107/971] Querying 'Kazuhisa Kakurai' (ORCID=0000-0001-5899-7657) …orcid: 0000-0001-5899-7657
+ → dob='1950-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Ulrich H. von Andrian', 'Ulrich Andrian']
+maybe orcid: ['0000-0003-4231-2283']
+[108/971] Querying 'Ulrich H. von Andrian' (ORCID=0000-0003-4231-2283) …orcid: 0000-0003-4231-2283
+ → dob=None, dod=None, affil='Harvard University'
+this is names_try: ['Alan O. Burts', 'Alan Burts']
+maybe orcid: [nan]
+[109/971] Querying 'Alan O. Burts' (ORCID=None) …each name: Alan O. Burts
+No match for name variant: Alan O. Burts
+each name: Alan Burts
+No match for name variant: Alan Burts
+ → dob=None, dod=None, affil=None
+this is names_try: ['Leila Pirhaji']
+maybe orcid: [nan]
+[110/971] Querying 'Leila Pirhaji' (ORCID=None) …each name: Leila Pirhaji
+ → dob='1986-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Daniel Banks']
+maybe orcid: ['0000-0003-2352-7457']
+[111/971] Querying 'Daniel Banks' (ORCID=0000-0003-2352-7457) …orcid: 0000-0003-2352-7457
+each name: Daniel Banks
+ → dob=None, dod=None, affil=None
+this is names_try: ['Andrea Vala']
+maybe orcid: [nan]
+[112/971] Querying 'Andrea Vala' (ORCID=None) …each name: Andrea Vala
+ → dob='1762-01-01T00:00:00Z', dod='1817-01-01T00:00:00Z', affil=None
+this is names_try: ['M. Farkhondeh']
+maybe orcid: [nan]
+[113/971] Querying 'M. Farkhondeh' (ORCID=None) …each name: M. Farkhondeh
+No match for name variant: M. Farkhondeh
+ → dob=None, dod=None, affil=None
+this is names_try: ['Anthony V. Grebe', 'Anthony Grebe']
+maybe orcid: ['0000-0003-1032-0158']
+[114/971] Querying 'Anthony V. Grebe' (ORCID=0000-0003-1032-0158) …orcid: 0000-0003-1032-0158
+each name: Anthony V. Grebe
+No match for name variant: Anthony V. Grebe
+each name: Anthony Grebe
+No match for name variant: Anthony Grebe
+ → dob=None, dod=None, affil=None
+this is names_try: ['A. Dévényi']
+maybe orcid: [nan]
+[115/971] Querying 'A. Dévényi' (ORCID=None) …each name: A. Dévényi
+No match for name variant: A. Dévényi
+ → dob=None, dod=None, affil=None
+this is names_try: ['Robert A. Cox', 'Robert Cox']
+maybe orcid: ['0000-0002-4854-4379']
+[116/971] Querying 'Robert A. Cox' (ORCID=0000-0002-4854-4379) …orcid: 0000-0002-4854-4379
+each name: Robert A. Cox
+ → dob=None, dod=None, affil=None
+this is names_try: ['Trevor J. Hine', 'Trevor Hine']
+maybe orcid: ['0000-0001-7507-7166']
+[117/971] Querying 'Trevor J. Hine' (ORCID=0000-0001-7507-7166) …orcid: 0000-0001-7507-7166
+ → dob=None, dod=None, affil=None
+this is names_try: ['Dheeraj S. Roy', 'Dheeraj Roy']
+maybe orcid: ['0000-0002-5218-1216']
+[118/971] Querying 'Dheeraj S. Roy' (ORCID=0000-0002-5218-1216) …orcid: 0000-0002-5218-1216
+ → dob=None, dod=None, affil=None
+this is names_try: ['Teemu P. Miettinen', 'Teemu Miettinen']
+maybe orcid: ['0000-0002-5975-200X']
+[119/971] Querying 'Teemu P. Miettinen' (ORCID=0000-0002-5975-200X) …orcid: 0000-0002-5975-200X
+ → dob=None, dod=None, affil=None
+this is names_try: ['Haifeng Gao']
+maybe orcid: ['0000-0001-9029-5022']
+[120/971] Querying 'Haifeng Gao' (ORCID=0000-0001-9029-5022) …orcid: 0000-0001-9029-5022
+ → dob=None, dod=None, affil='University of Notre Dame'
+this is names_try: ['R. D. Haun', 'R. Haun']
+maybe orcid: [nan]
+[121/971] Querying 'R. D. Haun' (ORCID=None) …each name: R. D. Haun
+No match for name variant: R. D. Haun
+each name: R. Haun
+No match for name variant: R. Haun
+ → dob=None, dod=None, affil=None
+this is names_try: ['Ewa Beldzik']
+maybe orcid: ['0000-0002-5511-4131']
+[122/971] Querying 'Ewa Beldzik' (ORCID=0000-0002-5511-4131) …orcid: 0000-0002-5511-4131
+ → dob=None, dod=None, affil='Boston University'
+this is names_try: ['Viren Jain']
+maybe orcid: ['0000-0003-1488-3505']
+[123/971] Querying 'Viren Jain' (ORCID=0000-0003-1488-3505) …orcid: 0000-0003-1488-3505
+ → dob=None, dod=None, affil=None
+this is names_try: ['R. B. Roy', 'R. Roy']
+maybe orcid: [nan]
+[124/971] Querying 'R. B. Roy' (ORCID=None) …each name: R. B. Roy
+No match for name variant: R. B. Roy
+each name: R. Roy
+ → dob=None, dod=None, affil='University of Zaragoza'
+this is names_try: ['Yehuda Bock']
+maybe orcid: ['0000-0001-8296-6623']
+[125/971] Querying 'Yehuda Bock' (ORCID=0000-0001-8296-6623) …orcid: 0000-0001-8296-6623
+ → dob=None, dod=None, affil='Scripps Institution of Oceanography'
+this is names_try: ['Lusann Yang']
+maybe orcid: ['0000-0001-5071-2936']
+[126/971] Querying 'Lusann Yang' (ORCID=0000-0001-5071-2936) …orcid: 0000-0001-5071-2936
+each name: Lusann Yang
+No match for name variant: Lusann Yang
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. R. Wilson', 'J. Wilson']
+maybe orcid: ['0000-0003-1412-092X']
+[127/971] Querying 'J. R. Wilson' (ORCID=0000-0003-1412-092X) …orcid: 0000-0003-1412-092X
+each name: J. R. Wilson
+ → dob=None, dod=None, affil=None
+this is names_try: ['Joanna J. Bryson', 'Joanna Bryson']
+maybe orcid: ['0000-0003-0021-0801']
+[128/971] Querying 'Joanna J. Bryson' (ORCID=0000-0003-0021-0801) …orcid: 0000-0003-0021-0801
+ → dob='1965-01-01T00:00:00Z', dod=None, affil='Hertie School of Governance'
+this is names_try: ['Gene M. Brown', 'Gene Brown']
+maybe orcid: [nan]
+[129/971] Querying 'Gene M. Brown' (ORCID=None) …each name: Gene M. Brown
+ → dob='1926-01-01T00:00:00Z', dod='2017-08-04T00:00:00Z', affil='Massachusetts Institute of Technology'
+this is names_try: ['Jie Zhu']
+maybe orcid: ['0000-0002-9152-9326']
+[130/971] Querying 'Jie Zhu' (ORCID=0000-0002-9152-9326) …orcid: 0000-0002-9152-9326
+each name: Jie Zhu
+ → dob=None, dod=None, affil=None
+this is names_try: ['Somayajulu Dhulipala']
+maybe orcid: ['0000-0002-3144-8583']
+[131/971] Querying 'Somayajulu Dhulipala' (ORCID=0000-0002-3144-8583) …orcid: 0000-0002-3144-8583
+each name: Somayajulu Dhulipala
+ → dob=None, dod=None, affil='Virginia Tech'
+this is names_try: ['S Castells']
+maybe orcid: [nan]
+[132/971] Querying 'S Castells' (ORCID=None) …each name: S Castells
+No match for name variant: S Castells
+ → dob=None, dod=None, affil=None
+this is names_try: ['R. Rohlicek']
+maybe orcid: [nan]
+[133/971] Querying 'R. Rohlicek' (ORCID=None) …each name: R. Rohlicek
+No match for name variant: R. Rohlicek
+ → dob=None, dod=None, affil=None
+this is names_try: ['Alan C. Newell', 'Alan Newell']
+maybe orcid: [nan]
+[134/971] Querying 'Alan C. Newell' (ORCID=None) …each name: Alan C. Newell
+ → dob='1941-11-05T00:00:00Z', dod=None, affil='University of Arizona'
+this is names_try: ['Yvonne R. Chan', 'Yvonne Chan']
+maybe orcid: [nan]
+[135/971] Querying 'Yvonne R. Chan' (ORCID=None) …each name: Yvonne R. Chan
+No match for name variant: Yvonne R. Chan
+each name: Yvonne Chan
+ → dob=None, dod=None, affil='Macquarie University'
+this is names_try: ['P. J. Gilinson', 'P. Gilinson']
+maybe orcid: [nan]
+[136/971] Querying 'P. J. Gilinson' (ORCID=None) …each name: P. J. Gilinson
+No match for name variant: P. J. Gilinson
+each name: P. Gilinson
+No match for name variant: P. Gilinson
+ → dob=None, dod=None, affil=None
+this is names_try: ['Melissa Wilson']
+maybe orcid: ['0000-0002-5391-7838']
+[137/971] Querying 'Melissa Wilson' (ORCID=0000-0002-5391-7838) …orcid: 0000-0002-5391-7838
+ → dob=None, dod=None, affil='Thomas Jefferson University'
+this is names_try: ['Chao Yin']
+maybe orcid: ['0000-0003-3379-310X']
+[138/971] Querying 'Chao Yin' (ORCID=0000-0003-3379-310X) …orcid: 0000-0003-3379-310X
+each name: Chao Yin
+ → dob='1908-01-01T00:00:00Z', dod='1985-01-01T00:00:00Z', affil=None
+this is names_try: ['Giulia Germinario']
+maybe orcid: ['0000-0002-1751-8696']
+[139/971] Querying 'Giulia Germinario' (ORCID=0000-0002-1751-8696) …orcid: 0000-0002-1751-8696
+ → dob=None, dod=None, affil='Consiglio Nazionale delle Ricerche'
+this is names_try: ['Atulya Yellepeddi']
+maybe orcid: [nan]
+[140/971] Querying 'Atulya Yellepeddi' (ORCID=None) …each name: Atulya Yellepeddi
+No match for name variant: Atulya Yellepeddi
+ → dob=None, dod=None, affil=None
+this is names_try: ['James W. Walker', 'James Walker']
+maybe orcid: ['0000-0002-4289-6197']
+[141/971] Querying 'James W. Walker' (ORCID=0000-0002-4289-6197) …orcid: 0000-0002-4289-6197
+ → dob=None, dod=None, affil='John Innes Centre'
+this is names_try: ['Albin J. Gasiewski', 'Albin Gasiewski']
+maybe orcid: ['0000-0003-0815-4058']
+[142/971] Querying 'Albin J. Gasiewski' (ORCID=0000-0003-0815-4058) …orcid: 0000-0003-0815-4058
+ → dob=None, dod=None, affil='University of Colorado Boulder'
+this is names_try: ['D. Vasilyev']
+maybe orcid: [nan]
+[143/971] Querying 'D. Vasilyev' (ORCID=None) …each name: D. Vasilyev
+No match for name variant: D. Vasilyev
+ → dob=None, dod=None, affil=None
+this is names_try: ['Werner M. Kaiser', 'Werner Kaiser']
+maybe orcid: [nan]
+[144/971] Querying 'Werner M. Kaiser' (ORCID=None) …each name: Werner M. Kaiser
+No match for name variant: Werner M. Kaiser
+each name: Werner Kaiser
+ → dob='1926-05-07T00:00:00Z', dod='2013-08-11T00:00:00Z', affil='Egyptian Museum of Berlin'
+this is names_try: ['Giacomo Nannicini']
+maybe orcid: ['0000-0002-4936-1259']
+[145/971] Querying 'Giacomo Nannicini' (ORCID=0000-0002-4936-1259) …orcid: 0000-0002-4936-1259
+ → dob=None, dod=None, affil=None
+this is names_try: ['Gustavo Aguilar']
+maybe orcid: ['0000-0002-0524-9388']
+[146/971] Querying 'Gustavo Aguilar' (ORCID=0000-0002-0524-9388) …orcid: 0000-0002-0524-9388
+ → dob=None, dod=None, affil='Biozentrum University of Basel'
+this is names_try: ['Li Liu']
+maybe orcid: ['0000-0002-5641-446X']
+[147/971] Querying 'Li Liu' (ORCID=0000-0002-5641-446X) …orcid: 0000-0002-5641-446X
+each name: Li Liu
+ → dob='0248-01-01T00:00:00Z', dod='0303-01-01T00:00:00Z', affil=None
+this is names_try: ['Steven H. Zeisel', 'Steven Zeisel']
+maybe orcid: ['0000-0002-9282-161X']
+[148/971] Querying 'Steven H. Zeisel' (ORCID=0000-0002-9282-161X) …orcid: 0000-0002-9282-161X
+ → dob=None, dod=None, affil=None
+this is names_try: ['Melody A. Morris', 'Melody Morris']
+maybe orcid: ['0000-0001-5597-154X']
+[149/971] Querying 'Melody A. Morris' (ORCID=0000-0001-5597-154X) …orcid: 0000-0001-5597-154X
+ → dob=None, dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Cassandra Telenko']
+maybe orcid: ['0000-0001-6883-8203']
+[150/971] Querying 'Cassandra Telenko' (ORCID=0000-0001-6883-8203) …orcid: 0000-0001-6883-8203
+each name: Cassandra Telenko
+No match for name variant: Cassandra Telenko
+ → dob=None, dod=None, affil=None
+this is names_try: ['Albert Y. Hung', 'Albert Hung']
+maybe orcid: ['0000-0003-3658-571X']
+[151/971] Querying 'Albert Y. Hung' (ORCID=0000-0003-3658-571X) …orcid: 0000-0003-3658-571X
+ → dob=None, dod=None, affil=None
+this is names_try: ['Harriet Latham']
+maybe orcid: [nan]
+[152/971] Querying 'Harriet Latham' (ORCID=None) …each name: Harriet Latham
+No match for name variant: Harriet Latham
+ → dob=None, dod=None, affil=None
+this is names_try: ['Whitney Lohmeyer']
+maybe orcid: ['0000-0002-7036-4331']
+[153/971] Querying 'Whitney Lohmeyer' (ORCID=0000-0002-7036-4331) …orcid: 0000-0002-7036-4331
+each name: Whitney Lohmeyer
+No match for name variant: Whitney Lohmeyer
+ → dob=None, dod=None, affil=None
+this is names_try: ['Ma']
+maybe orcid: [nan]
+[154/971] Querying 'Ma' (ORCID=None) …each name: Ma
+ → dob='1954-09-28T00:00:00Z', dod=None, affil='United Nations'
+this is names_try: ['Hoeskuldur P. Halldorsson', 'Hoeskuldur Halldorsson']
+maybe orcid: [nan]
+[155/971] Querying 'Hoeskuldur P. Halldorsson' (ORCID=None) …each name: Hoeskuldur P. Halldorsson
+ → dob=None, dod=None, affil=None
+this is names_try: ['R. de Sangro', 'R. Sangro']
+maybe orcid: [nan]
+[156/971] Querying 'R. de Sangro' (ORCID=None) …each name: R. de Sangro
+ → dob=None, dod=None, affil='Laboratori Nazionali di Frascati'
+this is names_try: ['Michael A. Shogren‐Knaak', 'Michael Shogren‐Knaak']
+maybe orcid: [nan]
+[157/971] Querying 'Michael A. Shogren‐Knaak' (ORCID=None) …each name: Michael A. Shogren‐Knaak
+No match for name variant: Michael A. Shogren‐Knaak
+each name: Michael Shogren‐Knaak
+No match for name variant: Michael Shogren‐Knaak
+ → dob=None, dod=None, affil=None
+this is names_try: ['Laura A. Zager', 'Laura Zager']
+maybe orcid: [nan]
+[158/971] Querying 'Laura A. Zager' (ORCID=None) …each name: Laura A. Zager
+No match for name variant: Laura A. Zager
+each name: Laura Zager
+ → dob=None, dod=None, affil=None
+this is names_try: ['Wei Zhou']
+maybe orcid: ['0000-0001-7719-0859']
+[159/971] Querying 'Wei Zhou' (ORCID=0000-0001-7719-0859) …orcid: 0000-0001-7719-0859
+ → dob='1983-01-01T00:00:00Z', dod=None, affil='Massachusetts General Hospital'
+this is names_try: ['Thomas Hellman Morton', 'Thomas Morton']
+maybe orcid: ['0000-0002-4122-4583']
+[160/971] Querying 'Thomas Hellman Morton' (ORCID=0000-0002-4122-4583) …orcid: 0000-0002-4122-4583
+ → dob=None, dod=None, affil='University of California, Riverside'
+this is names_try: ['Lynn M. Eriksen', 'Lynn Eriksen']
+maybe orcid: [nan]
+[161/971] Querying 'Lynn M. Eriksen' (ORCID=None) …each name: Lynn M. Eriksen
+No match for name variant: Lynn M. Eriksen
+each name: Lynn Eriksen
+No match for name variant: Lynn Eriksen
+ → dob=None, dod=None, affil=None
+this is names_try: ['Vivian Zhong']
+maybe orcid: [nan]
+[162/971] Querying 'Vivian Zhong' (ORCID=None) …each name: Vivian Zhong
+ → dob='1997-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Sandhya Kalavacherla']
+maybe orcid: ['0000-0003-0485-9042']
+[163/971] Querying 'Sandhya Kalavacherla' (ORCID=0000-0003-0485-9042) …orcid: 0000-0003-0485-9042
+each name: Sandhya Kalavacherla
+No match for name variant: Sandhya Kalavacherla
+ → dob=None, dod=None, affil=None
+this is names_try: ['A Zakrzewski']
+maybe orcid: [nan]
+[164/971] Querying 'A Zakrzewski' (ORCID=None) …each name: A Zakrzewski
+No match for name variant: A Zakrzewski
+ → dob=None, dod=None, affil=None
+this is names_try: ['H. I. A. Nisbet', 'H. Nisbet']
+maybe orcid: [nan]
+[165/971] Querying 'H. I. A. Nisbet' (ORCID=None) …each name: H. I. A. Nisbet
+No match for name variant: H. I. A. Nisbet
+each name: H. Nisbet
+No match for name variant: H. Nisbet
+ → dob=None, dod=None, affil=None
+this is names_try: ['William J. Durch', 'William Durch']
+maybe orcid: [nan]
+[166/971] Querying 'William J. Durch' (ORCID=None) …each name: William J. Durch
+No match for name variant: William J. Durch
+each name: William Durch
+ → dob='1950-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Arthur Richards']
+maybe orcid: ['0000-0001-9500-5514']
+[167/971] Querying 'Arthur Richards' (ORCID=0000-0001-9500-5514) …orcid: 0000-0001-9500-5514
+ → dob=None, dod=None, affil='University of Bristol'
+this is names_try: ['Barbara Barry']
+maybe orcid: ['0000-0002-0755-6939']
+[168/971] Querying 'Barbara Barry' (ORCID=0000-0002-0755-6939) …orcid: 0000-0002-0755-6939
+each name: Barbara Barry
+ → dob=None, dod=None, affil=None
+this is names_try: ['Nicholas Moore']
+maybe orcid: ['0000-0002-0079-7035']
+[169/971] Querying 'Nicholas Moore' (ORCID=0000-0002-0079-7035) …orcid: 0000-0002-0079-7035
+each name: Nicholas Moore
+ → dob='1756-07-21T00:00:00Z', dod='1816-10-07T00:00:00Z', affil=None
+this is names_try: ['Alexander Khaled Hayman', 'Alexander Hayman']
+maybe orcid: [nan]
+[170/971] Querying 'Alexander Khaled Hayman' (ORCID=None) …each name: Alexander Khaled Hayman
+No match for name variant: Alexander Khaled Hayman
+each name: Alexander Hayman
+No match for name variant: Alexander Hayman
+ → dob=None, dod=None, affil=None
+this is names_try: ['David Tang David Tang', 'David Tang']
+maybe orcid: [nan]
+[171/971] Querying 'David Tang David Tang' (ORCID=None) …each name: David Tang David Tang
+No match for name variant: David Tang David Tang
+each name: David Tang
+ → dob='1981-07-15T00:00:00Z', dod=None, affil=None
+this is names_try: ['Christopher P. Rhodes', 'Christopher Rhodes']
+maybe orcid: ['0000-0003-4886-9875']
+[172/971] Querying 'Christopher P. Rhodes' (ORCID=0000-0003-4886-9875) …orcid: 0000-0003-4886-9875
+ → dob=None, dod=None, affil='Texas State University'
+this is names_try: ['Vincent J. M. Salters', 'Vincent Salters']
+maybe orcid: ['0000-0002-5669-7869']
+[173/971] Querying 'Vincent J. M. Salters' (ORCID=0000-0002-5669-7869) …orcid: 0000-0002-5669-7869
+ → dob=None, dod=None, affil='Lamont–Doherty Earth Observatory'
+this is names_try: ['Shlomo Sternberg']
+maybe orcid: [nan]
+[174/971] Querying 'Shlomo Sternberg' (ORCID=None) …each name: Shlomo Sternberg
+ → dob='1936-11-20T00:00:00Z', dod='2024-08-23T00:00:00Z', affil='Harvard University'
+this is names_try: ['Anne‐Ulrike Trendelenburg']
+maybe orcid: [nan]
+[175/971] Querying 'Anne‐Ulrike Trendelenburg' (ORCID=None) …each name: Anne‐Ulrike Trendelenburg
+No match for name variant: Anne‐Ulrike Trendelenburg
+ → dob=None, dod=None, affil=None
+this is names_try: ['Mei Lyn Ong', 'Mei Ong']
+maybe orcid: [nan]
+[176/971] Querying 'Mei Lyn Ong' (ORCID=None) …each name: Mei Lyn Ong
+ → dob=None, dod=None, affil=None
+this is names_try: ['Alexander Olshevsky']
+maybe orcid: [nan]
+[177/971] Querying 'Alexander Olshevsky' (ORCID=None) …each name: Alexander Olshevsky
+No match for name variant: Alexander Olshevsky
+ → dob=None, dod=None, affil=None
+this is names_try: ['Yocl Fink']
+maybe orcid: [nan]
+[178/971] Querying 'Yocl Fink' (ORCID=None) …each name: Yocl Fink
+No match for name variant: Yocl Fink
+ → dob=None, dod=None, affil=None
+this is names_try: ['Michael Siegel']
+maybe orcid: [nan]
+[179/971] Querying 'Michael Siegel' (ORCID=None) …each name: Michael Siegel
+ → dob='1967-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Tatsushi Isojima']
+maybe orcid: [nan]
+[180/971] Querying 'Tatsushi Isojima' (ORCID=None) …each name: Tatsushi Isojima
+No match for name variant: Tatsushi Isojima
+ → dob=None, dod=None, affil=None
+this is names_try: ['David Zhang']
+maybe orcid: ['0000-0002-5027-5286']
+[181/971] Querying 'David Zhang' (ORCID=0000-0002-5027-5286) …orcid: 0000-0002-5027-5286
+ → dob='1949-01-01T00:00:00Z', dod=None, affil='Hong Kong Polytechnic University'
+this is names_try: ['Tatsuo Kaiho']
+maybe orcid: [nan]
+[182/971] Querying 'Tatsuo Kaiho' (ORCID=None) …each name: Tatsuo Kaiho
+No match for name variant: Tatsuo Kaiho
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. M. Liu', 'J. Liu']
+maybe orcid: [nan]
+[183/971] Querying 'J. M. Liu' (ORCID=None) …each name: J. M. Liu
+No match for name variant: J. M. Liu
+each name: J. Liu
+ → dob='1953-01-02T00:00:00Z', dod=None, affil='Vrije Universiteit Amsterdam'
+this is names_try: ['Reid Mello']
+maybe orcid: [nan]
+[184/971] Querying 'Reid Mello' (ORCID=None) …each name: Reid Mello
+ → dob=None, dod=None, affil=None
+this is names_try: ['R. R. Bertrand', 'R. Bertrand']
+maybe orcid: [nan]
+[185/971] Querying 'R. R. Bertrand' (ORCID=None) …each name: R. R. Bertrand
+No match for name variant: R. R. Bertrand
+each name: R. Bertrand
+ → dob=None, dod=None, affil=None
+this is names_try: ['Ran Choi']
+maybe orcid: ['0000-0003-4107-587X']
+[186/971] Querying 'Ran Choi' (ORCID=0000-0003-4107-587X) …orcid: 0000-0003-4107-587X
+each name: Ran Choi
+ → dob=None, dod=None, affil=None
+this is names_try: ['Daniel G. Panaccione', 'Daniel Panaccione']
+maybe orcid: ['0000-0002-4159-164X']
+[187/971] Querying 'Daniel G. Panaccione' (ORCID=0000-0002-4159-164X) …orcid: 0000-0002-4159-164X
+ → dob=None, dod=None, affil=None
+this is names_try: ['Subramanian Sundaram']
+maybe orcid: ['0000-0002-8456-916X']
+[188/971] Querying 'Subramanian Sundaram' (ORCID=0000-0002-8456-916X) …orcid: 0000-0002-8456-916X
+ → dob=None, dod=None, affil=None
+this is names_try: ['Takaaki Koga']
+maybe orcid: [nan]
+[189/971] Querying 'Takaaki Koga' (ORCID=None) …each name: Takaaki Koga
+ → dob='1953-04-25T00:00:00Z', dod=None, affil=None
+this is names_try: ['Lin Wen Hu', 'Lin Hu']
+maybe orcid: [nan]
+[190/971] Querying 'Lin Wen Hu' (ORCID=None) …each name: Lin Wen Hu
+No match for name variant: Lin Wen Hu
+each name: Lin Hu
+ → dob='1904-06-10T00:00:00Z', dod='1955-04-01T00:00:00Z', affil='Tsinghua University'
+this is names_try: ['Andrew T. Chan', 'Andrew Chan']
+maybe orcid: ['0000-0001-7284-6767']
+[191/971] Querying 'Andrew T. Chan' (ORCID=0000-0001-7284-6767) …orcid: 0000-0001-7284-6767
+ → dob=None, dod=None, affil=None
+this is names_try: ['Gregory Horning']
+maybe orcid: [nan]
+[192/971] Querying 'Gregory Horning' (ORCID=None) …each name: Gregory Horning
+No match for name variant: Gregory Horning
+ → dob=None, dod=None, affil=None
+this is names_try: ['Eli Arbel']
+maybe orcid: [nan]
+[193/971] Querying 'Eli Arbel' (ORCID=None) …each name: Eli Arbel
+No match for name variant: Eli Arbel
+ → dob=None, dod=None, affil=None
+this is names_try: ['G. W. Peck', 'G. Peck']
+maybe orcid: [nan]
+[194/971] Querying 'G. W. Peck' (ORCID=None) …each name: G. W. Peck
+ → dob='1845-03-23T00:00:00Z', dod='1914-01-10T00:00:00Z', affil=None
+this is names_try: ['Cuifang Kuang']
+maybe orcid: [nan]
+[195/971] Querying 'Cuifang Kuang' (ORCID=None) …each name: Cuifang Kuang
+ → dob=None, dod=None, affil=None
+this is names_try: ['Lyssa M. Freese', 'Lyssa Freese']
+maybe orcid: ['0000-0003-0944-2182']
+[196/971] Querying 'Lyssa M. Freese' (ORCID=0000-0003-0944-2182) …orcid: 0000-0003-0944-2182
+each name: Lyssa M. Freese
+No match for name variant: Lyssa M. Freese
+each name: Lyssa Freese
+No match for name variant: Lyssa Freese
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. Hartwell Harrison', 'J. Harrison']
+maybe orcid: ['0000-0002-6577-4168']
+[197/971] Querying 'J. Hartwell Harrison' (ORCID=0000-0002-6577-4168) …orcid: 0000-0002-6577-4168
+each name: J. Hartwell Harrison
+ → dob='1909-02-16T00:00:00Z', dod='1984-01-20T00:00:00Z', affil=None
+this is names_try: ['Cory D. Kidd', 'Cory Kidd']
+maybe orcid: [nan]
+[198/971] Querying 'Cory D. Kidd' (ORCID=None) …each name: Cory D. Kidd
+No match for name variant: Cory D. Kidd
+each name: Cory Kidd
+No match for name variant: Cory Kidd
+ → dob=None, dod=None, affil=None
+this is names_try: ['Steve Mullaney']
+maybe orcid: [nan]
+[199/971] Querying 'Steve Mullaney' (ORCID=None) …each name: Steve Mullaney
+No match for name variant: Steve Mullaney
+ → dob=None, dod=None, affil=None
+this is names_try: ['Akshay Agarwal']
+maybe orcid: ['0000-0002-5944-3346']
+[200/971] Querying 'Akshay Agarwal' (ORCID=0000-0002-5944-3346) …orcid: 0000-0002-5944-3346
+ → dob=None, dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Alberto Rodríguez Arreola', 'Alberto Arreola']
+maybe orcid: ['0000-0001-7426-9465']
+[201/971] Querying 'Alberto Rodríguez Arreola' (ORCID=0000-0001-7426-9465) …orcid: 0000-0001-7426-9465
+each name: Alberto Rodríguez Arreola
+No match for name variant: Alberto Rodríguez Arreola
+each name: Alberto Arreola
+No match for name variant: Alberto Arreola
+ → dob=None, dod=None, affil=None
+this is names_try: ['Yuko Yoshinaga']
+maybe orcid: ['0000-0002-4978-9394']
+[202/971] Querying 'Yuko Yoshinaga' (ORCID=0000-0002-4978-9394) …orcid: 0000-0002-4978-9394
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. Mardon']
+maybe orcid: [nan]
+[203/971] Querying 'J. Mardon' (ORCID=None) …each name: J. Mardon
+No match for name variant: J. Mardon
+ → dob=None, dod=None, affil=None
+this is names_try: ['Lubarsky']
+maybe orcid: [nan]
+[204/971] Querying 'Lubarsky' (ORCID=None) …each name: Lubarsky
+No match for name variant: Lubarsky
+ → dob=None, dod=None, affil=None
+this is names_try: ['Ali Beyzavi']
+maybe orcid: [nan]
+[205/971] Querying 'Ali Beyzavi' (ORCID=None) …each name: Ali Beyzavi
+No match for name variant: Ali Beyzavi
+ → dob=None, dod=None, affil=None
+this is names_try: ['Stefanie Klein']
+maybe orcid: ['0000-0003-1617-3451']
+[206/971] Querying 'Stefanie Klein' (ORCID=0000-0003-1617-3451) …orcid: 0000-0003-1617-3451
+ → dob=None, dod=None, affil='Friedrich-Alexander-Universität Erlangen-Nürnberg'
+this is names_try: ['Michinori Suginome']
+maybe orcid: ['0000-0003-3023-2219']
+[207/971] Querying 'Michinori Suginome' (ORCID=0000-0003-3023-2219) …orcid: 0000-0003-3023-2219
+ → dob='1966-02-18T00:00:00Z', dod=None, affil='Kyoto University'
+this is names_try: ['Robert A. Hegele', 'Robert Hegele']
+maybe orcid: ['0000-0003-2861-5325']
+[208/971] Querying 'Robert A. Hegele' (ORCID=0000-0003-2861-5325) …orcid: 0000-0003-2861-5325
+ → dob=None, dod=None, affil='Western University'
+this is names_try: ['D. Sneden']
+maybe orcid: [nan]
+[209/971] Querying 'D. Sneden' (ORCID=None) …each name: D. Sneden
+No match for name variant: D. Sneden
+ → dob=None, dod=None, affil=None
+this is names_try: ['Dimple Vijay Kochar', 'Dimple Kochar']
+maybe orcid: ['0000-0002-1623-7606']
+[210/971] Querying 'Dimple Vijay Kochar' (ORCID=0000-0002-1623-7606) …orcid: 0000-0002-1623-7606
+each name: Dimple Vijay Kochar
+No match for name variant: Dimple Vijay Kochar
+each name: Dimple Kochar
+No match for name variant: Dimple Kochar
+ → dob=None, dod=None, affil=None
+this is names_try: ['Mitchell W. Meinhold', 'Mitchell Meinhold']
+maybe orcid: [nan]
+[211/971] Querying 'Mitchell W. Meinhold' (ORCID=None) …each name: Mitchell W. Meinhold
+No match for name variant: Mitchell W. Meinhold
+each name: Mitchell Meinhold
+No match for name variant: Mitchell Meinhold
+ → dob=None, dod=None, affil=None
+this is names_try: ['露 张']
+maybe orcid: [nan]
+[212/971] Querying '露 张' (ORCID=None) …each name: 露 张
+No match for name variant: 露 张
+ → dob=None, dod=None, affil=None
+this is names_try: ['Harlee S. Strauss', 'Harlee Strauss']
+maybe orcid: [nan]
+[213/971] Querying 'Harlee S. Strauss' (ORCID=None) …each name: Harlee S. Strauss
+No match for name variant: Harlee S. Strauss
+each name: Harlee Strauss
+No match for name variant: Harlee Strauss
+ → dob=None, dod=None, affil=None
+this is names_try: ['Gordon R. Greenberg', 'Gordon Greenberg']
+maybe orcid: ['0000-0001-9260-9363']
+[214/971] Querying 'Gordon R. Greenberg' (ORCID=0000-0001-9260-9363) …orcid: 0000-0001-9260-9363
+each name: Gordon R. Greenberg
+No match for name variant: Gordon R. Greenberg
+each name: Gordon Greenberg
+ → dob='1968-07-07T00:00:00Z', dod=None, affil=None
+this is names_try: ['Steven R. Little', 'Steven Little']
+maybe orcid: ['0000-0002-7000-3931']
+[215/971] Querying 'Steven R. Little' (ORCID=0000-0002-7000-3931) …orcid: 0000-0002-7000-3931
+ → dob=None, dod=None, affil='University of Pittsburgh'
+this is names_try: ['Adolfo Guevara']
+maybe orcid: ['0000-0001-5366-372X']
+[216/971] Querying 'Adolfo Guevara' (ORCID=0000-0001-5366-372X) …orcid: 0000-0001-5366-372X
+each name: Adolfo Guevara
+ → dob='1923-09-04T00:00:00Z', dod=None, affil=None
+this is names_try: ['M. Skorokhvatov']
+maybe orcid: [nan]
+[217/971] Querying 'M. Skorokhvatov' (ORCID=None) …each name: M. Skorokhvatov
+No match for name variant: M. Skorokhvatov
+ → dob=None, dod=None, affil=None
+this is names_try: ['Charles H. Fisher', 'Charles Fisher']
+maybe orcid: [nan]
+[218/971] Querying 'Charles H. Fisher' (ORCID=None) …each name: Charles H. Fisher
+No match for name variant: Charles H. Fisher
+each name: Charles Fisher
+ → dob='1808-08-15T00:00:00Z', dod='1880-12-08T00:00:00Z', affil=None
+this is names_try: ['Gursel']
+maybe orcid: [nan]
+[219/971] Querying 'Gursel' (ORCID=None) …each name: Gursel
+ → dob='1982-08-08T00:00:00Z', dod=None, affil=None
+this is names_try: ['Tobias Kraus']
+maybe orcid: ['0000-0003-2951-1704']
+[220/971] Querying 'Tobias Kraus' (ORCID=0000-0003-2951-1704) …orcid: 0000-0003-2951-1704
+ → dob='1979-02-02T00:00:00Z', dod=None, affil='Saarland University'
+this is names_try: ['Md. Golam Kader', 'Md. Kader']
+maybe orcid: [nan]
+[221/971] Querying 'Md. Golam Kader' (ORCID=None) …each name: Md. Golam Kader
+No match for name variant: Md. Golam Kader
+each name: Md. Kader
+No match for name variant: Md. Kader
+ → dob=None, dod=None, affil=None
+this is names_try: ['Jane S. Bae', 'Jane Bae']
+maybe orcid: [nan]
+[222/971] Querying 'Jane S. Bae' (ORCID=None) …each name: Jane S. Bae
+No match for name variant: Jane S. Bae
+each name: Jane Bae
+ → dob='1959-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Shuhei Ono']
+maybe orcid: ['0000-0002-1348-9584']
+[223/971] Querying 'Shuhei Ono' (ORCID=0000-0002-1348-9584) …orcid: 0000-0002-1348-9584
+ → dob=None, dod=None, affil=None
+this is names_try: ['Denis Bernsmeier']
+maybe orcid: ['0000-0002-9805-7640']
+[224/971] Querying 'Denis Bernsmeier' (ORCID=0000-0002-9805-7640) …orcid: 0000-0002-9805-7640
+ → dob=None, dod=None, affil=None
+this is names_try: ['Jonathan B. Ashcom', 'Jonathan Ashcom']
+maybe orcid: [nan]
+[225/971] Querying 'Jonathan B. Ashcom' (ORCID=None) …each name: Jonathan B. Ashcom
+No match for name variant: Jonathan B. Ashcom
+each name: Jonathan Ashcom
+No match for name variant: Jonathan Ashcom
+ → dob=None, dod=None, affil=None
+this is names_try: ['Peter Hull']
+maybe orcid: [nan]
+[226/971] Querying 'Peter Hull' (ORCID=None) …each name: Peter Hull
+ → dob='1933-07-02T00:00:00Z', dod='2014-02-11T00:00:00Z', affil='Toronto Metropolitan University'
+this is names_try: ['Jong Hyeok Park', 'Jong Park']
+maybe orcid: ['0000-0002-6629-3147']
+[227/971] Querying 'Jong Hyeok Park' (ORCID=0000-0002-6629-3147) …orcid: 0000-0002-6629-3147
+ → dob='2000-01-01T00:00:00Z', dod=None, affil='Yonsei University'
+this is names_try: ['Yan Zhang']
+maybe orcid: ['0000-0003-2031-7286']
+[228/971] Querying 'Yan Zhang' (ORCID=0000-0003-2031-7286) …orcid: 0000-0003-2031-7286
+ → dob=None, dod=None, affil=None
+this is names_try: ['Etienne Demarly']
+maybe orcid: [nan]
+[229/971] Querying 'Etienne Demarly' (ORCID=None) …each name: Etienne Demarly
+No match for name variant: Etienne Demarly
+ → dob=None, dod=None, affil=None
+this is names_try: ['Richard L. Wasson', 'Richard Wasson']
+maybe orcid: [nan]
+[230/971] Querying 'Richard L. Wasson' (ORCID=None) …each name: Richard L. Wasson
+No match for name variant: Richard L. Wasson
+each name: Richard Wasson
+No match for name variant: Richard Wasson
+ → dob=None, dod=None, affil=None
+this is names_try: ['Carlo Ratti']
+maybe orcid: [nan]
+[231/971] Querying 'Carlo Ratti' (ORCID=None) …each name: Carlo Ratti
+ → dob='1971-01-07T00:00:00Z', dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Daniel Sobek']
+maybe orcid: [nan]
+[232/971] Querying 'Daniel Sobek' (ORCID=None) …each name: Daniel Sobek
+No match for name variant: Daniel Sobek
+ → dob=None, dod=None, affil=None
+this is names_try: ['Namit Chaudhary']
+maybe orcid: ['0000-0002-2115-7731']
+[233/971] Querying 'Namit Chaudhary' (ORCID=0000-0002-2115-7731) …orcid: 0000-0002-2115-7731
+each name: Namit Chaudhary
+No match for name variant: Namit Chaudhary
+ → dob=None, dod=None, affil=None
+this is names_try: ['Shawn M. Davidson', 'Shawn Davidson']
+maybe orcid: ['0000-0002-3475-0382']
+[234/971] Querying 'Shawn M. Davidson' (ORCID=0000-0002-3475-0382) …orcid: 0000-0002-3475-0382
+each name: Shawn M. Davidson
+No match for name variant: Shawn M. Davidson
+each name: Shawn Davidson
+No match for name variant: Shawn Davidson
+ → dob=None, dod=None, affil=None
+this is names_try: ['B.T. Adekor']
+maybe orcid: [nan]
+[235/971] Querying 'B.T. Adekor' (ORCID=None) …each name: B.T. Adekor
+No match for name variant: B.T. Adekor
+ → dob=None, dod=None, affil=None
+this is names_try: ['Guenther Raab']
+maybe orcid: [nan]
+[236/971] Querying 'Guenther Raab' (ORCID=None) …each name: Guenther Raab
+No match for name variant: Guenther Raab
+ → dob=None, dod=None, affil=None
+this is names_try: ['Margaret E. Torrence', 'Margaret Torrence']
+maybe orcid: ['0000-0003-2133-8599']
+[237/971] Querying 'Margaret E. Torrence' (ORCID=0000-0003-2133-8599) …orcid: 0000-0003-2133-8599
+each name: Margaret E. Torrence
+No match for name variant: Margaret E. Torrence
+each name: Margaret Torrence
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. K. Chin', 'J. Chin']
+maybe orcid: [nan]
+[238/971] Querying 'J. K. Chin' (ORCID=None) …each name: J. K. Chin
+ → dob=None, dod=None, affil=None
+this is names_try: ['Sarah Alnegheimish']
+maybe orcid: [nan]
+[239/971] Querying 'Sarah Alnegheimish' (ORCID=None) …each name: Sarah Alnegheimish
+No match for name variant: Sarah Alnegheimish
+ → dob=None, dod=None, affil=None
+this is names_try: ['Elaine C. Lee', 'Elaine Lee']
+maybe orcid: ['0000-0002-6556-1058']
+[240/971] Querying 'Elaine C. Lee' (ORCID=0000-0002-6556-1058) …orcid: 0000-0002-6556-1058
+each name: Elaine C. Lee
+No match for name variant: Elaine C. Lee
+each name: Elaine Lee
+ → dob=None, dod=None, affil=None
+this is names_try: ['Kyle Swanson']
+maybe orcid: ['0000-0002-7385-7844']
+[241/971] Querying 'Kyle Swanson' (ORCID=0000-0002-7385-7844) …orcid: 0000-0002-7385-7844
+ → dob=None, dod=None, affil=None
+this is names_try: ['A. Eviatar']
+maybe orcid: [nan]
+[242/971] Querying 'A. Eviatar' (ORCID=None) …each name: A. Eviatar
+No match for name variant: A. Eviatar
+ → dob=None, dod=None, affil=None
+this is names_try: ['D.A. Frankel']
+maybe orcid: [nan]
+[243/971] Querying 'D.A. Frankel' (ORCID=None) …each name: D.A. Frankel
+No match for name variant: D.A. Frankel
+ → dob=None, dod=None, affil=None
+this is names_try: ['Mike C. Boyer', 'Mike Boyer']
+maybe orcid: [nan]
+[244/971] Querying 'Mike C. Boyer' (ORCID=None) …each name: Mike C. Boyer
+No match for name variant: Mike C. Boyer
+each name: Mike Boyer
+No match for name variant: Mike Boyer
+ → dob=None, dod=None, affil=None
+this is names_try: ['Daniel Z. Freedman', 'Daniel Freedman']
+maybe orcid: ['0000-0001-7354-0129']
+[245/971] Querying 'Daniel Z. Freedman' (ORCID=0000-0001-7354-0129) …orcid: 0000-0001-7354-0129
+each name: Daniel Z. Freedman
+ → dob='1939-03-05T00:00:00Z', dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Michelle Rengarajan']
+maybe orcid: ['0000-0003-3203-7986']
+[246/971] Querying 'Michelle Rengarajan' (ORCID=0000-0003-3203-7986) …orcid: 0000-0003-3203-7986
+each name: Michelle Rengarajan
+ → dob=None, dod=None, affil=None
+this is names_try: ['R.E. Enstrom']
+maybe orcid: [nan]
+[247/971] Querying 'R.E. Enstrom' (ORCID=None) …each name: R.E. Enstrom
+No match for name variant: R.E. Enstrom
+ → dob=None, dod=None, affil=None
+this is names_try: ['Matthew J. Davis', 'Matthew Davis']
+maybe orcid: ['0000-0002-3410-7100']
+[248/971] Querying 'Matthew J. Davis' (ORCID=0000-0002-3410-7100) …orcid: 0000-0002-3410-7100
+each name: Matthew J. Davis
+ → dob=None, dod=None, affil=None
+this is names_try: ['Howie H. Breinan', 'Howie Breinan']
+maybe orcid: [nan]
+[249/971] Querying 'Howie H. Breinan' (ORCID=None) …each name: Howie H. Breinan
+No match for name variant: Howie H. Breinan
+each name: Howie Breinan
+No match for name variant: Howie Breinan
+ → dob=None, dod=None, affil=None
+this is names_try: ['Xiao Zhang']
+maybe orcid: ['0000-0002-0094-6221']
+[250/971] Querying 'Xiao Zhang' (ORCID=0000-0002-0094-6221) …orcid: 0000-0002-0094-6221
+ → dob=None, dod=None, affil=None
+this is names_try: ['Melanie Chin']
+maybe orcid: ['0000-0002-2771-0518']
+[251/971] Querying 'Melanie Chin' (ORCID=0000-0002-2771-0518) …orcid: 0000-0002-2771-0518
+ → dob=None, dod=None, affil=None
+this is names_try: ['Mary Lou Harsa-King', 'Mary Harsa-King']
+maybe orcid: [nan]
+[252/971] Querying 'Mary Lou Harsa-King' (ORCID=None) …each name: Mary Lou Harsa-King
+No match for name variant: Mary Lou Harsa-King
+each name: Mary Harsa-King
+No match for name variant: Mary Harsa-King
+ → dob=None, dod=None, affil=None
+this is names_try: ['Matheus Malta de Sá', 'Matheus Sá']
+maybe orcid: [nan]
+[253/971] Querying 'Matheus Malta de Sá' (ORCID=None) …each name: Matheus Malta de Sá
+No match for name variant: Matheus Malta de Sá
+each name: Matheus Sá
+ → dob='1526-01-01T00:00:00Z', dod='1573-11-25T00:00:00Z', affil=None
+this is names_try: ['Alex S. Park', 'Alex Park']
+maybe orcid: ['0000-0002-2052-558X']
+[254/971] Querying 'Alex S. Park' (ORCID=0000-0002-2052-558X) …orcid: 0000-0002-2052-558X
+ → dob=None, dod=None, affil='University of Western Australia'
+this is names_try: ['Chang‐Lee Chen']
+maybe orcid: [nan]
+[255/971] Querying 'Chang‐Lee Chen' (ORCID=None) …each name: Chang‐Lee Chen
+No match for name variant: Chang‐Lee Chen
+ → dob=None, dod=None, affil=None
+this is names_try: ['Stuart K. Kim', 'Stuart Kim']
+maybe orcid: ['0000-0001-8887-5095']
+[256/971] Querying 'Stuart K. Kim' (ORCID=0000-0001-8887-5095) …orcid: 0000-0001-8887-5095
+ → dob=None, dod=None, affil=None
+this is names_try: ['L. G. Popov', 'L. Popov']
+maybe orcid: [nan]
+[257/971] Querying 'L. G. Popov' (ORCID=None) …each name: L. G. Popov
+No match for name variant: L. G. Popov
+each name: L. Popov
+ → dob=None, dod=None, affil='Amgueddfa Cymru – Museum Wales'
+this is names_try: ['T. Posbergh']
+maybe orcid: [nan]
+[258/971] Querying 'T. Posbergh' (ORCID=None) …each name: T. Posbergh
+No match for name variant: T. Posbergh
+ → dob=None, dod=None, affil=None
+this is names_try: ['Jerzy Blusztajn']
+maybe orcid: ['0000-0002-5475-1948']
+[259/971] Querying 'Jerzy Blusztajn' (ORCID=0000-0002-5475-1948) …orcid: 0000-0002-5475-1948
+each name: Jerzy Blusztajn
+ → dob=None, dod=None, affil=None
+this is names_try: ['Alex H. Ramos', 'Alex Ramos']
+maybe orcid: [nan]
+[260/971] Querying 'Alex H. Ramos' (ORCID=None) …each name: Alex H. Ramos
+No match for name variant: Alex H. Ramos
+each name: Alex Ramos
+ → dob='1961-01-17T00:00:00Z', dod=None, affil=None
+this is names_try: ['Mark L. Shannon', 'Mark Shannon']
+maybe orcid: [nan]
+[261/971] Querying 'Mark L. Shannon' (ORCID=None) …each name: Mark L. Shannon
+No match for name variant: Mark L. Shannon
+each name: Mark Shannon
+ → dob='1939-12-08T00:00:00Z', dod='2018-05-11T00:00:00Z', affil=None
+this is names_try: ['Y.W. Hao']
+maybe orcid: [nan]
+[262/971] Querying 'Y.W. Hao' (ORCID=None) …each name: Y.W. Hao
+No match for name variant: Y.W. Hao
+ → dob=None, dod=None, affil=None
+this is names_try: ['Marcel Williams']
+maybe orcid: [nan]
+[263/971] Querying 'Marcel Williams' (ORCID=None) …each name: Marcel Williams
+ → dob='1970-08-20T00:00:00Z', dod='2017-04-24T00:00:00Z', affil=None
+this is names_try: ['Neil Strickland']
+maybe orcid: [nan]
+[264/971] Querying 'Neil Strickland' (ORCID=None) …each name: Neil Strickland
+ → dob='1966-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Panagiotis Chatzitsakyris']
+maybe orcid: [nan]
+[265/971] Querying 'Panagiotis Chatzitsakyris' (ORCID=None) …each name: Panagiotis Chatzitsakyris
+No match for name variant: Panagiotis Chatzitsakyris
+ → dob=None, dod=None, affil=None
+this is names_try: ['Justin Nowell']
+maybe orcid: [nan]
+[266/971] Querying 'Justin Nowell' (ORCID=None) …each name: Justin Nowell
+ → dob=None, dod=None, affil=None
+this is names_try: ['Hannu Tiitinen']
+maybe orcid: [nan]
+[267/971] Querying 'Hannu Tiitinen' (ORCID=None) …each name: Hannu Tiitinen
+No match for name variant: Hannu Tiitinen
+ → dob=None, dod=None, affil=None
+this is names_try: ['Erik Helstrom']
+maybe orcid: ['0000-0001-7852-569X']
+[268/971] Querying 'Erik Helstrom' (ORCID=0000-0001-7852-569X) …orcid: 0000-0001-7852-569X
+each name: Erik Helstrom
+No match for name variant: Erik Helstrom
+ → dob=None, dod=None, affil=None
+this is names_try: ['Eric A. Standley', 'Eric Standley']
+maybe orcid: ['0000-0003-0680-6788']
+[269/971] Querying 'Eric A. Standley' (ORCID=0000-0003-0680-6788) …orcid: 0000-0003-0680-6788
+ → dob=None, dod=None, affil=None
+this is names_try: ['David H. Gregg', 'David Gregg']
+maybe orcid: ['0000-0002-9258-6752']
+[270/971] Querying 'David H. Gregg' (ORCID=0000-0002-9258-6752) …orcid: 0000-0002-9258-6752
+ → dob=None, dod=None, affil=None
+this is names_try: ['Sarah J. Vigeland', 'Sarah Vigeland']
+maybe orcid: ['0000-0003-4700-9072']
+[271/971] Querying 'Sarah J. Vigeland' (ORCID=0000-0003-4700-9072) …orcid: 0000-0003-4700-9072
+ → dob=None, dod=None, affil='Jet Propulsion Laboratory'
+this is names_try: ['Ellen F. Vieux', 'Ellen Vieux']
+maybe orcid: ['0000-0003-3815-4366']
+[272/971] Querying 'Ellen F. Vieux' (ORCID=0000-0003-3815-4366) …orcid: 0000-0003-3815-4366
+each name: Ellen F. Vieux
+No match for name variant: Ellen F. Vieux
+each name: Ellen Vieux
+No match for name variant: Ellen Vieux
+ → dob=None, dod=None, affil=None
+this is names_try: ['D. Coe']
+maybe orcid: [nan]
+[273/971] Querying 'D. Coe' (ORCID=None) …each name: D. Coe
+ → dob=None, dod=None, affil=None
+this is names_try: ['Xining Du']
+maybe orcid: [nan]
+[274/971] Querying 'Xining Du' (ORCID=None) …each name: Xining Du
+No match for name variant: Xining Du
+ → dob=None, dod=None, affil=None
+this is names_try: ['Jim Williams']
+maybe orcid: ['0000-0002-1464-2317']
+[275/971] Querying 'Jim Williams' (ORCID=0000-0002-1464-2317) …orcid: 0000-0002-1464-2317
+ → dob=None, dod=None, affil='University of Western Australia'
+this is names_try: ['Lee B. Spence', 'Lee Spence']
+maybe orcid: [nan]
+[276/971] Querying 'Lee B. Spence' (ORCID=None) …each name: Lee B. Spence
+No match for name variant: Lee B. Spence
+each name: Lee Spence
+ → dob='1963-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Andrea M. Lehn', 'Andrea Lehn']
+maybe orcid: [nan]
+[277/971] Querying 'Andrea M. Lehn' (ORCID=None) …each name: Andrea M. Lehn
+No match for name variant: Andrea M. Lehn
+each name: Andrea Lehn
+ → dob='1961-01-01T00:00:00Z', dod=None, affil='University of Vienna'
+this is names_try: ['H.S. Chen']
+maybe orcid: [nan]
+[278/971] Querying 'H.S. Chen' (ORCID=None) …each name: H.S. Chen
+ → dob=None, dod=None, affil=None
+this is names_try: ['GJ Yurek']
+maybe orcid: [nan]
+[279/971] Querying 'GJ Yurek' (ORCID=None) …each name: GJ Yurek
+No match for name variant: GJ Yurek
+ → dob=None, dod=None, affil=None
+this is names_try: ['Daniel Drocourt']
+maybe orcid: [nan]
+[280/971] Querying 'Daniel Drocourt' (ORCID=None) …each name: Daniel Drocourt
+ → dob=None, dod=None, affil=None
+this is names_try: ['M S Rosenkrantz', 'M Rosenkrantz']
+maybe orcid: [nan]
+[281/971] Querying 'M S Rosenkrantz' (ORCID=None) …each name: M S Rosenkrantz
+No match for name variant: M S Rosenkrantz
+each name: M Rosenkrantz
+No match for name variant: M Rosenkrantz
+ → dob=None, dod=None, affil=None
+this is names_try: ['R M Procter', 'R Procter']
+maybe orcid: [nan]
+[282/971] Querying 'R M Procter' (ORCID=None) …each name: R M Procter
+No match for name variant: R M Procter
+each name: R Procter
+No match for name variant: R Procter
+ → dob=None, dod=None, affil=None
+this is names_try: ['Chia-Hua Lee']
+maybe orcid: ['0000-0003-4229-3027']
+[283/971] Querying 'Chia-Hua Lee' (ORCID=0000-0003-4229-3027) …orcid: 0000-0003-4229-3027
+ → dob=None, dod=None, affil='Industrial Technology Research Institute'
+this is names_try: ['John D. W. Madden', 'John Madden']
+maybe orcid: ['0000-0002-0014-4712']
+[284/971] Querying 'John D. W. Madden' (ORCID=0000-0002-0014-4712) …orcid: 0000-0002-0014-4712
+ → dob=None, dod=None, affil='University of British Columbia'
+this is names_try: ['Virgile Galle']
+maybe orcid: [nan]
+[285/971] Querying 'Virgile Galle' (ORCID=None) …each name: Virgile Galle
+ → dob=None, dod=None, affil=None
+this is names_try: ['John H. Carson', 'John Carson']
+maybe orcid: [nan]
+[286/971] Querying 'John H. Carson' (ORCID=None) …each name: John H. Carson
+No match for name variant: John H. Carson
+each name: John Carson
+ → dob='1954-08-16T00:00:00Z', dod=None, affil=None
+this is names_try: ['David Leviatin']
+maybe orcid: [nan]
+[287/971] Querying 'David Leviatin' (ORCID=None) …each name: David Leviatin
+ → dob='1961-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['F. Vilas']
+maybe orcid: ['0000-0003-4723-5870']
+[288/971] Querying 'F. Vilas' (ORCID=0000-0003-4723-5870) …orcid: 0000-0003-4723-5870
+ → dob='1952-01-01T00:00:00Z', dod=None, affil='Planetary Science Institute'
+this is names_try: ['Bae‐Ian Wu']
+maybe orcid: ['0000-0002-8437-3239']
+[289/971] Querying 'Bae‐Ian Wu' (ORCID=0000-0002-8437-3239) …orcid: 0000-0002-8437-3239
+each name: Bae‐Ian Wu
+No match for name variant: Bae‐Ian Wu
+ → dob=None, dod=None, affil=None
+this is names_try: ['Yichen Li']
+maybe orcid: ['0000-0003-4081-3885']
+[290/971] Querying 'Yichen Li' (ORCID=0000-0003-4081-3885) …orcid: 0000-0003-4081-3885
+each name: Yichen Li
+ → dob=None, dod=None, affil=None
+this is names_try: ['Ajay Modi']
+maybe orcid: [nan]
+[291/971] Querying 'Ajay Modi' (ORCID=None) …each name: Ajay Modi
+No match for name variant: Ajay Modi
+ → dob=None, dod=None, affil=None
+this is names_try: ['Kathleen M. Lewis', 'Kathleen Lewis']
+maybe orcid: [nan]
+[292/971] Querying 'Kathleen M. Lewis' (ORCID=None) …each name: Kathleen M. Lewis
+No match for name variant: Kathleen M. Lewis
+each name: Kathleen Lewis
+ → dob=None, dod=None, affil='Pennsylvania State University'
+this is names_try: ['Alfred K. Susskind', 'Alfred Susskind']
+maybe orcid: [nan]
+[293/971] Querying 'Alfred K. Susskind' (ORCID=None) …each name: Alfred K. Susskind
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. Golak']
+maybe orcid: ['0000-0002-5210-6910']
+[294/971] Querying 'J. Golak' (ORCID=0000-0002-5210-6910) …orcid: 0000-0002-5210-6910
+each name: J. Golak
+No match for name variant: J. Golak
+ → dob=None, dod=None, affil=None
+this is names_try: ['Jia‐Hong Gao']
+maybe orcid: ['0000-0002-9311-0297']
+[295/971] Querying 'Jia‐Hong Gao' (ORCID=0000-0002-9311-0297) …orcid: 0000-0002-9311-0297
+ → dob=None, dod=None, affil=None
+this is names_try: ['Zhengli Han']
+maybe orcid: ['0000-0002-8648-854X']
+[296/971] Querying 'Zhengli Han' (ORCID=0000-0002-8648-854X) …orcid: 0000-0002-8648-854X
+each name: Zhengli Han
+No match for name variant: Zhengli Han
+ → dob=None, dod=None, affil=None
+this is names_try: ['Jennifer R. Brown', 'Jennifer Brown']
+maybe orcid: ['0000-0003-2040-4961']
+[297/971] Querying 'Jennifer R. Brown' (ORCID=0000-0003-2040-4961) …orcid: 0000-0003-2040-4961
+ → dob=None, dod=None, affil=None
+this is names_try: ['Michael J. Baum', 'Michael Baum']
+maybe orcid: ['0000-0003-3066-437X']
+[298/971] Querying 'Michael J. Baum' (ORCID=0000-0003-3066-437X) …orcid: 0000-0003-3066-437X
+ → dob=None, dod=None, affil='Boston University'
+this is names_try: ['N. Lehtomaki']
+maybe orcid: [nan]
+[299/971] Querying 'N. Lehtomaki' (ORCID=None) …each name: N. Lehtomaki
+No match for name variant: N. Lehtomaki
+ → dob=None, dod=None, affil=None
+this is names_try: ['A. Gondhalekar']
+maybe orcid: [nan]
+[300/971] Querying 'A. Gondhalekar' (ORCID=None) …each name: A. Gondhalekar
+No match for name variant: A. Gondhalekar
+ → dob=None, dod=None, affil=None
+this is names_try: ['Marija D. Ilie', 'Marija Ilie']
+maybe orcid: [nan]
+[301/971] Querying 'Marija D. Ilie' (ORCID=None) …each name: Marija D. Ilie
+No match for name variant: Marija D. Ilie
+each name: Marija Ilie
+ → dob='1977-12-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Stephanie E. Woods', 'Stephanie Woods']
+maybe orcid: [nan]
+[302/971] Querying 'Stephanie E. Woods' (ORCID=None) …each name: Stephanie E. Woods
+No match for name variant: Stephanie E. Woods
+each name: Stephanie Woods
+ → dob=None, dod=None, affil=None
+this is names_try: ['Gary T. Leavens', 'Gary Leavens']
+maybe orcid: [nan]
+[303/971] Querying 'Gary T. Leavens' (ORCID=None) …each name: Gary T. Leavens
+ → dob='1950-01-01T00:00:00Z', dod=None, affil='University of Central Florida'
+this is names_try: ['Ming-Ru Wu']
+maybe orcid: [nan]
+[304/971] Querying 'Ming-Ru Wu' (ORCID=None) …each name: Ming-Ru Wu
+No match for name variant: Ming-Ru Wu
+ → dob=None, dod=None, affil=None
+this is names_try: ['Sean T. Roberts', 'Sean Roberts']
+maybe orcid: ['0000-0002-3322-3687']
+[305/971] Querying 'Sean T. Roberts' (ORCID=0000-0002-3322-3687) …orcid: 0000-0002-3322-3687
+ → dob=None, dod=None, affil='University of Southern California'
+this is names_try: ['Jaephil Cho']
+maybe orcid: ['0000-0002-3890-1432']
+[306/971] Querying 'Jaephil Cho' (ORCID=0000-0002-3890-1432) …orcid: 0000-0002-3890-1432
+ → dob='1967-01-01T00:00:00Z', dod=None, affil='Ulsan National Institute of Science and Technology'
+this is names_try: ['Lois Pollak']
+maybe orcid: [nan]
+[307/971] Querying 'Lois Pollak' (ORCID=None) …each name: Lois Pollak
+No match for name variant: Lois Pollak
+ → dob=None, dod=None, affil=None
+this is names_try: ['HARVEY KAYE']
+maybe orcid: [nan]
+[308/971] Querying 'HARVEY KAYE' (ORCID=None) …each name: HARVEY KAYE
+ → dob=None, dod=None, affil=None
+this is names_try: ['Alexandre Heuillet']
+maybe orcid: ['0000-0003-2109-7895']
+[309/971] Querying 'Alexandre Heuillet' (ORCID=0000-0003-2109-7895) …orcid: 0000-0003-2109-7895
+ → dob=None, dod=None, affil=None
+this is names_try: ['Kenji Taniguchi']
+maybe orcid: ['0000-0001-5980-1943']
+[310/971] Querying 'Kenji Taniguchi' (ORCID=0000-0001-5980-1943) …orcid: 0000-0001-5980-1943
+each name: Kenji Taniguchi
+ → dob='1947-01-01T00:00:00Z', dod=None, affil='Shiga University'
+this is names_try: ['C.F. Dewey']
+maybe orcid: [nan]
+[311/971] Querying 'C.F. Dewey' (ORCID=None) …each name: C.F. Dewey
+No match for name variant: C.F. Dewey
+ → dob=None, dod=None, affil=None
+this is names_try: ['Daniel F. Kacher', 'Daniel Kacher']
+maybe orcid: [nan]
+[312/971] Querying 'Daniel F. Kacher' (ORCID=None) …each name: Daniel F. Kacher
+No match for name variant: Daniel F. Kacher
+each name: Daniel Kacher
+No match for name variant: Daniel Kacher
+ → dob=None, dod=None, affil=None
+this is names_try: ['John T. Norton', 'John Norton']
+maybe orcid: [nan]
+[313/971] Querying 'John T. Norton' (ORCID=None) …each name: John T. Norton
+ → dob='1898-11-13T00:00:00Z', dod='1989-07-17T00:00:00Z', affil=None
+this is names_try: ['Rubin Nirmalan']
+maybe orcid: [nan]
+[314/971] Querying 'Rubin Nirmalan' (ORCID=None) …each name: Rubin Nirmalan
+No match for name variant: Rubin Nirmalan
+ → dob=None, dod=None, affil=None
+this is names_try: ['Justin Dove']
+maybe orcid: [nan]
+[315/971] Querying 'Justin Dove' (ORCID=None) …each name: Justin Dove
+No match for name variant: Justin Dove
+ → dob=None, dod=None, affil=None
+this is names_try: ['Lily Huang']
+maybe orcid: [nan]
+[316/971] Querying 'Lily Huang' (ORCID=None) …each name: Lily Huang
+No match for name variant: Lily Huang
+ → dob=None, dod=None, affil=None
+this is names_try: ['Daniel M. DeSantis', 'Daniel DeSantis']
+maybe orcid: ['0009-0003-3026-0831']
+[317/971] Querying 'Daniel M. DeSantis' (ORCID=0009-0003-3026-0831) …orcid: 0009-0003-3026-0831
+each name: Daniel M. DeSantis
+No match for name variant: Daniel M. DeSantis
+each name: Daniel DeSantis
+No match for name variant: Daniel DeSantis
+ → dob=None, dod=None, affil=None
+this is names_try: ['David L. Akey', 'David Akey']
+maybe orcid: ['0000-0002-5687-540X']
+[318/971] Querying 'David L. Akey' (ORCID=0000-0002-5687-540X) …orcid: 0000-0002-5687-540X
+ → dob=None, dod=None, affil='University of Michigan'
+this is names_try: ['K.F. Jensen']
+maybe orcid: [nan]
+[319/971] Querying 'K.F. Jensen' (ORCID=None) …each name: K.F. Jensen
+No match for name variant: K.F. Jensen
+ → dob=None, dod=None, affil=None
+this is names_try: ['Cyrus F. Hirjibehedin', 'Cyrus Hirjibehedin']
+maybe orcid: ['0000-0003-1706-2147']
+[320/971] Querying 'Cyrus F. Hirjibehedin' (ORCID=0000-0003-1706-2147) …orcid: 0000-0003-1706-2147
+ → dob='2000-01-01T00:00:00Z', dod=None, affil='University College London'
+this is names_try: ['Marcello DiMare']
+maybe orcid: [nan]
+[321/971] Querying 'Marcello DiMare' (ORCID=None) …each name: Marcello DiMare
+No match for name variant: Marcello DiMare
+ → dob=None, dod=None, affil=None
+this is names_try: ['John D. Altman', 'John Altman']
+maybe orcid: ['0000-0001-9733-2359']
+[322/971] Querying 'John D. Altman' (ORCID=0000-0001-9733-2359) …orcid: 0000-0001-9733-2359
+ → dob='1962-10-01T00:00:00Z', dod=None, affil='Emory University School of Medicine'
+this is names_try: ['Kayvan Zainabadi']
+maybe orcid: ['0000-0003-3134-1783']
+[323/971] Querying 'Kayvan Zainabadi' (ORCID=0000-0003-3134-1783) …orcid: 0000-0003-3134-1783
+ → dob=None, dod=None, affil=None
+this is names_try: ['Shulamit Levenberg']
+maybe orcid: ['0000-0001-5471-7339']
+[324/971] Querying 'Shulamit Levenberg' (ORCID=0000-0001-5471-7339) …orcid: 0000-0001-5471-7339
+ → dob='1969-01-01T00:00:00Z', dod=None, affil='Technion – Israel Institute of Technology'
+this is names_try: ['Katsutoshi Ono']
+maybe orcid: [nan]
+[325/971] Querying 'Katsutoshi Ono' (ORCID=None) …each name: Katsutoshi Ono
+ → dob='1905-01-01T00:00:00Z', dod='1988-12-20T00:00:00Z', affil='Ryukoku University'
+this is names_try: ['William A. Schmitt', 'William Schmitt']
+maybe orcid: ['0000-0002-9213-9725']
+[326/971] Querying 'William A. Schmitt' (ORCID=0000-0002-9213-9725) …orcid: 0000-0002-9213-9725
+each name: William A. Schmitt
+No match for name variant: William A. Schmitt
+each name: William Schmitt
+No match for name variant: William Schmitt
+ → dob=None, dod=None, affil=None
+this is names_try: ['S. I. Krasheninnikov', 'S. Krasheninnikov']
+maybe orcid: ['0000-0002-0786-5440']
+[327/971] Querying 'S. I. Krasheninnikov' (ORCID=0000-0002-0786-5440) …orcid: 0000-0002-0786-5440
+each name: S. I. Krasheninnikov
+No match for name variant: S. I. Krasheninnikov
+each name: S. Krasheninnikov
+No match for name variant: S. Krasheninnikov
+ → dob=None, dod=None, affil=None
+this is names_try: ['Gregory P. Fournier', 'Gregory Fournier']
+maybe orcid: ['0000-0003-1605-5455']
+[328/971] Querying 'Gregory P. Fournier' (ORCID=0000-0003-1605-5455) …orcid: 0000-0003-1605-5455
+ → dob=None, dod=None, affil=None
+this is names_try: ['John F. Maloney', 'John Maloney']
+maybe orcid: [nan]
+[329/971] Querying 'John F. Maloney' (ORCID=None) …each name: John F. Maloney
+ → dob=None, dod='1919-06-01T00:00:00Z', affil=None
+this is names_try: ['Diego Martinez']
+maybe orcid: ['0000-0002-8518-8502']
+[330/971] Querying 'Diego Martinez' (ORCID=0000-0002-8518-8502) …orcid: 0000-0002-8518-8502
+ → dob=None, dod=None, affil=None
+this is names_try: ['Hong Jeong']
+maybe orcid: ['0000-0001-8464-6033']
+[331/971] Querying 'Hong Jeong' (ORCID=0000-0001-8464-6033) …orcid: 0000-0001-8464-6033
+each name: Hong Jeong
+ → dob='1989-08-12T00:00:00Z', dod=None, affil=None
+this is names_try: ['Chandan Singh']
+maybe orcid: ['0000-0001-8006-1329']
+[332/971] Querying 'Chandan Singh' (ORCID=0000-0001-8006-1329) …orcid: 0000-0001-8006-1329
+ → dob=None, dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Kwan Wee Tan', 'Kwan Tan']
+maybe orcid: ['0000-0002-8289-6503']
+[333/971] Querying 'Kwan Wee Tan' (ORCID=0000-0002-8289-6503) …orcid: 0000-0002-8289-6503
+ → dob=None, dod=None, affil='Nanyang Technological University'
+this is names_try: ['J.N. Tsitsiklis']
+maybe orcid: [nan]
+[334/971] Querying 'J.N. Tsitsiklis' (ORCID=None) …each name: J.N. Tsitsiklis
+No match for name variant: J.N. Tsitsiklis
+ → dob=None, dod=None, affil=None
+this is names_try: ['Julie K. Monda', 'Julie Monda']
+maybe orcid: [nan]
+[335/971] Querying 'Julie K. Monda' (ORCID=None) …each name: Julie K. Monda
+No match for name variant: Julie K. Monda
+each name: Julie Monda
+ → dob=None, dod=None, affil=None
+this is names_try: ['Sarah Klein']
+maybe orcid: ['0000-0002-8117-2589']
+[336/971] Querying 'Sarah Klein' (ORCID=0000-0002-8117-2589) …orcid: 0000-0002-8117-2589
+each name: Sarah Klein
+ → dob='1985-04-19T00:00:00Z', dod=None, affil=None
+this is names_try: ['A.A. Rigos']
+maybe orcid: [nan]
+[337/971] Querying 'A.A. Rigos' (ORCID=None) …each name: A.A. Rigos
+No match for name variant: A.A. Rigos
+ → dob=None, dod=None, affil=None
+this is names_try: ['John F. Houde', 'John Houde']
+maybe orcid: [nan]
+[338/971] Querying 'John F. Houde' (ORCID=None) …each name: John F. Houde
+ → dob=None, dod=None, affil='University of California, San Francisco'
+this is names_try: ['C.M. Clampitt']
+maybe orcid: [nan]
+[339/971] Querying 'C.M. Clampitt' (ORCID=None) …each name: C.M. Clampitt
+No match for name variant: C.M. Clampitt
+ → dob=None, dod=None, affil=None
+this is names_try: ['H. W. Hayden', 'H. Hayden']
+maybe orcid: [nan]
+[340/971] Querying 'H. W. Hayden' (ORCID=None) …each name: H. W. Hayden
+No match for name variant: H. W. Hayden
+each name: H. Hayden
+ → dob='1919-05-24T00:00:00Z', dod='2010-11-11T00:00:00Z', affil=None
+this is names_try: ['J.D. Burger']
+maybe orcid: [nan]
+[341/971] Querying 'J.D. Burger' (ORCID=None) …each name: J.D. Burger
+No match for name variant: J.D. Burger
+ → dob=None, dod=None, affil=None
+this is names_try: ['Alasdair Hastewell']
+maybe orcid: ['0000-0003-2633-380X']
+[342/971] Querying 'Alasdair Hastewell' (ORCID=0000-0003-2633-380X) …orcid: 0000-0003-2633-380X
+each name: Alasdair Hastewell
+No match for name variant: Alasdair Hastewell
+ → dob=None, dod=None, affil=None
+this is names_try: ['Luean E. Anthony', 'Luean Anthony']
+maybe orcid: [nan]
+[343/971] Querying 'Luean E. Anthony' (ORCID=None) …each name: Luean E. Anthony
+No match for name variant: Luean E. Anthony
+each name: Luean Anthony
+No match for name variant: Luean Anthony
+ → dob=None, dod=None, affil=None
+this is names_try: ['Priya Vasa']
+maybe orcid: [nan]
+[344/971] Querying 'Priya Vasa' (ORCID=None) …each name: Priya Vasa
+No match for name variant: Priya Vasa
+ → dob=None, dod=None, affil=None
+this is names_try: ['J. Bosse']
+maybe orcid: ['0000-0002-7600-509X']
+[345/971] Querying 'J. Bosse' (ORCID=0000-0002-7600-509X) …orcid: 0000-0002-7600-509X
+each name: J. Bosse
+ → dob='1922-12-23T00:00:00Z', dod='2013-12-06T00:00:00Z', affil=None
+this is names_try: ['Andrea Colaço']
+maybe orcid: ['0009-0001-6661-2216']
+[346/971] Querying 'Andrea Colaço' (ORCID=0009-0001-6661-2216) …orcid: 0009-0001-6661-2216
+each name: Andrea Colaço
+No match for name variant: Andrea Colaço
+ → dob=None, dod=None, affil=None
+this is names_try: ['Mu‐Hyun Baik']
+maybe orcid: ['0000-0002-8832-8187']
+[347/971] Querying 'Mu‐Hyun Baik' (ORCID=0000-0002-8832-8187) …orcid: 0000-0002-8832-8187
+ → dob=None, dod=None, affil='KAIST'
+this is names_try: ['Y. Endoh']
+maybe orcid: [nan]
+[348/971] Querying 'Y. Endoh' (ORCID=None) …each name: Y. Endoh
+No match for name variant: Y. Endoh
+ → dob=None, dod=None, affil=None
+this is names_try: ['J.S. Shafran']
+maybe orcid: [nan]
+[349/971] Querying 'J.S. Shafran' (ORCID=None) …each name: J.S. Shafran
+No match for name variant: J.S. Shafran
+ → dob=None, dod=None, affil=None
+this is names_try: ['Lucas Puig']
+maybe orcid: [nan]
+[350/971] Querying 'Lucas Puig' (ORCID=None) …each name: Lucas Puig
+ → dob='1987-01-31T00:00:00Z', dod=None, affil=None
+this is names_try: ['Yancheng Lai']
+maybe orcid: ['0009-0004-8444-7535']
+[351/971] Querying 'Yancheng Lai' (ORCID=0009-0004-8444-7535) …orcid: 0009-0004-8444-7535
+each name: Yancheng Lai
+No match for name variant: Yancheng Lai
+ → dob=None, dod=None, affil=None
+this is names_try: ['Alan E. E. Roger', 'Alan Roger']
+maybe orcid: [nan]
+[352/971] Querying 'Alan E. E. Roger' (ORCID=None) …each name: Alan E. E. Roger
+No match for name variant: Alan E. E. Roger
+each name: Alan Roger
+ → dob='1945-08-04T00:00:00Z', dod=None, affil=None
+this is names_try: ['N. E. Tolbert', 'N. Tolbert']
+maybe orcid: [nan]
+[353/971] Querying 'N. E. Tolbert' (ORCID=None) …each name: N. E. Tolbert
+No match for name variant: N. E. Tolbert
+each name: N. Tolbert
+No match for name variant: N. Tolbert
+ → dob=None, dod=None, affil=None
+this is names_try: ['Stefan Neufeind']
+maybe orcid: [nan]
+[354/971] Querying 'Stefan Neufeind' (ORCID=None) …each name: Stefan Neufeind
+No match for name variant: Stefan Neufeind
+ → dob=None, dod=None, affil=None
+this is names_try: ['Jacques Steininger']
+maybe orcid: [nan]
+[355/971] Querying 'Jacques Steininger' (ORCID=None) …each name: Jacques Steininger
+No match for name variant: Jacques Steininger
+ → dob=None, dod=None, affil=None
+this is names_try: ['Mun Kyung Hwang', 'Mun Hwang']
+maybe orcid: [nan]
+[356/971] Querying 'Mun Kyung Hwang' (ORCID=None) …each name: Mun Kyung Hwang
+No match for name variant: Mun Kyung Hwang
+each name: Mun Hwang
+No match for name variant: Mun Hwang
+ → dob=None, dod=None, affil=None
+this is names_try: ['RD Wagh']
+maybe orcid: [nan]
+[357/971] Querying 'RD Wagh' (ORCID=None) …each name: RD Wagh
+No match for name variant: RD Wagh
+ → dob=None, dod=None, affil=None
+this is names_try: ['Tobin J. Marks', 'Tobin Marks']
+maybe orcid: ['0000-0001-8771-0141']
+[358/971] Querying 'Tobin J. Marks' (ORCID=0000-0001-8771-0141) …orcid: 0000-0001-8771-0141
+ → dob='1944-11-25T00:00:00Z', dod=None, affil='Northwestern University'
+this is names_try: ['Masaki Ihara']
+maybe orcid: [nan]
+[359/971] Querying 'Masaki Ihara' (ORCID=None) …each name: Masaki Ihara
+ → dob='1986-11-04T00:00:00Z', dod=None, affil=None
+this is names_try: ['J. Moran']
+maybe orcid: ['0000-0003-4575-9320']
+[360/971] Querying 'J. Moran' (ORCID=0000-0003-4575-9320) …orcid: 0000-0003-4575-9320
+each name: J. Moran
+ → dob='1831-01-01T00:00:00Z', dod='1903-02-19T00:00:00Z', affil=None
+this is names_try: ['S. Sen']
+maybe orcid: ['0000-0002-9006-9698']
+[361/971] Querying 'S. Sen' (ORCID=0000-0002-9006-9698) …orcid: 0000-0002-9006-9698
+ → dob=None, dod=None, affil='University of Wisconsin–La Crosse'
+this is names_try: ['Xiaoli Wang']
+maybe orcid: ['0000-0003-3608-7163']
+[362/971] Querying 'Xiaoli Wang' (ORCID=0000-0003-3608-7163) …orcid: 0000-0003-3608-7163
+ → dob=None, dod=None, affil='Yantai University'
+this is names_try: ['Kalyan Talluri']
+maybe orcid: ['0000-0003-1608-6403']
+[363/971] Querying 'Kalyan Talluri' (ORCID=0000-0003-1608-6403) …orcid: 0000-0003-1608-6403
+ → dob=None, dod=None, affil=None
+this is names_try: ['David P. DiVincenzo', 'David DiVincenzo']
+maybe orcid: ['0000-0003-4332-645X']
+[364/971] Querying 'David P. DiVincenzo' (ORCID=0000-0003-4332-645X) …orcid: 0000-0003-4332-645X
+ → dob='1959-01-01T00:00:00Z', dod=None, affil='RWTH Aachen University'
+this is names_try: ['Robert Slott']
+maybe orcid: [nan]
+[365/971] Querying 'Robert Slott' (ORCID=None) …each name: Robert Slott
+No match for name variant: Robert Slott
+ → dob=None, dod=None, affil=None
+this is names_try: ['Randall J. Margolis', 'Randall Margolis']
+maybe orcid: [nan]
+[366/971] Querying 'Randall J. Margolis' (ORCID=None) …each name: Randall J. Margolis
+No match for name variant: Randall J. Margolis
+each name: Randall Margolis
+No match for name variant: Randall Margolis
+ → dob=None, dod=None, affil=None
+this is names_try: ['Arun Paidimarri']
+maybe orcid: ['0000-0003-0493-337X']
+[367/971] Querying 'Arun Paidimarri' (ORCID=0000-0003-0493-337X) …orcid: 0000-0003-0493-337X
+each name: Arun Paidimarri
+No match for name variant: Arun Paidimarri
+ → dob=None, dod=None, affil=None
+this is names_try: ['M Wong']
+maybe orcid: [nan]
+[368/971] Querying 'M Wong' (ORCID=None) …each name: M Wong
+ → dob=None, dod=None, affil='University of California, Berkeley'
+this is names_try: ['Pai Peng']
+maybe orcid: ['0000-0003-2749-6811']
+[369/971] Querying 'Pai Peng' (ORCID=0000-0003-2749-6811) …orcid: 0000-0003-2749-6811
+each name: Pai Peng
+ → dob='1896-10-22T00:00:00Z', dod='1929-08-30T00:00:00Z', affil=None
+this is names_try: ['Rujia Zha']
+maybe orcid: [nan]
+[370/971] Querying 'Rujia Zha' (ORCID=None) …each name: Rujia Zha
+No match for name variant: Rujia Zha
+ → dob=None, dod=None, affil=None
+this is names_try: ['Hend Alrasheed']
+maybe orcid: ['0000-0002-8649-5926']
+[371/971] Querying 'Hend Alrasheed' (ORCID=0000-0002-8649-5926) …orcid: 0000-0002-8649-5926
+ → dob=None, dod=None, affil='King Saud University'
+this is names_try: ['Daniel S. Sax', 'Daniel Sax']
+maybe orcid: [nan]
+[372/971] Querying 'Daniel S. Sax' (ORCID=None) …each name: Daniel S. Sax
+No match for name variant: Daniel S. Sax
+each name: Daniel Sax
+ → dob=None, dod=None, affil=None
+this is names_try: ['Inja Song']
+maybe orcid: [nan]
+[373/971] Querying 'Inja Song' (ORCID=None) …each name: Inja Song
+No match for name variant: Inja Song
+ → dob=None, dod=None, affil=None
+this is names_try: ['Richard Earl']
+maybe orcid: [nan]
+[374/971] Querying 'Richard Earl' (ORCID=None) …each name: Richard Earl
+ → dob='1920-03-03T00:00:00Z', dod='1955-09-12T00:00:00Z', affil=None
+this is names_try: ['Nafees Ahemad']
+maybe orcid: ['0000-0002-5164-1970']
+[375/971] Querying 'Nafees Ahemad' (ORCID=0000-0002-5164-1970) …orcid: 0000-0002-5164-1970
+ → dob=None, dod=None, affil='Monash University Malaysia'
+this is names_try: ['Taeho Shin']
+maybe orcid: ['0009-0003-8244-4835']
+[376/971] Querying 'Taeho Shin' (ORCID=0009-0003-8244-4835) …orcid: 0009-0003-8244-4835
+each name: Taeho Shin
+No match for name variant: Taeho Shin
+ → dob=None, dod=None, affil=None
+this is names_try: ['A.W. Swanson']
+maybe orcid: [nan]
+[377/971] Querying 'A.W. Swanson' (ORCID=None) …each name: A.W. Swanson
+No match for name variant: A.W. Swanson
+ → dob=None, dod=None, affil=None
+this is names_try: ['Michael C. Johnson', 'Michael Johnson']
+maybe orcid: ['0000-0003-2910-4551']
+[378/971] Querying 'Michael C. Johnson' (ORCID=0000-0003-2910-4551) …orcid: 0000-0003-2910-4551
+each name: Michael C. Johnson
+ → dob=None, dod=None, affil='University of Nevada, Reno School of Medicine'
+this is names_try: ['Joel Clark']
+maybe orcid: [nan]
+[379/971] Querying 'Joel Clark' (ORCID=None) …each name: Joel Clark
+ → dob='1965-01-30T00:00:00Z', dod=None, affil=None
+this is names_try: ['Kewen Lei']
+maybe orcid: ['0000-0002-3586-682X']
+[380/971] Querying 'Kewen Lei' (ORCID=0000-0002-3586-682X) …orcid: 0000-0002-3586-682X
+ → dob=None, dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Tatsuya Arai']
+maybe orcid: ['0000-0002-2328-9519']
+[381/971] Querying 'Tatsuya Arai' (ORCID=0000-0002-2328-9519) …orcid: 0000-0002-2328-9519
+ → dob=None, dod=None, affil='Hokkaido University'
+this is names_try: ['P.D. Hartung']
+maybe orcid: [nan]
+[382/971] Querying 'P.D. Hartung' (ORCID=None) …each name: P.D. Hartung
+No match for name variant: P.D. Hartung
+ → dob=None, dod=None, affil=None
+this is names_try: ['Shou-Kong Fan']
+maybe orcid: ['0000-0001-7992-4238']
+[383/971] Querying 'Shou-Kong Fan' (ORCID=0000-0001-7992-4238) …orcid: 0000-0001-7992-4238
+each name: Shou-Kong Fan
+No match for name variant: Shou-Kong Fan
+ → dob=None, dod=None, affil=None
+this is names_try: ['B. A. Corbin', 'B. Corbin']
+maybe orcid: [nan]
+[384/971] Querying 'B. A. Corbin' (ORCID=None) …each name: B. A. Corbin
+ → dob=None, dod=None, affil=None
+this is names_try: ['Boaz A. Nemet', 'Boaz Nemet']
+maybe orcid: [nan]
+[385/971] Querying 'Boaz A. Nemet' (ORCID=None) …each name: Boaz A. Nemet
+No match for name variant: Boaz A. Nemet
+each name: Boaz Nemet
+No match for name variant: Boaz Nemet
+ → dob=None, dod=None, affil=None
+this is names_try: ['Benjamin Golub']
+maybe orcid: ['0009-0002-6743-8018']
+[386/971] Querying 'Benjamin Golub' (ORCID=0009-0002-6743-8018) …orcid: 0009-0002-6743-8018
+ → dob=None, dod=None, affil=None
+this is names_try: ['Steven O. Smith', 'Steven Smith']
+maybe orcid: ['0000-0003-1861-7159']
+[387/971] Querying 'Steven O. Smith' (ORCID=0000-0003-1861-7159) …orcid: 0000-0003-1861-7159
+ → dob=None, dod=None, affil='Stony Brook University'
+this is names_try: ['Bernd Rolauffs']
+maybe orcid: ['0000-0002-3275-8196']
+[388/971] Querying 'Bernd Rolauffs' (ORCID=0000-0002-3275-8196) …orcid: 0000-0002-3275-8196
+ → dob='1969-01-01T00:00:00Z', dod=None, affil=None
+this is names_try: ['Juan Mena-Parra']
+maybe orcid: ['0000-0002-0772-9326']
+[389/971] Querying 'Juan Mena-Parra' (ORCID=0000-0002-0772-9326) …orcid: 0000-0002-0772-9326
+each name: Juan Mena-Parra
+No match for name variant: Juan Mena-Parra
+ → dob=None, dod=None, affil=None
+this is names_try: ['Franz Stückle']
+maybe orcid: [nan]
+[390/971] Querying 'Franz Stückle' (ORCID=None) …each name: Franz Stückle
+No match for name variant: Franz Stückle
+ → dob=None, dod=None, affil=None
+this is names_try: ['P. Esquissaud']
+maybe orcid: [nan]
+[391/971] Querying 'P. Esquissaud' (ORCID=None) …each name: P. Esquissaud
+No match for name variant: P. Esquissaud
+ → dob=None, dod=None, affil=None
+this is names_try: ['Steven S. Shen', 'Steven Shen']
+maybe orcid: ['0000-0001-7725-1260']
+[392/971] Querying 'Steven S. Shen' (ORCID=0000-0001-7725-1260) …orcid: 0000-0001-7725-1260
+ → dob=None, dod=None, affil='Grossman School of Medicine'
+this is names_try: ['Krieger Mytelka']
+maybe orcid: [nan]
+[393/971] Querying 'Krieger Mytelka' (ORCID=None) …each name: Krieger Mytelka
+No match for name variant: Krieger Mytelka
+ → dob=None, dod=None, affil=None
+this is names_try: ['Paul R. Harnett', 'Paul Harnett']
+maybe orcid: ['0000-0001-7021-0642']
+[394/971] Querying 'Paul R. Harnett' (ORCID=0000-0001-7021-0642) …orcid: 0000-0001-7021-0642
+ → dob=None, dod=None, affil=None
+this is names_try: ['François‐Xavier Mahon']
+maybe orcid: ['0000-0003-1545-6775']
+[395/971] Querying 'François‐Xavier Mahon' (ORCID=0000-0003-1545-6775) …orcid: 0000-0003-1545-6775
+each name: François‐Xavier Mahon
+No match for name variant: François‐Xavier Mahon
+ → dob=None, dod=None, affil=None
+this is names_try: ['Mary Madden']
+maybe orcid: ['0000-0002-3898-125X']
+[396/971] Querying 'Mary Madden' (ORCID=0000-0002-3898-125X) …orcid: 0000-0002-3898-125X
+ → dob=None, dod=None, affil=None
+this is names_try: ['Mauro Cazzaniga']
+maybe orcid: ['0009-0003-8232-7233']
+[397/971] Querying 'Mauro Cazzaniga' (ORCID=0009-0003-8232-7233) …orcid: 0009-0003-8232-7233
+each name: Mauro Cazzaniga
+No match for name variant: Mauro Cazzaniga
+ → dob=None, dod=None, affil=None
+this is names_try: ['Mark S. Spector', 'Mark Spector']
+maybe orcid: ['0000-0002-7211-2525']
+[398/971] Querying 'Mark S. Spector' (ORCID=0000-0002-7211-2525) …orcid: 0000-0002-7211-2525
+each name: Mark S. Spector
+No match for name variant: Mark S. Spector
+each name: Mark Spector
+ → dob='1965-11-22T00:00:00Z', dod=None, affil=None
+this is names_try: ['Hugh Heclo']
+maybe orcid: [nan]
+[399/971] Querying 'Hugh Heclo' (ORCID=None) …each name: Hugh Heclo
+ → dob='1943-03-10T00:00:00Z', dod='2017-08-06T00:00:00Z', affil='Harvard University'
+this is names_try: ['Y. Hara']
+maybe orcid: [nan]
+[400/971] Querying 'Y. Hara' (ORCID=None) …each name: Y. Hara
+ → dob='1905-01-01T00:00:00Z', dod='1944-01-01T00:00:00Z', affil='Jagiellonian University'
+this is names_try: ['Shunji Nakano']
+maybe orcid: ['0000-0002-6565-9450']
+[401/971] Querying 'Shunji Nakano' (ORCID=0000-0002-6565-9450) …orcid: 0000-0002-6565-9450
+ → dob=None, dod=None, affil='Nagoya University'
+this is names_try: ['Tushar Swamy']
+maybe orcid: ['0000-0002-2975-6042']
+[402/971] Querying 'Tushar Swamy' (ORCID=0000-0002-2975-6042) …orcid: 0000-0002-2975-6042
+each name: Tushar Swamy
+No match for name variant: Tushar Swamy
+ → dob=None, dod=None, affil=None
+this is names_try: ['Sung-Jin Ahn']
+maybe orcid: [nan]
+[403/971] Querying 'Sung-Jin Ahn' (ORCID=None) …each name: Sung-Jin Ahn
+ → dob=None, dod=None, affil=None
+this is names_try: ['David B. Nieborg', 'David Nieborg']
+maybe orcid: ['0000-0002-3498-789X']
+[404/971] Querying 'David B. Nieborg' (ORCID=0000-0002-3498-789X) …orcid: 0000-0002-3498-789X
+ → dob='1980-01-01T00:00:00Z', dod=None, affil='University of Toronto'
+this is names_try: ['Gang Han']
+maybe orcid: ['0000-0001-8943-569X']
+[405/971] Querying 'Gang Han' (ORCID=0000-0001-8943-569X) …orcid: 0000-0001-8943-569X
+ → dob=None, dod=None, affil='Massachusetts Institute of Technology'
+this is names_try: ['Jong‐In Hong']
+maybe orcid: ['0000-0001-7831-8834']
+[406/971] Querying 'Jong‐In Hong' (ORCID=0000-0001-7831-8834) …orcid: 0000-0001-7831-8834
+ → dob=None, dod=None, affil='Seoul National University'
+this is names_try: ['Daniel M. Kim', 'Daniel Kim']
+maybe orcid: ['0000-0001-6033-4975']
+[407/971] Querying 'Daniel M. Kim' (ORCID=0000-0001-6033-4975) …orcid: 0000-0001-6033-4975
+ → dob=None, dod=None, affil='Harvard University'
+this is names_try: ['Mehmet Z. Sengun', 'Mehmet Sengun']
+maybe orcid: [nan]
+[408/971] Querying 'Mehmet Z. Sengun' (ORCID=None) …each name: Mehmet Z. Sengun
+No match for name variant: Mehmet Z. Sengun
+each name: Mehmet Sengun
+No match for name variant: Mehmet Sengun
+ → dob=None, dod=None, affil=None
+this is names_try: ['Yuri. Trakht']
+maybe orcid: [nan]
+[409/971] Querying 'Yuri. Trakht' (ORCID=None) …each name: Yuri. Trakht
+No match for name variant: Yuri. Trakht
+ → dob=None, dod=None, affil=None
+this is names_try: ['Matthew Hung']
+maybe orcid: [nan]
+[410/971] Querying 'Matthew Hung' (ORCID=None) …each name: Matthew Hung
+No match for name variant: Matthew Hung
+ → dob=None, dod=None, affil=None
+this is names_try: ['Rosalie M. Uchanski', 'Rosalie Uchanski']
+maybe orcid: ['0000-0002-7904-0202']
+[411/971] Querying 'Rosalie M. Uchanski' (ORCID=0000-0002-7904-0202) …orcid: 0000-0002-7904-0202
+each name: Rosalie M. Uchanski
+No match for name variant: Rosalie M. Uchanski
+each name: Rosalie Uchanski
+No match for name variant: Rosalie Uchanski
+ → dob=None, dod=None, affil=None
+this is names_try: ['Thelma Estrin']
+maybe orcid: [nan]
+[412/971] Querying 'Thelma Estrin' (ORCID=None) …each name: Thelma Estrin
+ → dob='1924-02-21T00:00:00Z', dod='2014-02-15T00:00:00Z', affil='University of California, Los Angeles'
+this is names_try: ['Chu‐Yung Chen']
+maybe orcid: [nan]
+[413/971] Querying 'Chu‐Yung Chen' (ORCID=None) …each name: Chu‐Yung Chen
+No match for name variant: Chu‐Yung Chen
+ → dob=None, dod=None, affil=None
+this is names_try: ['Minxian Wang']
+maybe orcid: ['0000-0002-3753-508X']
+[414/971] Querying 'Minxian Wang' (ORCID=0000-0002-3753-508X) …orcid: 0000-0002-3753-508X
+ → dob=None, dod=None, affil=None
+this is names_try: ['A. L. Utz', 'A. Utz']
+maybe orcid: ['0000-0002-6525-594X']
+[415/971] Querying 'A. L. Utz' (ORCID=0000-0002-6525-594X) …orcid: 0000-0002-6525-594X
+ → dob=None, dod=None, affil=None
+this is names_try: ['Simone Deparis']
+maybe orcid: ['0000-0002-2832-6630']
+[416/971] Querying 'Simone Deparis' (ORCID=0000-0002-2832-6630) …orcid: 0000-0002-2832-6630
+ → dob=None, dod=None, affil=None
+this is names_try: ['Jeremy Allen']
+maybe orcid: [nan]
+[417/971] Querying 'Jeremy Allen' (ORCID=None) …each name: Jeremy Allen
+ → dob='1982-10-28T00:00:00Z', dod=None, affil=None
+this is names_try: ['Keir Martyn']
+maybe orcid: [nan]
+[418/971] Querying 'Keir Martyn' (ORCID=None) …each name: Keir Martyn
+No match for name variant: Keir Martyn
+ → dob=None, dod=None, affil=None
+All scripts completed successfully.

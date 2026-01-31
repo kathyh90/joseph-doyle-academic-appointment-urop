@@ -1,6 +1,6 @@
 #Purpose of this file is to run modify the data to make it less messy and then run an audit to see how it
 #compares to an audit of the data when we applied the first attempt at cleaning it. This is done in check.py.
-# an audit of the data we get to check for any issues. 
+# an audit of the data we get to check for any issues.
 #First load files for all instutitions and append them
 import pandas as pd
 import gc
@@ -17,7 +17,7 @@ def clean_perfect_overlap(
 ):
     rng = np.random.default_rng(seed)
     df = df.copy()
-    
+
     if len(df) == 0:
         print("No perfect overlaps found")
         return df
@@ -188,9 +188,9 @@ def flag_partial_overlap(
 pd.set_option('display.width', 2000)
 pd.set_option('display.max_columns', 50)
 # Load and append files
-df1 = pd.read_csv('/home/mm4958/openalex/results/cornell_final_raw.csv')
-df2 = pd.read_csv('/home/mm4958/openalex/results/mit_final_raw.csv')
-df3 = pd.read_csv('/home/mm4958/openalex/results/ou_final_raw.csv')
+df1 = pd.read_csv('/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/cornell_final_raw.csv')
+df2 = pd.read_csv('/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/mit_final_raw.csv')
+df3 = pd.read_csv('/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/ou_final_raw.csv')
 comb_df = pd.concat([df1, df2, df3], ignore_index=True)
 del df1, df2, df3
 gc.collect()
@@ -241,7 +241,7 @@ df_copy['time_from_last_pub'] = df_copy['date_of_death'] - df_copy['latest_end_a
 
 #Collapse data at author level
 agg_dict = {
-    "distance_km": "mean",  
+    "distance_km": "mean",
     "date_of_birth": "first",
     "date_of_death": "first",
     "appoint_len": "mean",
@@ -265,10 +265,10 @@ df_raw = (
 desc = (df_raw[['total_works','total_citations','distance_km','n_appointments','age_first_pub', 'time_from_last_pub', 'lifespan', 'date_of_birth', 'date_of_death',
                 'earliest_start', 'latest_end_adj', 'appoint_len']].describe(percentiles=[0.25, 0.5, 0.75]).round(2))
 
-desc.to_csv("/home/mm4958/openalex/results/df_raw_sum_stats.csv")
-df_raw.to_csv("/home/mm4958/openalex/results/df_raw_combined.csv")
+desc.to_csv("/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/df_raw_sum_stats.csv")
+df_raw.to_csv("/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/df_raw_combined.csv")
 # -------------------------
-# Affiliation 
+# Affiliation
 # -------------------------
 #remove appointments shorter than 6 years
 short_spells = unique_affiliation['appoint_len'] < 6
@@ -316,7 +316,7 @@ unique_affiliation['perfect_overlap'] = 0
 unique_affiliation['partial_overlap_kept'] = 0
 unique_affiliation['partial_overlap_author'] = 0
 # -------------------------
-# Clean Partial overlaps 
+# Clean Partial overlaps
 # -------------------------
 df_no_overlap = clean_partial_overlap(unique_affiliation)
 obs3 = df_no_overlap.shape[0]
@@ -338,13 +338,13 @@ print(f"Number of perfect overlaps: {perfect_overlap_1}")
 print(f"Number of partial overlaps that did not meet threshold of 4 years: {partial_overlap_kept_n}")
 #download perfect overlaps and partial overlaps to a csv
 remaining_overlap = df_no_overlap[
-    (df_no_overlap['perfect_overlap'] == 1) | 
+    (df_no_overlap['perfect_overlap'] == 1) |
     (df_no_overlap['partial_overlap_kept'] == 1)
 ]
-remaining_overlap.to_csv('/home/mm4958/openalex/results/remaining_partial_overlaps_all_perfect_overlaps.csv', index=False)
+remaining_overlap.to_csv('/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/remaining_partial_overlaps_all_perfect_overlaps.csv', index=False)
 # -------------------------
-# Clean perfect overlaps pairs by 
-#(1) Dropping the one with misssing coordinates 
+# Clean perfect overlaps pairs by
+#(1) Dropping the one with misssing coordinates
 #(2) Removing the one without word "university" in them
 #(3) Randomly removing one of the pair
 # -------------------------
@@ -409,7 +409,7 @@ obs_life  = bad_life.sum()
 auth_life = df_merged.loc[bad_life, "author_id"].nunique()
 obs_affect = obs_age + obs_life
 auth_affect = auth_life + auth_age
-# Set to missing 
+# Set to missing
 df_merged.loc[bad_age,  "age_first_pub"] = np.nan
 df_merged.loc[bad_life, "lifespan"] = np.nan
 
@@ -428,7 +428,7 @@ print(f" Authors remaining after all changes: {authors4}  (from {authors0}) ({(a
 count_death_date = df_merged[df_merged['date_of_death'].notna() & (df_merged['date_of_death'] != '')]['author_id'].nunique()
 count_birth_date = df_merged[df_merged['date_of_birth'].notna() & (df_merged['date_of_birth'] != '')]['author_id'].nunique()
 count_birth_death_date = df_merged[
-    (df_merged['date_of_death'].notna()) & (df_merged['date_of_death'] != '') & 
+    (df_merged['date_of_death'].notna()) & (df_merged['date_of_death'] != '') &
     (df_merged['date_of_birth'].notna()) & (df_merged['date_of_birth'] != '')
 ]['author_id'].nunique()
 summary_lifespan = df_merged[['age_first_pub', 'time_from_last_pub', 'lifespan', 'date_of_birth', 'date_of_death','earliest_start', 'latest_end', 'appoint_len_w', "total_works", "total_citations"]].describe(percentiles=[0.25, 0.5, 0.75]).round(2)
@@ -455,4 +455,4 @@ summary_appointments_by_author = appointments_per_author.describe(
 ).round(2)
 
 print('\nSummary stats for number of appointments per author below:\n', summary_appointments_by_author)
-df_merged.to_csv('/home/mm4958/openalex/results/df_cleaned_final.csv', index=False)
+df_merged.to_csv('/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/df_cleaned_final.csv', index=False)

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/main_pipeline/8_graphs.py", line 92, in <module>
+    order=order
+NameError: name 'order' is not defined

@@ -12,19 +12,18 @@ import aiohttp
 import time
 
 # ── CONFIG ───────────────────────────────────────────────
-# ── CONFIG ───────────────────────────────────
 INSTITUTIONS = {
     "mit": {
-        "input":  "/home/mm4958/openalex/results/with_nearest_hospital_mit.csv",
-        "output": "/home/mm4958/openalex/results/with_death_dates_mit.csv"
+        "input":  "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_nearest_hospital_mit.csv",
+        "output": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_death_dates_mit.csv"
     },
     "cornell": {
-        "input":  "/home/mm4958/openalex/results/with_nearest_hospital_cornell.csv",
-        "output": "/home/mm4958/openalex/results/with_death_dates_cornell.csv"
+        "input":  "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_nearest_hospital_cornell.csv",
+        "output": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_death_dates_cornell.csv"
     },
     "OU": {
-        "input":  "/home/mm4958/openalex/results/with_nearest_hospital_ou.csv",
-        "output": "/home/mm4958/openalex/results/with_death_dates_ou.csv"
+        "input":  "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_nearest_hospital_ou.csv",
+        "output": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_death_dates_ou.csv"
     },
 }
 NAME_COL = "name"

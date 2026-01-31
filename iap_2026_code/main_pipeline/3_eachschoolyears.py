@@ -1,4 +1,4 @@
-#THis file will get us a timeline of what institutions the author worked at throughout their life. 
+#THis file will get us a timeline of what institutions the author worked at throughout their life.
 import asyncio
 import aiohttp
 import async_timeout
@@ -11,31 +11,32 @@ import math
 # ---------------- CONFIG ------------------------
 INSTITUTIONS = {
     "mit": {
-        "input_profiles_csv": "/home/mm4958/openalex/results/MIT_author_profiles_extended_f.csv",
+        "input_profiles_csv": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/MIT_author_profiles_extended_f.csv",
         "output_spans_csv":   "MIT_author_institution_year_spans.csv"
     },
     "ou": {
-        "input_profiles_csv": "/home/mm4958/openalex/results/OU_author_profiles_extended_f.csv",
+        "input_profiles_csv": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/OU_author_profiles_extended_f.csv",
         "output_spans_csv":   "OU_author_institution_year_spans.csv"
     },
-    "osu": {
-        "input_profiles_csv": "OSU_author_profiles_extended_f.csv",
-        "output_spans_csv":   "OSU_author_institution_year_spans.csv"
-    },
-    "dartmouth": {
-        "input_profiles_csv": "dartmouth_author_profiles_extended_f.csv",
-        "output_spans_csv":   "dartmouth_author_institution_year_spans.csv"
-    },
+    # "osu": {
+    #     "input_profiles_csv": "OSU_author_profiles_extended_f.csv",
+    #     "output_spans_csv":   "OSU_author_institution_year_spans.csv"
+    # },
+    # "dartmouth": {
+    #     "input_profiles_csv": "dartmouth_author_profiles_extended_f.csv",
+    #     "output_spans_csv":   "dartmouth_author_institution_year_spans.csv"
+    # },
     "cornell": {
-        "input_profiles_csv": "/home/mm4958/openalex/results/cornell_author_profiles_extended_f.csv",
+        "input_profiles_csv": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/cornell_author_profiles_extended_f.csv",
         "output_spans_csv":   "cornell_author_institution_year_spans.csv"
     },
-    "harvard": {
-        "input_profiles_csv": "harvard_author_profiles_extended_f.csv",
-        "output_spans_csv":   "harvard_author_institution_year_spans.csv"
-    },
+    # "harvard": {
+    #     "input_profiles_csv": "harvard_author_profiles_extended_f.csv",
+    #     "output_spans_csv":   "harvard_author_institution_year_spans.csv"
+    # },
 }
 
+OPENALEX_API_KEY = 'lvSaVMtRlMSlYYbVfXctWl'
 PER_PAGE = 200
 CONCURRENCY_LIMIT = 5            # how many simultaneous OpenAlex calls
 RETRY_STATUS_CODES = {429, 500, 502, 503, 504}
@@ -49,11 +50,15 @@ author_cache = {}   # { author_id : { (inst_id, inst_name): {years} } }
 
 # ---------------- LOW-LEVEL FETCH w/ RETRIES -------------------------
 async def fetch_json(url: str, session: ClientSession, semaphore: asyncio.Semaphore):
+    HEADERS = {
+        "Authorization": f"Bearer {OPENALEX_API_KEY}"
+    }
+
     async with semaphore:
         for attempt in range(1, MAX_RETRIES + 1):
             try:
                 async with async_timeout.timeout(30):
-                    async with session.get(url) as r:
+                    async with session.get(url, headers = HEADERS) as r:
                         if r.status in RETRY_STATUS_CODES:
                             await asyncio.sleep(2 ** attempt)
                             continue
@@ -134,6 +139,7 @@ async def process_institution(slug, paths, session, semaphore):
 
     authors = df["author_id"].tolist()
     name_map = dict(zip(df["author_id"], df.get("name", "")))
+    orcid_map = dict(zip(df["author_id"], df.get("orcid", "")))
 
     print(f"\n--- Processing {slug.upper()} ({len(authors)} authors) ---")
 
@@ -157,10 +163,11 @@ async def process_institution(slug, paths, session, semaphore):
                 "institution_name": inst_name,
                 "year_start":       min(years),
                 "year_end":         max(years),
+                "orcid":            orcid_map.get(aurl, "")
             })
 
     out_df = pd.DataFrame(rows)
-    out_path = f"/home/mm4958/openalex/results/{output_csv}"
+    out_path = f"/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/{output_csv}"
     out_df.to_csv(out_path, index=False)
     print(f"✓ Done {slug.upper()} — wrote {len(rows)} rows → {out_df}")
 

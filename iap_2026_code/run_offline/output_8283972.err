@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/main_pipeline/2_checkaffiliations.py", line 233, in <module>
+    asyncio.run(main())
+  File "/home/kathyh90/.conda/envs/urop_sloan_env/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/home/kathyh90/.conda/envs/urop_sloan_env/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/main_pipeline/2_checkaffiliations.py", line 227, in main
+    await process_institution(slug, props)
+  File "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/main_pipeline/2_checkaffiliations.py", line 166, in process_institution
+    if not Path(in_csv).exists():
+  File "/home/kathyh90/.conda/envs/urop_sloan_env/lib/python3.10/pathlib.py", line 1290, in exists
+    self.stat()
+  File "/home/kathyh90/.conda/envs/urop_sloan_env/lib/python3.10/pathlib.py", line 1097, in stat
+    return self._accessor.stat(self, follow_symlinks=follow_symlinks)
+PermissionError: [Errno 13] Permission denied: '/home/mm4958/openalex/results/ou_only_affiliations.csv'

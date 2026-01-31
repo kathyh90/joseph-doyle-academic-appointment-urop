@@ -11,7 +11,7 @@ from aiohttp import ClientSession, ClientResponseError
 INSTITUTIONS = {
     "mit":      "I63966007",   # Massachusetts Institute of Technology
     "ou":       "I8692664",    # University of Oklahoma
-    "osu":      "I115475287",   # Oklahoma State University
+    "osu":      "I115475287",  # Oklahoma State University
     "dartmouth":"I107672454",  # Dartmouth College
     "cornell":  "I205783295",  # Cornell University
     "harvard":  "I136199984",  # Harvard University
@@ -117,7 +117,7 @@ async def process_institution(slug, inst_id_num):
     df = pd.DataFrame.from_dict(authors, orient="index")
     df.reset_index(inplace=True)
     df.rename(columns={"index": "author_id"}, inplace=True)
-    out_fn = f"/home/kathyh90/joseph-doyle-academic-appointment-urop/iap_2026_code/results/{slug}_only_affiliations.csv"
+    out_fn = f"/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/{slug}_only_affiliations.csv"
     df.to_csv(out_fn, index=False)
     print(f"[{slug}] Saved {len(df)} authors → {out_fn}")
 

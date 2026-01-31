@@ -1,0 +1,40 @@
+
+Processing MIT
+• 962 authors
+• 5756 institutions
+⚠ Institution failed I96323854: 404, message='Not Found', url='https://api.openalex.org/institutions/I96323854'
+⚠ Institution failed I4210096815: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210096815'
+⚠ Institution failed I4210164347: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210164347'
+⚠ Institution failed I4210088176: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210088176'
+⚠ Institution failed I4210096309: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210096309'
+⚠ Institution failed I4210128905: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210128905'
+⚠ Institution failed I4210133110: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210133110'
+⚠ Institution failed I4210093580: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210093580'
+⚠ Institution failed I4210112983: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210112983'
+⚠ Institution failed I4210145818: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210145818'
+⚠ Institution failed I4210128032: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210128032'
+⚠ Institution failed I4210115425: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210115425'
+✓ Saved → /home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/mit_final_raw.csv
+
+Processing CORNELL
+• 1129 authors
+• 6357 institutions
+⚠ Institution failed I4210103002: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210103002'
+⚠ Institution failed I4210096815: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210096815'
+⚠ Institution failed I4210133110: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210133110'
+⚠ Institution failed I4210144721: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210144721'
+⚠ Institution failed I4210129566: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210129566'
+⚠ Institution failed I4210159031: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210159031'
+⚠ Institution failed I4210105967: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210105967'
+⚠ Institution failed I96323854: 404, message='Not Found', url='https://api.openalex.org/institutions/I96323854'
+⚠ Institution failed I4210093580: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210093580'
+⚠ Institution failed I4210088176: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210088176'
+✓ Saved → /home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/cornell_final_raw.csv
+
+Processing OU
+• 319 authors
+• 2196 institutions
+⚠ Institution failed I4210096815: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210096815'
+⚠ Institution failed I4210151952: 404, message='Not Found', url='https://api.openalex.org/institutions/I4210151952'
+✓ Saved → /home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/ou_final_raw.csv
+All scripts completed successfully.

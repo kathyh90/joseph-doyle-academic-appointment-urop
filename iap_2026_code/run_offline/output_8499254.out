@@ -1,0 +1,53 @@
+
+Initial number of observations: 34808
+Initial number of authors: 2410
+Dropping appointments <6 years:
+  Authors dropped: 913 (37.88%)
+  Observations dropped: 28820 (82.80%)
+For authors that have multiple appointments, dropping those that are not at institutions of type healthcare or education:
+  Authors affected: 43 (2.87%)
+  Observations affected: 1484 (24.78%)
+Winsorizing appointments >50-year to 50 years:
+  Authors affected: 64 (4.40%)
+  Observations affected: 293 (6.51%)
+Dropping appointments that overlap by > 4 years (drop the shorter one)
+  Authors dropped: 0 (0.00%)
+  Observations dropped: 2596 (57.64%)
+Number of perfect overlaps: 213
+Number of partial overlaps that did not meet threshold of 4 years: 501
+Dropping perfect overlaps according to logic above
+  Authors dropped: 0 (0.00%)
+  Observations dropped: 115 (6.03%)
+Number of perfect overlaps remaining: 0 so removed 213, so (100.00%)
+Number of partial overlaps that did not meet threshold of 4 years: 501
+
+After setting to NaN age_first_pub if it was less than 15 years after birth or more than 50 years after birth and setting lifespan to NaN if negative:
+ Observations affected: 224  (from 1793) (12.49%)
+ Authors affected: 167  (from 1454) (11.49%)
+ Observations remaining after all changes: 1793  (from 34808) (5.15%)
+ Authors remaining after all changes: 1454  (from 2410) (60.33%)
+Summary stats for lifespan variables below:
+        age_first_pub  time_from_last_pub  lifespan  date_of_birth  date_of_death  earliest_start  latest_end  appoint_len_w  total_works  total_citations
+count         281.00              162.00    161.00         505.00         162.00         1793.00     1793.00        1793.00      1793.00          1793.00
+mean           32.34                1.62     73.17        1941.21        1962.86         1992.51     2018.24          18.72       181.00          8503.86
+std             8.69                4.69     16.12          50.35          64.49           18.03       10.58          12.31       270.66         18561.33
+min            17.00                0.00      8.00        1713.00        1727.00         1828.00     1957.00           6.00         2.00             0.00
+25%            26.00                0.00     62.00        1932.00        1928.50         1982.00     2016.00           8.00        40.00           842.00
+50%            32.00                0.00     75.00        1952.00        1990.50         1995.00     2023.00          15.00        93.00          2525.00
+75%            38.00                0.00     85.00        1971.00        2013.00         2006.00     2025.00          26.00       209.00          7446.00
+max            50.00               31.00    100.00        2012.00        2025.00         2020.00     2026.00          50.00      3272.00        251561.00
+Non-missing death dates (1 / author): 128 (8.80%)
+Non-missing birth dates (1 / author): 386 (26.55%)
+Non-missing birth & death dates (1 / author): 127 (8.73%)
+
+Summary stats for number of appointments per author below:
+        appointments_per_author
+count                  1454.00
+mean                      1.23
+std                       0.50
+min                       1.00
+25%                       1.00
+50%                       1.00
+75%                       1.00
+max                       4.00
+All scripts completed successfully.

@@ -30,11 +30,7 @@ RETRY_STATUS_CODES = {429, 500, 502, 503, 504}
 MAX_RETRIES = 5
 REQUEST_DELAY = 0.3
 AUTHOR_IDS = [
-    "A5113979747",
-    "A5059247979",
-    "A5111861926",
-    "A5108445423",
-    "A5060098137"
+    "A5066279102",
 ]
 
 # --------------------- LOW-LEVEL FETCH -------------------------
@@ -150,7 +146,7 @@ async def main():
                 })
 
     pd.DataFrame(all_rows).to_csv(
-        "/home/mm4958/openalex/custom_pipeline/results/custom_author_institution_year_span.csv", index=False
+        "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/custom_author_institution_year_span.csv", index=False
     )
 
     print("\n✓ Saved combined affiliation spans → authors_affiliation_spans.csv")

@@ -6,21 +6,21 @@ from pathlib import Path
 # ── CONFIG ───────────────────────────────────
 INSTITUTIONS = {
     "mit": {
-        "input":  "/home/mm4958/openalex/results/with_death_dates_mit.csv",
-        "output": "/home/mm4958/openalex/results/mit_final_raw.csv"
+        "input":  "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_death_dates_mit.csv",
+        "output": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/mit_final_raw.csv"
     },
     "cornell": {
-        "input":  "/home/mm4958/openalex/results/with_death_dates_cornell.csv",
-        "output": "/home/mm4958/openalex/results/cornell_final_raw.csv"
+        "input":  "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_death_dates_cornell.csv",
+        "output": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/cornell_final_raw.csv"
     },
     "OU": {
-        "input":  "/home/mm4958/openalex/results/with_death_dates_ou.csv",
-        "output": "/home/mm4958/openalex/results/ou_final_raw.csv"
+        "input":  "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_death_dates_ou.csv",
+        "output": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/ou_final_raw.csv"
     },
 }
 
 CONCURRENCY_LIMIT = 5
-HEADERS = {"User-Agent": "mm4958@mit.edu"} 
+HEADERS = {"User-Agent": "mm4958@mit.edu", "Authorization": "Bearer lvSaVMtRlMSlYYbVfXctWl"}
 
 # ── ASYNC FETCH ──────────────────────────────
 async def fetch_author_stats(author_id, session, sem):
@@ -79,7 +79,7 @@ def process_institution(slug, props):
     print(f"\nProcessing {slug.upper()}")
 
     df = pd.read_csv(props["input"], dtype=str)
-    
+
     # ── DEBUG SAMPLE (1%) ────────────────────
     #SAMPLE_FRAC = 0.01
     #RANDOM_SEED = 42

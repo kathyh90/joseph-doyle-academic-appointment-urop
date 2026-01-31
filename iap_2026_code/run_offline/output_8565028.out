@@ -1,0 +1,17 @@
+start_bin
+1820      1
+1890      1
+1910      3
+1920      1
+1930      4
+1940     11
+1950     24
+1960     82
+1970    167
+1980    233
+1990    286
+2000    347
+2010    290
+2020      2
+Name: count, dtype: int64
+All scripts completed successfully.

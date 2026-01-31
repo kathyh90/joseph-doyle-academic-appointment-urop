@@ -12,12 +12,12 @@ from sklearn.neighbors import BallTree
 # ---------------- CONFIG ----------------
 INSTITUTIONS = {
     "mit": {
-        "input_csv": "/home/mm4958/openalex/results/MIT_author_institution_year_spans.csv",
-        "output_csv":   "/home/mm4958/openalex/results/with_nearest_hospital_mit.csv"
+        "input_csv": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/MIT_author_institution_year_spans.csv",
+        "output_csv": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_nearest_hospital_mit.csv"
     },
     "ou": {
-        "input_csv": "/home/mm4958/openalex/results/OU_author_institution_year_spans.csv",
-        "output_csv":   "/home/mm4958/openalex/results/with_nearest_hospital_ou.csv"
+        "input_csv": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/OU_author_institution_year_spans.csv",
+        "output_csv":   "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_nearest_hospital_ou.csv"
     },
     #"osu": {
     #    "input_csv": "/home/mm4958/openalex/results/OSU_author_institution_year_spans.csv",
@@ -28,8 +28,8 @@ INSTITUTIONS = {
     #    "output_csv":   "with_nearest_hospital_dartmouth.csv"
     #},
     "cornell": {
-        "input_csv": "/home/mm4958/openalex/results/cornell_author_institution_year_spans.csv",
-        "output_csv":   "/home/mm4958/openalex/results/with_nearest_hospital_cornell.csv"
+        "input_csv": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/cornell_author_institution_year_spans.csv",
+        "output_csv":   "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_nearest_hospital_cornell.csv"
     },
     #"harvard": {
     #    "input_csv": "/home/mm4958/openalex/results/harvard_author_institution_year_spans.csv",
@@ -46,6 +46,10 @@ MAX_RETRIES = 5
 RETRY_CODES = {429, 500, 502, 503, 504}
 HOSP_WAIT = 10
 
+OA_HEADERS = {
+    "User-Agent": "AcademicHealthPanel/1.0 (mailto:mm4958@mit.edu)",
+    "Authorization": "Bearer lvSaVMtRlMSlYYbVfXctWl"
+}
 
 # ---------------- HELPER FUNCTIONS ----------------
 async def fetch_json(session, url, semaphore=None):
@@ -75,7 +79,7 @@ async def fetch_inst_coord(inst_id, session, oa_sem):
     if not js:
         print(f"[OA] Failed to fetch {key}, got None")
         return inst_id, (None, None)
-    
+
     country = js.get("country_code")
     if country != "US":
         #Skip non-US institutions entirely
@@ -96,7 +100,7 @@ async def fallback_nominatim(inst_id, name, session, nom_sem):
     if not name:
         print(f"[NOM] No name for {inst_id}, skipping fallback")
         return inst_id, (None, None)
-    
+
     print(f"[NOM] Fallback for {inst_id} ({name})")
     params = {"q": name, "format": "json", "limit": 1}
     headers = {"User-Agent": "AcademicHealthPanel/1.0"}
@@ -160,12 +164,12 @@ async def process_school(input_csv, output_csv, hosp):
     unique_insts = df["institution_id"].unique()
     id_to_name = df.set_index("institution_id")["institution_name"].to_dict()
 
-    async with aiohttp.ClientSession() as session:
+    async with aiohttp.ClientSession(headers = OA_HEADERS) as session:
         # OpenAlex geocoding
         oa_sem = asyncio.Semaphore(OA_CONCURRENCY)
         oa_tasks = [fetch_inst_coord(i, session, oa_sem) for i in unique_insts]
         inst_results = await asyncio.gather(*oa_tasks)
-        
+
         inst_coords = {}
         inst_countries = {}  # track country for each institution
 
@@ -178,7 +182,7 @@ async def process_school(input_csv, output_csv, hosp):
             inst_coords[inst_id] = (lat, lon)
             inst_countries[inst_id] = country  # save country
             print(f"[DEBUG] {inst_id} -> lat={lat}, lon={lon}, country={country}")
-                
+
         # Fallback Nominatim geocoding (US only)
         nom_sem = asyncio.Semaphore(NOMINATIM_CONCURRENCY)
         need_fallback = [
@@ -194,7 +198,7 @@ async def process_school(input_csv, output_csv, hosp):
             if coord != (None, None):
                 inst_coords[inst_id] = coord
                 print(f"[NOM] Got fallback coordinates for {inst_id}: {coord}")
-       
+
         # Log US institutions still missing coordinates
         failed_us = [
             k for k, v in inst_coords.items()

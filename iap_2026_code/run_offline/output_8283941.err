@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/main_pipeline/5_orcid_get_years.py", line 205, in <module>
+    main()
+  File "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/main_pipeline/5_orcid_get_years.py", line 154, in main
+    first = parts[0]
+IndexError: list index out of range

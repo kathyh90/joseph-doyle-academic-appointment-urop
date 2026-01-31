@@ -2,12 +2,12 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("/home/mm4958/openalex/results/df_cleaned_final.csv")
+df = pd.read_csv("/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/df_cleaned_final.csv")
 #Create variable for number of appointments per author
 df["n_appointments"] = df.groupby("author_id")["author_id"].transform("size")
 #Collapse data at author level
 agg_dict = {
-    "distance_km": "mean",  
+    "distance_km": "mean",
     "date_of_birth": "first",
     "date_of_death": "first",
     "appoint_len_w": "mean",
@@ -34,12 +34,12 @@ df_author = (
 )
 
 #Summary stats for all variables at the author level
-desc = (df_author[['total_works','total_citations','distance_km','n_appointments','age_first_pub', 'time_from_last_pub', 'lifespan', 
+desc = (df_author[['total_works','total_citations','distance_km','n_appointments','age_first_pub', 'time_from_last_pub', 'lifespan',
                  'date_of_birth', 'date_of_death','earliest_start', 'latest_end_adj', 'appoint_len_w',
-                 'partial_overlap_author', 'perfect_overlap_author', 'bad_age_first_pub', 'bad_lifespan', 
+                 'partial_overlap_author', 'perfect_overlap_author', 'bad_age_first_pub', 'bad_lifespan',
                  'winsorized_appointment', 'appt_dropped_by_inst_type']].describe(percentiles=[0.25, 0.5, 0.75]).round(2))
 
-desc.to_csv("/home/mm4958/openalex/results/df_final_sum_stats.csv")
+desc.to_csv("/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/df_final_sum_stats.csv")
 #yvars to plot
 y_vars = ["total_works","total_citations","distance_km", "date_of_birth", "date_of_death", "appoint_len_w", "lifespan", "latest_end_adj", "age_first_pub", "time_from_last_pub", "n_appointments"]
 #create cohorts in intervals of 10 years based on earliest appointment date
@@ -66,7 +66,7 @@ y_labels = {
     "total_citations": "Total citations"}
 
 order = sorted(df_author["start_bin"].unique())
-fig_dir = "/home/mm4958/openalex/graphs"# Count number of authors per cohort
+fig_dir = "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/graphs"# Count number of authors per cohort
 cohort_counts = (
     df_author
     .groupby("start_bin")
@@ -90,13 +90,13 @@ for y in y_vars:
         y=y,
         order=order
     )
-    
+
     label = y_labels.get(y, y)
 
     plt.xlabel("Earliest appointment date (10-year cohorts)")
     plt.ylabel(label)
     plt.title(f"{label} by earliest appointment date")
-    
+
     # ---- ADD N LABELS ----
     bin_q3 = (
         df_author
@@ -104,7 +104,7 @@ for y in y_vars:
         .quantile(0.75)  # 75th percentile
         .reindex(order)
     )
-    
+
     variable_counts = (
         df_author[df_author[y].notna()]
         .groupby("start_bin")
@@ -129,7 +129,7 @@ for y in y_vars:
     y_min = df_author[y].min()
     y_max = df_author[y].max()
     y_range = y_max - y_min
-    ax.set_ylim(y_min - 0.02 * y_range, y_max + 0.1 * y_range) 
+    ax.set_ylim(y_min - 0.02 * y_range, y_max + 0.1 * y_range)
     plt.tight_layout()
     plt.savefig(f"{fig_dir}/boxplot_{y}_by_start_bin.png", dpi=300)
     plt.close()

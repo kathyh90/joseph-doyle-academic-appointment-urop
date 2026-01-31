@@ -1,0 +1,30 @@
+
+=== Processing massachusetts institute of technology (1012 authors) ===
+[50/1012] processed — 48 kept, 0 errors
+[100/1012] processed — 97 kept, 0 errors
+[150/1012] processed — 145 kept, 1 errors
+[200/1012] processed — 193 kept, 1 errors
+[250/1012] processed — 242 kept, 1 errors
+[300/1012] processed — 291 kept, 1 errors
+[350/1012] processed — 338 kept, 1 errors
+[400/1012] processed — 384 kept, 3 errors
+[450/1012] processed — 430 kept, 4 errors
+[500/1012] processed — 478 kept, 5 errors
+[550/1012] processed — 527 kept, 6 errors
+[600/1012] processed — 575 kept, 7 errors
+[650/1012] processed — 625 kept, 7 errors
+[700/1012] processed — 675 kept, 7 errors
+[750/1012] processed — 723 kept, 7 errors
+[800/1012] processed — 770 kept, 8 errors
+[850/1012] processed — 818 kept, 8 errors
+[900/1012] processed — 864 kept, 8 errors
+[950/1012] processed — 911 kept, 9 errors
+[1000/1012] processed — 959 kept, 9 errors
+[1012/1012] processed — 971 kept, 9 errors
+[{'author_id': 'https://openalex.org/A1909111750', 'name': 'John Morrison', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A1909111750'"}, {'author_id': 'https://openalex.org/A2807814223', 'name': 'Sayed Saad Afzal', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2807814223'"}, {'author_id': 'https://openalex.org/A3171204331', 'name': 'B. L. Reichelt', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A3171204331'"}, {'author_id': 'https://openalex.org/A4304869649', 'name': 'Brastianos, Priscilla K.', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A4304869649'"}, {'author_id': 'https://openalex.org/A2765259247', 'name': 'Amilton Barbosa Botelho Junior', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2765259247'"}, {'author_id': 'https://openalex.org/A2751640369', 'name': 'Wei Zitang', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2751640369'"}, {'author_id': 'https://openalex.org/A2480770876', 'name': 'Alexander Tang', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A2480770876'"}, {'author_id': 'https://openalex.org/A4294450618', 'name': 'Sławomir K. Tadeja', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A4294450618'"}, {'author_id': 'https://openalex.org/A3126671990', 'name': 'Haruko Wainwright', 'inst_1_id': 'https://openalex.org/I63966007', 'inst_1_name': 'Massachusetts Institute of Technology', 'year_start_1': '2025', 'year_end_1': '2025', 'MIT_ID': 'https://openalex.org/I63966007', 'MIT_year_start': '2025', 'MIT_year_end': '2025', 'current_institutions': '', 'past_institutions': '', '_has_inst': False, '_error': 'ClientResponseError', 'status': 404, 'message': "404, message='Not Found', url='https://api.openalex.org/authors/A3126671990'"}]
+Total errors: 9
+Error types: Counter({'ClientResponseError': 9})
+✓ Done! Saved 971 profiles to MIT_author_profiles_extended_f.csv
+
+ Finished in 7.12 minutes (427.17 seconds)
+All scripts completed successfully.

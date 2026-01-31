@@ -1,3 +1,5 @@
+# TO DO: implement parallel querying through asyncio and aiohttp. I started inserting some code
+# from other files in the corresponding locations but never ran it through and tested it.
 """
 enrich_with_birth_death.py
 
@@ -9,12 +11,28 @@ Dependencies:
 """
 
 import pandas as pd
+import asyncio
+import aiohttp
 import time
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 # ── CONFIG ────────────────────────────────────────────────────────────────
-INPUT_CSV         = "/home/kathyh90/joseph-doyle-academic-appointment-urop/results/MIT_author_profiles_extended_f.csv"
-OUTPUT_CSV        = "/home/kathyh90/joseph-doyle-academic-appointment-urop/results/extended_results.csv"
+INSTITUTIONS = {
+    "mit": {
+        "input":  "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/removed_mit_author.csv",
+        "output": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_death_dates_mit.csv"
+    },
+    "cornell": {
+        "input":  "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_nearest_hospital_cornell.csv",
+        "output": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_death_dates_cornell.csv"
+    },
+    "OU": {
+        "input":  "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_nearest_hospital_ou.csv",
+        "output": "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_death_dates_ou.csv"
+    },
+},
+INPUT_CSV = "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_nearest_hospital_ou.csv"
+OUTPUT_CSV = "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/with_death_dates_ou.csv"
 NAME_COL          = "name"       # name column
 ORCID_COL         = "orcid"      # optional column for ORCID IDs
 REQUEST_DELAY_SEC = 1.0          # ≤1 req/sec
@@ -201,5 +219,11 @@ def main():
     df.to_csv(OUTPUT_CSV, index=False)
     print(f"\n✓ Done! Wrote {len(df)} rows to '{OUTPUT_CSV}'.")
 
+# async def run_all():
+#     for slug, props in INSTITUTIONS.items():
+#         print(f"\n=== Processing {slug.upper()} ===")
+#         await main(slug, props)
+
 if __name__ == "__main__":
+    # asyncio.run(run_all())
     main()

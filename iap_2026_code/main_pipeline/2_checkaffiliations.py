@@ -5,25 +5,33 @@ import asyncio
 import time
 from pathlib import Path
 import math
+import os
+
+# ── OpenAlex API Key (gives more rate limit) ─────────────────────────────────────────────────────
+# OPENALEX_API_KEY = os.environ.get("OPENALEX_API_KEY")
+OPENALEX_API_KEY = 'lvSaVMtRlMSlYYbVfXctWl'
+
+# if not OPENALEX_API_KEY:
+#     raise RuntimeError("OPENALEX_API_KEY environment variable is not set")
 
 # ── CONFIG: Institutions ─────────────────────────────────────────────────────
 INSTITUTIONS = {
     "mit": {
         "display": "massachusetts institute of technology",
         "oa_id":    "https://openalex.org/I63966007",
-        "input":    "/home/kathyh90/joseph-doyle-academic-appointment-urop/iap_2026_code/results/mit_only_affiliations.csv",
+        "input":    "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/mit_only_affiliations.csv",
         "output":   "MIT_author_profiles_extended_f.csv"
     },
-    #"ou": {
-    #    "display": "university of oklahoma",
-    #    "oa_id":    "https://openalex.org/I8692664",
-    #    "input":    "/home/mm4958/openalex/results/ou_only_affiliations.csv",
-    #    "output":   "OU_author_profiles_extended_f.csv"
-    #},
+    "ou": {
+       "display": "university of oklahoma",
+       "oa_id":    "https://openalex.org/I8692664",
+       "input":    "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/ou_only_affiliations.csv",
+       "output":   "OU_author_profiles_extended_f.csv"
+    },
     "cornell": {
         "display": "cornell",
         "oa_id":    "https://openalex.org/I205783295",
-        "input":    "/home/mm4958/openalex/results/cornell_only_affiliations.csv",
+        "input":    "/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results/cornell_only_affiliations.csv",
         "output":   "cornell_author_profiles_extended_f.csv"
     }
     # Add more institutions as needed...
@@ -36,11 +44,15 @@ MAX_LINES = 100000  # stop after this many authors
 
 # ── UTILITY ──────────────────────────────────────────────────────────────────
 async def rate_limited_fetch(sem, session, url, max_retries=5, base_delay=1.0):
+    HEADERS = {
+        "Authorization": f"Bearer {OPENALEX_API_KEY}"
+    }
+
     async with sem:
         for attempt in range(1, max_retries + 1):
             try:
                 await asyncio.sleep(10 / RATE_LIMIT)  # space requests
-                async with session.get(url) as response:
+                async with session.get(url, headers = HEADERS) as response:
                     response.raise_for_status()
                     return await response.json()
             except aiohttp.ClientResponseError as e:
@@ -116,11 +128,11 @@ def process_profile(row, profile, oa_id, prefix):
         return x.get("display_name") or ""
 
     # Current institutions (last_known_institutions)
-    current = [safe_name(inst) for inst in profile.get("last_known_institutions", [])]
+    current = [safe_name(inst) for inst in profile.get("last_known_institutions") or []]
 
     # Past institutions
     past = []
-    for aff in profile.get("affiliations", []):
+    for aff in profile.get("affiliations") or []:
         inst = aff.get("institution") or {}
         name = safe_name(inst)
         if name and name not in current:
@@ -134,10 +146,10 @@ def process_profile(row, profile, oa_id, prefix):
     # Has target institution?
     has_inst = any(
         (inst.get("id") or "").lower() == oa_id.lower()
-        for inst in profile.get("last_known_institutions", [])
+        for inst in profile.get("last_known_institutions") or []
     ) or any(
         ((aff.get("institution") or {}).get("id") or "").lower() == oa_id.lower()
-        for aff in profile.get("affiliations", [])
+        for aff in profile.get("affiliations") or []
     )
 
     # Output
@@ -156,7 +168,7 @@ async def process_institution(slug, props):
     disp_lower = props["display"].lower()
     oa_id      = props["oa_id"]
     in_csv     = props["input"]
-    out_csv    = Path("/home/kathyh90/joseph-doyle-academic-appointment-urop/iap_2026_code/results") / props["output"]
+    out_csv    = Path("/home/kathyh90/joe-doyle-urop-2025/iap_2026_code/results") / props["output"]
     prefix     = slug.upper()
 
     if not Path(in_csv).exists():
@@ -165,8 +177,8 @@ async def process_institution(slug, props):
 
     df = pd.read_csv(in_csv, dtype=str)
     # Take 1% sample and overwrite df. DELETE THIS ONCE WE"RE DONE DEBUGGING
-    #sample_size = max(1, math.ceil(len(df) * 0.01))
-    #df = df.sample(n=sample_size, random_state=42)
+    sample_size = max(1, math.ceil(len(df) * 0.01))
+    df = df.sample(n=sample_size, random_state=42)
     df = df.fillna("")
     total = len(df)
     print(f"\n=== Processing {props['display']} ({total} authors) ===")
